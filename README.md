@@ -91,7 +91,7 @@ India is clearing its legacy dumpsites under SBM-U 2.0's **Lakshya Zero Dumpsite
 ## Architecture
 
 ```mermaid
-flowchart LR
+flowchart TB
   subgraph SRC[Open data sources]
     CT[Climate TRACE<br/>532 dumpsite points]
     OSM[OpenStreetMap<br/>landfill polygons]
