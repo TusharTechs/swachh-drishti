@@ -177,6 +177,7 @@ def cmd_publish():
         tot["sites_with_fire"] += p["fire_days"] > 0
     (web / "sites.geojson").write_text(json.dumps({"type": "FeatureCollection", "features": feats,
                                                    "attribution": fc.get("attribution")}))
+    tot["repo"] = "https://github.com/TusharTechs/swachh-drishti"
     tot["generated"] = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d")
     (web / "summary.json").write_text(json.dumps(tot))
     print(tot)

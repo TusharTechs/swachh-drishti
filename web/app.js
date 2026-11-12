@@ -16,7 +16,7 @@ async function load() {
   ]);
   state.sites = sites;
   renderKpis(summary);
-  if (summary.repo) $('#repo-link').href = summary.repo;
+  if (summary.repo) { $('#repo-link').href = summary.repo; window.REPO = summary.repo + '/issues/new?template=right-of-reply.yml&title=Right%20of%20reply%3A%20'; }
   const states = [...new Set(sites.features.map(f => f.properties.state))].sort();
   $('#f-state').insertAdjacentHTML('beforeend', states.map(s => `<option>${s}</option>`).join(''));
   initMap();
@@ -115,7 +115,7 @@ async function select(id) {
     ${fireBlock(d.fires)}
     ${expoBlock(d.exposure)}
     ${d.pack_md ? `<div class="pack">${marked.parse(d.pack_md)}</div>` : (d.assessment ? '' : '<p class="note">Evidence pack pending agent review.</p>')}
-    <p class="note">Observations from open satellite data; not a certificate of remediation. <a href="${(window.REPO || '#')}" target="_blank" rel="noopener">Right of reply / corrections</a></p>`;
+    <p class="note">Observations from open satellite data; not a certificate of remediation. <a href="${window.REPO ? window.REPO + encodeURIComponent(p.site_id + ' ' + name(p)) : '#'}" target="_blank" rel="noopener">Right of reply / corrections</a></p>`;
   panel.querySelector('.close').onclick = () => { panel.classList.add('hidden'); history.replaceState(null, '', ' '); };
   if (obs.length) wireChips(panel, obs);
 }

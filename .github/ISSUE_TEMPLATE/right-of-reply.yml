@@ -1,0 +1,15 @@
+name: Right of reply / correction
+description: ULBs, state missions and citizens can correct a site record or share official progress data.
+labels: [right-of-reply]
+body:
+  - type: input
+    id: site
+    attributes: {label: Site ID and name, placeholder: "SD0001 Ghazipur landfill"}
+    validations: {required: true}
+  - type: dropdown
+    id: who
+    attributes: {label: You are, options: [Urban local body, State SBM-U mission, Pollution control board, Citizen / NGO, Researcher, Other]}
+  - type: textarea
+    id: correction
+    attributes: {label: What should be corrected or added?, description: "Boundary, status, remediation progress, fire events… Please link official documents where possible. Do not include personal data."}
+    validations: {required: true}
