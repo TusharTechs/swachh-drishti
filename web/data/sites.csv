@@ -1,0 +1,652 @@
+site_id,display_name,city,state,status,drap_priority,legacy_waste_t,area_ha,trend,fire_days,pop_1km,pop_2km,pop_5km,review_passed,lon,lat
+SD0001,Ghazipur landfill,Delhi,Delhi,mapped,True,7900000.0,28.24,little_visible_change,5,163745,599329,2598131,True,77.32666,28.6233
+SD0002,Okhla landfill,Delhi,Delhi,mapped,True,7900000.0,24.96,little_visible_change,1,111575,340739,1683223,True,77.2837,28.51225
+SD0003,Pallikaranai Dumpyard,Chennai,Tamil Nadu,needs-tracing,True,4550886.5,,,0,2937,81049,1131627,,80.22561,12.95427
+SD0005,Delhi dumpsite,Gurugram,Haryana,needs-tracing,True,3000000.0,,,0,19777,91554,481395,,77.12715,28.53301
+SD0006,Tajpur Road dumpsite,Ludhiana,Punjab,mapped,True,2100000.0,27.07,little_visible_change,40,73390,221901,1165453,True,75.90826,30.92727
+SD0007,North 24 Parganas dumpsite,Kolkata,West Bengal,needs-tracing,True,2075000.0,,,0,3001,11789,196814,,88.5013,22.69162
+SD0008,Howrah dumpsite,Kolkata,West Bengal,auto-traced,True,2075000.0,1.34,little_visible_change,1,48832,154580,1506576,True,88.33393,22.63573
+SD0009,Mandur Landfill BBMP,Bengaluru,Karnataka,mapped,True,1956400.0,18.93,little_visible_change,2,208,1417,11913,True,77.72565,13.0847
+SD0010,Mavallipura BBMP Landfill,Bengaluru,Karnataka,mapped,True,1956400.0,54.35,visible_reduction,11,9622,53773,821872,True,77.53932,13.11866
+SD0011,Karnataka Compost Development Centre - KCDC,Bengaluru,Karnataka,mapped,True,1956400.0,12.86,visible_reduction,1,24703,56764,170638,True,77.64899,12.89548
+SD0012,Mahadevapura Zone dumpsite,Bengaluru,Karnataka,auto-traced,True,1956400.0,77.56,little_visible_change,0,5425,14513,218492,True,77.68673,13.01925
+SD0013,Bangalore Urban dumpsite,Bengaluru,Karnataka,auto-traced,True,1956400.0,92.24,little_visible_change,14,5108,17300,172329,True,77.62545,12.83692
+SD0014,Municipal Landfill,Ranchi,Jharkhand,mapped,True,1803858.0,25.44,little_visible_change,7,9499,30466,170281,True,85.25443,23.41131
+SD0015,GVMC Dumpyard,Visakhapatnam,Andhra Pradesh,mapped,True,1765072.0,40.65,little_visible_change,31,3357,16631,91553,True,83.37113,17.83981
+SD0016,Quelossim dumpsite,Margao,Goa,auto-traced,True,1618673.0,74.85,indeterminate,7,20781,31191,61895,True,73.93874,15.3732
+SD0017,Odisha dumpsite,Bhubaneswar,Odisha,auto-traced,True,1600000.0,27.09,visible_expansion,19,643,2192,25107,True,85.78566,20.39123
+SD0018,Assam dumpsite,Guwahati,Assam,needs-tracing,True,1500000.0,,,0,2737,28543,184039,,91.67798,26.11443
+SD0019,Barrackpur - Ii dumpsite,South Dum Dum,West Bengal,needs-tracing,True,1400000.0,,,0,10948,81399,552047,,88.33791,22.77033
+SD0020,Jaipur dumpsite,Jaipur,Rajasthan,auto-traced,True,1191091.0,29.48,little_visible_change,4,2218,9152,106361,True,75.91869,26.94541
+SD0021,Kota District dumpsite,Kota,Rajasthan,auto-traced,True,1133050.0,8.85,little_visible_change,26,7552,14642,211099,True,75.79717,25.191
+SD0022,Municipal Landfill,Srinagar,Jammu And Kashmir,mapped,True,1100000.0,26.72,visible_expansion,1,430,141801,873406,True,74.78625,34.12378
+SD0023,Amritsar dumpsite,Amritsar,Punjab,needs-tracing,True,1100000.0,,,0,35266,230732,1004540,,74.87875,31.63567
+SD0024,Dhapa Landfill,Howrah,West Bengal,mapped,True,1000000.0,59.0,little_visible_change,59,21513,86381,1736537,True,88.42437,22.53703
+SD0025,124001 dumpsite,Rohtak,Haryana,auto-traced,True,969806.0,27.16,little_visible_change,5,1964,55525,409334,True,76.55579,28.87584
+SD0026,Dakshina Kannada District dumpsite,Mangalore,Karnataka,auto-traced,True,900000.0,11.51,visible_expansion,1,8742,21643,129901,True,74.87538,12.77977
+SD0027,Bikaner dumpsite,Bikaner,Rajasthan,needs-tracing,True,832363.5,,,0,54340,196510,777098,,73.31714,28.01593
+SD0028,Bikaner dumpsite,Bikaner,Rajasthan,needs-tracing,True,832363.5,,,0,54340,196510,777098,,73.31714,28.01593
+SD0029,Jalandhar dumpsite,Jalandhar,Punjab,needs-tracing,True,800000.0,,,0,51228,177016,516558,,75.56789,31.29223
+SD0030,Compost Yard-Vellalore,Coimbatore,Tamil Nadu,auto-traced,True,743257.0,76.27,little_visible_change,13,73458,142885,755186,True,77.00474,10.95848
+SD0031,Jammu dumpsite,Jammu,Jammu And Kashmir,needs-tracing,True,723549.0,,,0,20839,117432,564842,,74.85809,32.71856
+SD0032,Odisha dumpsite,Cuttack,Odisha,auto-traced,True,685000.0,7.15,visible_expansion,1,86,2116,24598,True,85.77639,20.41426
+SD0033,Jaipur dumpsite,Jaipur,Rajasthan,auto-traced,True,681455.0,3.83,little_visible_change,0,686,3789,58180,True,75.9416,26.95505
+SD0034,Landfill Site,Mysore,Karnataka,mapped,True,600948.0,19.17,little_visible_change,6,23686,92749,436844,True,76.65492,12.2685
+SD0035,Gwalior dumpsite,Gwalior,Madhya Pradesh,needs-tracing,True,581462.0,,,0,2331,6485,168954,,78.14778,26.14811
+SD0036,Bareilly dumpsite,Bareilly,Uttar Pradesh,needs-tracing,True,575578.0,,,0,1117,10511,110224,,79.40475,28.45823
+SD0037,East Godavari dumpsite,Rajahmundry,Andhra Pradesh,auto-traced,True,512495.0,3.77,visible_expansion,3,63781,148435,478572,True,81.7799,17.02892
+SD0038,South 24 Parganas dumpsite,Kamarhati,West Bengal,needs-tracing,True,500000.0,,,0,6074,76453,1076948,,88.44814,22.56436
+SD0039,HDMC Landfill,Hubballi,Karnataka,mapped,True,479930.0,9.79,little_visible_change,25,2248,16258,91474,True,75.10982,15.32409
+SD0040,Meerut dumpsite,Meerut,Uttar Pradesh,mapped,True,470936.0,10.34,visible_reduction,4,15328,42901,477853,True,77.73228,28.9269
+SD0041,Dimapur dumpsite,Dimapur,Nagaland,mapped,True,460000.0,7.25,little_visible_change,2,17858,67035,349397,True,93.74818,25.92281
+SD0042,Durgapur dumpsite,Durgapur,West Bengal,mapped,True,450000.0,4.34,visible_expansion,1,1286,38155,162372,True,87.35968,23.54305
+SD0043,Aligarh dumpsite,Aligarh,Uttar Pradesh,needs-tracing,True,447912.0,,,0,2544,12437,341344,,78.13582,27.87611
+SD0044,Madurai District dumpsite,Madurai,Tamil Nadu,auto-traced,True,434641.0,2.41,little_visible_change,2,5680,30001,517186,True,78.08813,9.87235
+SD0045,Phagwara dumpsite,Phagwara,Punjab,needs-tracing,True,405000.0,,,0,43567,105973,183851,,75.76965,31.22067
+SD0046,Jodhpur dumpsite,Jodhpur,Rajasthan,needs-tracing,True,399718.0,,,0,53502,178562,698803,,73.03514,26.29677
+SD0047,Puri (M) dumpsite,Puri,Odisha,mapped,True,391904.0,2.62,little_visible_change,0,76916,179569,333322,True,85.81068,19.79683
+SD0048,Ajmer dumpsite,Ajmer,Rajasthan,needs-tracing,True,377400.0,,,0,927,6032,66128,,74.68089,26.38817
+SD0049,Kakinada dumpsite,Kakinada,Andhra Pradesh,needs-tracing,True,362375.0,,,0,13018,105159,364550,,82.2503,16.9429
+SD0050,Nizamabad dumpsite,Nizamabad,Telangana,needs-tracing,True,351532.0,,,0,77156,229901,421701,,78.09782,18.67319
+SD0051,North 24 Parganas dumpsite,Naihati,West Bengal,needs-tracing,True,350000.0,,,0,141882,289338,1122671,,88.38814,22.85975
+SD0052,Andhra Pradesh dumpsite,Nellore,Andhra Pradesh,auto-traced,True,343405.0,109.81,little_visible_change,3,120985,248525,519942,True,79.99792,14.46584
+SD0053,Nellore dumpsite,Nellore,Andhra Pradesh,needs-tracing,True,343405.0,,,0,86899,281266,531508,,79.98738,14.44937
+SD0054,Agartala dumpsite,Agartala,Tripura,needs-tracing,True,332000.0,,,0,46061,202972,618858,,91.28238,23.83124
+SD0055,Kalaburagi District dumpsite,Kalaburagi,Karnataka,auto-traced,True,309189.0,95.03,little_visible_change,10,843,3015,151353,True,76.78317,17.28238
+SD0056,Belgaum District dumpsite,Belagavi,Karnataka,auto-traced,True,300000.0,2.4,visible_expansion,1,1162,6014,124910,True,74.86365,16.16092
+SD0057,Hugli dumpsite,Maheshtala,West Bengal,auto-traced,True,300000.0,1.38,visible_expansion,0,8320,29407,444601,True,88.33534,22.66661
+SD0058,Jabalpur dumpsite,Jabalpur,Madhya Pradesh,needs-tracing,True,300000.0,,,0,104844,346386,1232385,,79.93245,23.17015
+SD0059,Bankura dumpsite,Bankura,West Bengal,needs-tracing,True,300000.0,,,0,5006,17750,60796,,87.20819,23.13238
+SD0060,Bellary dumpsite,Bellary,Karnataka,needs-tracing,True,266214.0,,,0,52145,243074,558659,,76.91733,15.14302
+SD0061,Khammam dumpsite,Khammam,Telangana,needs-tracing,True,262241.0,,,0,30604,171763,348318,,80.15003,17.24654
+SD0062,Davanagere dumpsite,Davanagere,Karnataka,needs-tracing,True,241524.0,,,0,0,5494,23399,,75.83034,14.25588
+SD0063,Srikakulam dumpsite,Srikakulam,Andhra Pradesh,auto-traced,True,237841.0,1.39,little_visible_change,0,5519,14422,50188,True,83.99684,18.3743
+SD0064,Gangtok dumpsite,Gangtok,Sikkim,needs-tracing,True,233823.0,,,0,60865,102112,165889,,88.61227,27.32905
+SD0065,Karimnagar dumpsite,Karimnagar,Telangana,auto-traced,True,225800.0,70.92,little_visible_change,14,33724,89945,298239,True,79.14259,18.41317
+SD0066,Barddhaman dumpsite,Barddhaman,West Bengal,needs-tracing,True,220000.0,,,0,96,5508,33215,,87.75,23.25
+SD0067,Sirsa dumpsite,Sirsa,Haryana,needs-tracing,True,218470.0,,,0,155,5128,27619,,74.90366,29.6063
+SD0068,Moga dumpsite,Moga,Punjab,needs-tracing,True,214000.0,,,0,1532,20639,184497,,75.15936,30.78776
+SD0069,Jaisalmer dumpsite,Jaisalmer,Rajasthan,needs-tracing,True,211817.0,,,0,0,103,1899,,70.77751,27.02642
+SD0070,Hardwar dumpsite,Hardwar,Uttarakhand,mapped,True,210556.0,0.91,indeterminate,0,21675,63133,450136,True,78.09733,29.94294
+SD0071,Hardwar dumpsite,Hardwar,Uttarakhand,needs-tracing,True,210556.0,,,0,38543,123917,345671,,78.1453,29.93845
+SD0072,Baramula dumpsite,Baramula,Jammu And Kashmir,needs-tracing,True,209819.0,,,0,37859,86831,158829,,74.3435,34.20869
+SD0073,Haldwani dumpsite,Haldwani,Uttarakhand,mapped,True,207200.0,3.89,little_visible_change,18,20876,75531,324633,True,79.53428,29.20047
+SD0074,Silchar dumpsite,Silchar,Assam,needs-tracing,True,200000.0,,,0,40948,174573,453295,,92.78757,24.8303
+SD0075,Burhanpur dumpsite,Burhanpur,Madhya Pradesh,needs-tracing,True,196775.0,,,0,83,3298,27381,,76.37088,21.33487
+SD0076,Dhanbad dumpsite,Dhanbad,Jharkhand,mapped,True,195769.0,22.89,little_visible_change,0,24600,45208,186726,True,86.43539,23.66293
+SD0077,Ganjam dumpsite,Brahmapur,Odisha,auto-traced,True,184759.0,2.36,visible_reduction,1,4075,27029,319517,True,84.75083,19.32895
+SD0078,Bhuj dumpsite,Bhuj,Gujarat,mapped,True,180000.0,4.13,little_visible_change,0,1016,2009,28892,True,69.73945,23.20295
+SD0079,Mahabubnagar dumpsite,Mahbubnagar,Telangana,auto-traced,True,150000.0,25.8,visible_reduction,6,14408,63540,227408,True,77.97257,16.75461
+SD0080,Barrackpur - Ii dumpsite,Panihati,West Bengal,needs-tracing,True,150000.0,,,0,13642,54233,960716,,88.38005,22.67868
+SD0081,Kohima dumpsite,Kohima,Nagaland,needs-tracing,True,150000.0,,,0,6278,12658,134726,,94.10192,25.66188
+SD0082,English Bazar dumpsite,English Bazar,West Bengal,needs-tracing,True,150000.0,,,0,38871,97698,193078,,88.13985,25.00574
+SD0083,Nabadwip dumpsite,Nabadwip,West Bengal,mapped,True,150000.0,1.47,indeterminate,0,3537,38398,178096,True,88.3989,23.42182
+SD0084,Mansa dumpsite,Mansa,Punjab,needs-tracing,True,149000.0,,,0,478,3139,22027,,75.48896,29.87641
+SD0085,Jind city landfill,Jind,Haryana,mapped,True,145000.0,1.98,indeterminate,1,44002,125217,280171,True,76.30733,29.3113
+SD0086,Hassan dumpsite,Hassan,Karnataka,mapped,True,141616.0,3.7,visible_reduction,0,37256,114849,264845,True,76.09481,12.99731
+SD0087,Chhindwara dumpsite,Chhindwara,Madhya Pradesh,needs-tracing,True,138668.0,,,0,1696,7283,105234,,78.79883,22.20719
+SD0088,Chittoor Municipal Corporation Landfill,Chittoor,Andhra Pradesh,mapped,True,135397.0,6.41,little_visible_change,8,6585,21263,191024,True,79.08967,13.23738
+SD0089,Udupi dumpsite,Udupi,Karnataka,needs-tracing,True,134067.0,,,0,522,1731,14695,,74.87319,13.52698
+SD0090,Krishna dumpsite,Mangalagiri,Andhra Pradesh,needs-tracing,True,133266.0,,,0,51274,153407,823111,,80.64641,16.54033
+SD0091,North Goa dumpsite,Mapusa,Goa,mapped,True,132000.0,2.5,little_visible_change,0,1925,19480,101381,True,73.78294,15.5294
+SD0092,Tadpatri dumpsite,Tadipatri,Andhra Pradesh,needs-tracing,True,127237.0,,,0,1915,6629,24353,,78.05309,14.88074
+SD0093,Dausa dumpsite,Dausa,Rajasthan,needs-tracing,True,122870.0,,,0,528,2298,23792,,76.44375,26.80487
+SD0094,Balurghat dumpsite,Balurghat,West Bengal,needs-tracing,True,120000.0,,,0,130184,260952,340150,,88.77807,25.22344
+SD0095,Adilabad dumpsite,Adilabad,Telangana,needs-tracing,True,116834.0,,,0,51466,136045,195904,,78.53399,19.67595
+SD0096,Chhatarpur dumpsite,Chhatarpur,Madhya Pradesh,needs-tracing,True,116232.0,,,0,26,1092,10990,,79.67818,24.76061
+SD0097,Mandi dumpsite,Mandi,Himachal Pradesh,needs-tracing,True,114468.0,,,0,312,1631,18884,,77.00925,31.65166
+SD0098,Sangrur dumpsite,Sangrur,Punjab,needs-tracing,True,114000.0,,,0,882,5305,109573,,75.85333,30.13572
+SD0099,Kavali dumpsite,Kavali,Andhra Pradesh,needs-tracing,True,113081.0,,,0,57265,107377,129295,,79.99269,14.91358
+SD0100,Yemmiganur dumpsite,Yemmiganur,Andhra Pradesh,needs-tracing,True,108597.0,,,0,84764,131620,153433,,77.48195,15.76797
+SD0101,Churu dumpsite,Ramgarh,Rajasthan,auto-traced,True,107950.0,30.04,visible_reduction,0,14291,46901,138070,True,74.9531,28.31881
+SD0102,Assam dumpsite,Tezpur,Assam,needs-tracing,True,107061.0,,,0,19871,94456,277464,,92.81576,26.63145
+SD0103,Dharmsala dumpsite,Dharmsala,Himachal Pradesh,needs-tracing,True,104367.0,,,0,206,321,9215,,76.05227,32.4813
+SD0104,Jalpaiguri District dumpsite,Darjiling,West Bengal,mapped,True,100000.0,6.82,little_visible_change,20,18328,74738,288637,True,88.45123,26.74649
+SD0105,Krishnagar-I dumpsite,Krishnanagar,West Bengal,needs-tracing,True,100000.0,,,0,79158,417758,899365,,88.5116,23.4052
+SD0106,Murshidabad dumpsite,Murshidabad,West Bengal,needs-tracing,True,100000.0,,,0,6978,39951,114231,,88.26788,24.22638
+SD0107,Sirsi dumpsite,Sirsi,Karnataka,needs-tracing,True,98323.0,,,0,49345,90399,109210,,74.83886,14.61924
+SD0108,Sirsa dumpsite,Mandi Dabwali,Haryana,needs-tracing,True,96000.0,,,0,19117,61785,100611,,74.69025,29.95811
+SD0109,Guna dumpsite,Guna,Madhya Pradesh,needs-tracing,True,96000.0,,,0,217,451,2975,,77.2601,24.50018
+SD0110,Ashoknagar dumpsite,Ashoknagar,Madhya Pradesh,needs-tracing,True,95096.0,,,0,251,1981,7762,,77.8787,24.61861
+SD0111,Kalimpong dumpsite,Kalimpong,West Bengal,needs-tracing,True,95000.0,,,0,18835,29278,46267,,88.47237,27.07029
+SD0112,Shivamogga Taluku dumpsite,Bhadravati,Karnataka,auto-traced,True,93504.0,37.27,little_visible_change,2,9969,70667,381262,True,75.55186,13.91084
+SD0113,Chirawa Tehsil dumpsite,Chirawa,Rajasthan,needs-tracing,True,92997.0,,,0,4102,21566,110631,,75.64019,28.2603
+SD0114,Bari dumpsite,Bari,Rajasthan,needs-tracing,True,92457.0,,,0,100612,116379,152435,,77.61565,26.64694
+SD0115,Jhunjhunun dumpsite,Jhunjhunun,Rajasthan,needs-tracing,True,92000.0,,,0,27167,89531,203069,,75.39003,28.10709
+SD0116,Santipur dumpsite,Santipur,West Bengal,needs-tracing,True,92000.0,,,0,16955,54630,137451,,88.43716,23.25977
+SD0117,North 24 Parganas dumpsite,Ashoknagar Kalyangarh,West Bengal,needs-tracing,True,90000.0,,,0,1588,8677,134618,,88.51868,22.70558
+SD0118,Chitradurga dumpsite,Chitradurga,Karnataka,needs-tracing,True,89063.0,,,0,634,2624,10682,,76.52967,14.30492
+SD0119,Narwana dumpsite,Narwana,Haryana,needs-tracing,True,87561.0,,,0,5107,7140,117794,,76.07541,29.58306
+SD0120,Sircilla dumpsite,Sircilla,Telangana,needs-tracing,True,86554.0,,,0,70479,100344,135359,,78.8086,18.38976
+SD0121,Koppal District dumpsite,Koppal,Karnataka,auto-traced,True,84800.0,85.25,little_visible_change,1,1131,6546,37931,True,76.47274,15.49566
+SD0122,Mandya dumpsite,Mandya,Karnataka,needs-tracing,True,84562.0,,,0,637,3572,14352,,76.72755,12.63689
+SD0123,Gadag dumpsite,Gadag,Karnataka,needs-tracing,True,81116.0,,,0,2807,3297,108235,,75.68158,15.41669
+SD0124,Vadavathoor MSW dumping yard,Kottayam,Kerala,mapped,True,80000.0,1.95,visible_expansion,0,23633,65846,273404,True,76.55951,9.59133
+SD0125,Dibrugarh dumpsite,Dibrugarh,Assam,auto-traced,True,80000.0,1.07,indeterminate,0,9320,31416,194844,True,94.93428,27.50076
+SD0126,Mairang dumpsite,Mairang,Meghalaya,needs-tracing,True,80000.0,,,0,217,3131,16750,,91.63955,25.66472
+SD0127,Suryapet dumpsite,Suryapet,Telangana,needs-tracing,True,80000.0,,,0,253,2176,19134,,79.79253,17.08001
+SD0128,Guntur dumpsite,Piduguralla,Andhra Pradesh,needs-tracing,True,77813.0,,,0,1437,15397,117073,,79.9191,16.4764
+SD0129,Dadra And Nagar Haveli dumpsite,Silvassa,Daman Diu And Dadra Nagar Haveli,needs-tracing,True,77799.0,,,0,5773,24790,183410,,72.94469,20.33354
+SD0130,Gohana dumpsite,Gohana,Haryana,needs-tracing,True,77410.0,,,0,800,21204,168928,,76.67054,29.11894
+SD0131,Kamareddy dumpsite,Kamareddy,Telangana,needs-tracing,True,77269.0,,,0,29,2366,6905,,78.05394,18.31655
+SD0132,Nasirabad dumpsite,Nasirabad,Rajasthan,needs-tracing,True,77147.0,,,0,2973,31689,72644,,74.71738,26.29507
+SD0133,Mandur Landfill BBMP,Channarayapatna,Karnataka,mapped,True,77118.0,39.01,visible_reduction,6,340,906,19041,True,77.72772,13.08199
+SD0134,Madikeri dumpsite,Madikeri,Karnataka,mapped,True,76636.0,1.53,indeterminate,0,5957,32022,57086,True,75.72145,12.42486
+SD0135,Kurseong dumpsite,Kurseong,West Bengal,needs-tracing,True,75000.0,,,0,30366,39953,60888,,88.27836,26.88183
+SD0136,Dungarpur dumpsite,Dungarpur,Rajasthan,needs-tracing,True,73167.0,,,0,20359,45937,87265,,73.70872,23.85389
+SD0137,Arsikere dumpsite,Arsikere,Karnataka,needs-tracing,True,69315.0,,,0,41462,69483,92872,,76.2532,13.31378
+SD0138,Rayadurg dumpsite,Rayadurg,Andhra Pradesh,needs-tracing,True,67039.0,,,0,55461,68920,78441,,76.85004,14.69994
+SD0139,Khanna dumpsite,Khanna,Punjab,needs-tracing,True,66713.0,,,0,37536,93459,161525,,76.22208,30.70062
+SD0140,Tuensang dumpsite,Tuensang,Nagaland,needs-tracing,True,66456.0,,,0,0,166,6829,,94.74155,26.23421
+SD0141,Radaur Landfill,Yamunanagar,Haryana,mapped,True,66000.0,0.9,indeterminate,0,15898,26543,52259,True,77.15141,30.03396
+SD0142,Nathdwara dumpsite,Nathdwara,Rajasthan,needs-tracing,True,65857.0,,,0,1406,4881,18970,,73.91375,24.91219
+SD0143,Jagtial dumpsite,Jagtial,Telangana,needs-tracing,True,65400.0,,,0,1582,12783,134213,,78.91507,18.82136
+SD0144,Haryana dumpsite,Manesar,Haryana,needs-tracing,True,65000.0,,,0,14986,28889,98113,,76.77483,28.31979
+SD0145,Nalgonda dumpsite,Nalgonda,Telangana,auto-traced,True,64278.0,5.11,little_visible_change,36,2112,4518,60972,True,79.32477,17.08317
+SD0146,Vinukonda dumpsite,Vinukonda,Andhra Pradesh,needs-tracing,True,64078.0,,,0,63557,85926,100446,,79.74213,16.05223
+SD0147,Kagaznagar dumpsite,Kagaznagar,Telangana,needs-tracing,True,63619.0,,,0,29899,66912,98990,,79.48999,19.34656
+SD0148,Theni District dumpsite,Chinnamanur,Tamil Nadu,auto-traced,True,63300.0,70.48,visible_expansion,6,2393,9694,47628,True,77.43645,9.94331
+SD0149,Raichur dumpsite,Raichur,Karnataka,needs-tracing,True,63252.0,,,0,1307,8186,15504,,76.90036,16.05472
+SD0150,Ranibennur dumpsite,Ranibennur,Karnataka,needs-tracing,True,62753.0,,,0,33600,89741,135052,,75.63572,14.62589
+SD0151,Mahabubabad dumpsite,Mahabubabad,Telangana,needs-tracing,True,62685.0,,,0,228,1111,7001,,80.04134,17.7139
+SD0152,Mancherial District dumpsite,Mancherial,Telangana,auto-traced,True,62431.0,7.74,little_visible_change,15,3159,33615,149091,True,79.42944,18.89954
+SD0153,Barmer dumpsite,Barmer,Rajasthan,needs-tracing,True,60390.0,,,0,280,627,4880,,71.19249,25.58149
+SD0154,Tehri dumpsite,Tehri,Uttarakhand,needs-tracing,True,59888.0,,,0,793,2400,15737,,78.38836,30.4026
+SD0155,Pali dumpsite,Pali,Rajasthan,needs-tracing,True,58500.0,,,0,15,1874,23583,,73.41939,25.45522
+SD0156,Jhinjhak dumpsite,Jhinjhak,Uttar Pradesh,needs-tracing,True,58265.0,,,0,48947,65806,114873,,79.734,26.56286
+SD0157,Malpura dumpsite,Malpura,Rajasthan,needs-tracing,True,58164.0,,,0,28717,57228,69777,,75.37298,26.2888
+SD0158,North 24 Parganas dumpsite,Chakdaha,West Bengal,auto-traced,True,58000.0,4.19,visible_expansion,0,36812,101613,700704,True,88.43286,22.9503
+SD0159,Thalassery dumpsite,Thalassery,Kerala,needs-tracing,True,56783.0,,,0,85158,175745,286979,,75.49231,11.75389
+SD0160,Nokha dumpsite,Nokha,Rajasthan,needs-tracing,True,55909.0,,,0,38577,83301,118022,,73.4756,27.55527
+SD0161,Baheri dumpsite,Baheri,Uttar Pradesh,needs-tracing,True,55000.0,,,0,81471,109402,164587,,79.50054,28.77812
+SD0162,Puruliya dumpsite,Puruliya,West Bengal,needs-tracing,True,55000.0,,,0,2483,8744,292327,,86.41667,23.33333
+SD0163,Ramgarh dumpsite,Ramgarh,Rajasthan,needs-tracing,True,54523.0,,,0,31819,42705,52308,,74.97769,28.1707
+SD0164,Sawai Madhopur dumpsite,Sawai Madhopur,Rajasthan,needs-tracing,True,53636.0,,,0,2020,2996,19827,,76.30436,26.22902
+SD0165,Sindhanuru Taluku dumpsite,Sindhnur,Karnataka,auto-traced,True,52500.0,11.73,visible_expansion,5,1587,38881,139824,True,76.74624,15.78794
+SD0166,Lalitpur dumpsite,Lalitpur,Uttar Pradesh,needs-tracing,True,51739.0,,,0,63,1563,16095,,78.51862,24.69997
+SD0167,Tinsukia District dumpsite,Tinsukia,Assam,auto-traced,True,50000.0,2.11,visible_expansion,0,3497,14731,172641,True,95.35854,27.45857
+SD0168,Golaghat dumpsite,Golaghat,Assam,needs-tracing,True,50000.0,,,0,60753,138612,189497,,93.97437,26.51083
+SD0169,Mon dumpsite,Mon,Nagaland,needs-tracing,True,50000.0,,,0,620,922,5357,,95.0,26.66667
+SD0170,Meerut Cantonment dumpsite,Meerut Cantonment,Uttar Pradesh,needs-tracing,True,50000.0,,,0,51321,139482,731156,,77.6871,29.01632
+SD0171,Udaipurwati dumpsite,Udaipurwati,Rajasthan,needs-tracing,True,49438.0,,,0,19094,27964,46055,,75.4744,27.73099
+SD0172,Basni dumpsite,Basni,Rajasthan,needs-tracing,True,49376.0,,,0,47321,146757,420214,,73.01084,26.22303
+SD0173,Naspur dumpsite,Naspur,Telangana,needs-tracing,True,49003.0,,,0,5180,23147,91393,,79.49992,18.87332
+SD0174,Gudibande Taluk dumpsite,Chikkaballapura,Karnataka,auto-traced,True,48871.0,70.05,visible_reduction,2,6771,34258,70794,True,77.77423,13.77101
+SD0175,Nizamabad dumpsite,Bodhan,Telangana,needs-tracing,True,48355.0,,,0,554,3341,198224,,78.05024,18.65288
+SD0176,Sheoganj dumpsite,Sheoganj,Rajasthan,needs-tracing,True,47919.0,,,0,18814,50641,98028,,73.06553,25.13889
+SD0177,Chintamani dumpsite,Chintamani,Karnataka,needs-tracing,True,46804.0,,,0,71267,111015,137067,,78.05331,13.39866
+SD0178,Kolar dumpsite,Kolar,Karnataka,needs-tracing,True,45914.0,,,0,1461,4291,21846,,78.26693,13.18051
+SD0179,Peddapalli dumpsite,Peddapalli,Telangana,needs-tracing,True,45479.0,,,0,67,87,25213,,79.49502,18.62065
+SD0180,Vemulawada dumpsite,Vemulawada,Telangana,needs-tracing,True,44372.0,,,0,30213,47056,65304,,78.8699,18.46748
+SD0181,Kannauj dumpsite,Kannauj,Uttar Pradesh,needs-tracing,True,33385.0,,,0,1424,8046,49886,,79.69279,26.99867
+SD0182,Thoubal dumpsite,Thoubal,Manipur,needs-tracing,True,29911.0,,,0,19504,43401,146177,,93.99687,24.6387
+SD0183,Rajnandgaon dumpsite,Rajnandgaon,Chhattisgarh,needs-tracing,True,26506.0,,,0,376,1937,14235,,80.79708,21.06844
+SD0184,Yanam dumpsite,Yanam,Puducherry,mapped,True,25306.0,0.98,indeterminate,0,23074,67344,93686,True,82.19972,16.73101
+SD0185,Mirzapur dumpsite,Mirzapur,Uttar Pradesh,needs-tracing,True,8804.0,,,0,256,2190,31068,,82.62802,24.93169
+SD0186,Aalo dumpsite,Aalo,Arunachal Pradesh,needs-tracing,True,2400.0,,,0,2,163,30924,,94.76342,28.13857
+SD0187,Khawhai dumpsite,Khawhai,Mizoram,needs-tracing,True,372.0,,,0,2187,2826,4561,,93.12408,23.37597
+SD0189,Brajarajnagar dumpsite,Brajarajnagar,Odisha,mapped,,,158.22,visible_reduction,13,4777,15040,141328,True,83.8976,21.79368
+SD0190,Lakhanpur dumpsite,Lakhanpur,Odisha,mapped,,,129.64,visible_reduction,138,3769,7239,56730,True,83.83272,21.7676
+SD0191,Municipal Landfill,Kanpur,Uttar Pradesh,mapped,,,44.93,little_visible_change,37,25916,137102,740298,True,80.23479,26.44925
+SD0192,Deonar dumpsite,Mumbai,Maharashtra,mapped,,,2.76,visible_reduction,0,53952,242388,1674864,True,72.93081,19.06607
+SD0193,Ambabhona dumpsite,Ambabhona,Odisha,mapped,,,9.9,indeterminate,0,1874,3488,10683,True,83.55226,21.67747
+SD0194,Bhalswa landfill,Delhi,Delhi,mapped,,,26.98,little_visible_change,10,157685,485446,2038234,True,77.15772,28.74093
+SD0195,Jhinkpani dumpsite,Jhinkpani,Jharkhand,mapped,,,30.32,visible_reduction,0,5478,39726,73090,True,85.73257,22.41474
+SD0196,Naregaon Municipal Dumping Ground,Chhatrapati Sambhajinagar,Maharashtra,mapped,,,17.34,little_visible_change,5,17155,53483,602722,True,75.39847,19.89234
+SD0197,Doddaballapura taluk landfill,Doddaballapura taluk,Karnataka,mapped,,,17.71,visible_reduction,11,1000,3546,18163,True,77.37371,13.3206
+SD0198,Banaharapali dumpsite,Banaharapali,Odisha,mapped,,,44.6,little_visible_change,24,5400,16050,43614,True,83.85405,21.76044
+SD0199,Mulund Dumping Ground BMC,Mumbai,Maharashtra,mapped,,,54.15,visible_reduction,2,198730,667113,2626425,True,72.97537,19.16744
+SD0200,Ambabhona dumpsite,Ambabhona,Odisha,mapped,,,19.71,visible_reduction,0,1106,4586,11179,True,83.56072,21.70712
+SD0201,Orient dumpsite,Orient,Odisha,mapped,,,33.89,little_visible_change,22,8330,55380,138787,True,83.90387,21.81791
+SD0202,Gujarat dumpsite,Gujarat,Gujarat,needs-tracing,,,,,0,1061,4530,36992,,69.91264,22.32188
+SD0203,Bhavnagar dumpsite,Bhavnagar,Gujarat,needs-tracing,,,,,0,446,921,80008,,72.09247,21.79697
+SD0204,Noamundi dumpsite,Noamundi,Jharkhand,mapped,,,14.28,little_visible_change,3,934,16286,23222,True,85.36486,22.21218
+SD0205,Gujarat dumpsite,Gujarat,Gujarat,auto-traced,,,72.63,little_visible_change,1,2415,31936,162718,True,70.65083,21.75785
+SD0206,Corporation Landfill,Trichy Corporation Limits,Tamil Nadu,mapped,,,19.15,little_visible_change,4,62992,166451,835911,True,78.72454,10.80412
+SD0207,Maharashtra dumpsite,Maharashtra,Maharashtra,auto-traced,,,98.82,little_visible_change,1,6511,19188,234841,True,75.81353,21.01129
+SD0208,Maharashtra dumpsite,Maharashtra,Maharashtra,needs-tracing,,,,,0,36625,121488,499993,,74.56037,20.56592
+SD0209,Wani dumpsite,Wani,Maharashtra,mapped,,,11.11,visible_reduction,42,1216,2382,12386,True,79.0402,20.07673
+SD0210,Karuvadikuppam Landfill,Ozhukarai Taluk,Puducherry,mapped,,,11.07,visible_reduction,2,16205,106483,685750,True,79.81305,11.9725
+SD0211,Bhavnagar District dumpsite,Bhavnagar District,Gujarat,needs-tracing,,,,,0,4227,8951,83709,,72.04053,21.73539
+SD0212,Bhavnagar District dumpsite,Bhavnagar District,Gujarat,needs-tracing,,,,,0,16777,68821,105272,,71.97037,21.72187
+SD0213,Botad District dumpsite,Botad District,Gujarat,auto-traced,,,1.83,little_visible_change,0,10775,54523,150454,True,71.68705,22.17431
+SD0214,Bhilai dumpsite,Bhilai,Chhattisgarh,mapped,,,8.93,little_visible_change,0,14558,139736,714157,True,81.36648,21.18385
+SD0215,Solapur dumpsite,Solapur,Maharashtra,needs-tracing,,,,,0,1711,21744,436365,,75.90811,17.70566
+SD0216,Guntur dumpsite,Guntur,Andhra Pradesh,auto-traced,,,20.21,little_visible_change,0,11229,13050,36677,True,80.33125,16.06539
+SD0217,Rahta dumpsite,Rahta,Maharashtra,needs-tracing,,,,,0,1932,7757,63163,,74.44821,19.59494
+SD0218,Ahmednagar dumpsite,Ahmednagar,Maharashtra,needs-tracing,,,,,0,886,4439,36193,,74.59589,19.42742
+SD0219,Wani dumpsite,Wani,Maharashtra,mapped,,,8.22,visible_reduction,52,63,949,20424,True,79.02727,20.0948
+SD0220,Kanjur Landfill,Mumbai,Maharashtra,mapped,,,137.89,little_visible_change,0,71403,251313,1781257,True,72.95073,19.12293
+SD0221,Yevla dumpsite,Yevla,Maharashtra,auto-traced,,,2.41,little_visible_change,3,1594,5822,70416,True,74.50767,20.06265
+SD0222,Dhule dumpsite,Dhule,Maharashtra,auto-traced,,,31.89,visible_reduction,1,1310,10377,107259,True,74.58354,21.30496
+SD0223,Maharashtra dumpsite,Maharashtra,Maharashtra,needs-tracing,,,,,0,13117,93145,548024,,74.54336,20.57693
+SD0224,Maharashtra dumpsite,Maharashtra,Maharashtra,auto-traced,,,92.74,little_visible_change,2,38841,67263,361512,True,75.59871,20.96844
+SD0225,Ahmedabad District dumpsite,Ahmedabad District,Gujarat,auto-traced,,,2.16,little_visible_change,3,188,1685,54663,True,71.9825,22.35406
+SD0226,Pune District dumpsite,Pune District,Maharashtra,auto-traced,,,102.49,little_visible_change,1,30462,77248,426861,True,73.85712,18.65677
+SD0227,Maharashtra dumpsite,Maharashtra,Maharashtra,needs-tracing,,,,,0,8853,65643,407738,,74.542,20.52708
+SD0228,Rajkot dumpsite,Rajkot,Gujarat,needs-tracing,,,,,0,24327,114801,742178,,70.77819,22.32136
+SD0229,Jamnagar City Taluka dumpsite,Jamnagar City Taluka,Gujarat,needs-tracing,,,,,0,2732,44517,480997,,70.0256,22.45482
+SD0230,Fazilka dumpsite,Fazilka,Punjab,needs-tracing,,,,,0,14936,64916,155676,,74.1822,30.1419
+SD0231,Vadodara Taluka dumpsite,Vadodara Taluka,Gujarat,needs-tracing,,,,,0,4682,46356,258065,,73.2071,22.23354
+SD0232,Bhavnagar Taluka dumpsite,Bhavnagar Taluka,Gujarat,auto-traced,,,1.58,little_visible_change,0,48639,200525,727055,True,72.12844,21.75622
+SD0233,Gujarat dumpsite,Gujarat,Gujarat,auto-traced,,,2.38,little_visible_change,1,2032,3166,6368,True,70.71103,22.71433
+SD0234,Tisaiyanvillai Garbage yard,Sathankulam,Tamil Nadu,mapped,,,3.26,visible_reduction,4,16397,34269,54182,True,77.86013,8.34318
+SD0235,Rajkot dumpsite,Rajkot,Gujarat,needs-tracing,,,,,0,8520,45382,157131,,70.79249,21.94246
+SD0236,Indapur dumpsite,Indapur,Maharashtra,auto-traced,,,72.15,little_visible_change,1,6742,15293,34829,True,74.74353,18.31464
+SD0237,Pune District dumpsite,Pune District,Maharashtra,auto-traced,,,104.31,little_visible_change,7,38093,112620,680207,True,73.95073,18.47074
+SD0238,Gujarat dumpsite,Gujarat,Gujarat,needs-tracing,,,,,0,105,665,27555,,72.80458,21.10796
+SD0239,Borio dumpsite,Borio,Jharkhand,mapped,,,5.27,visible_reduction,0,1978,6568,61344,True,87.66346,25.19743
+SD0240,Pune District dumpsite,Pune District,Maharashtra,auto-traced,,,88.93,little_visible_change,0,1683,5836,58948,True,74.08034,18.35771
+SD0241,Sikar dumpsite,Sikar,Rajasthan,auto-traced,,,4.94,visible_expansion,3,5403,40464,257146,True,75.11217,27.61459
+SD0242,Rajkot dumpsite,Rajkot,Gujarat,needs-tracing,,,,,0,11335,65708,710706,,70.75736,22.25644
+SD0243,Giridih dumpsite,Giridih,Jharkhand,mapped,,,4.17,visible_reduction,0,2733,11114,69320,True,86.24005,24.22018
+SD0244,Maharashtra dumpsite,Maharashtra,Maharashtra,auto-traced,,,53.86,visible_reduction,2,13872,16820,110890,True,77.09886,19.69158
+SD0245,Mumbai Metropolitan Region dumpsite,Mumbai Metropolitan Region,Maharashtra,needs-tracing,,,,,0,27936,151496,966378,,73.11778,19.25087
+SD0246,Rajkot dumpsite,Rajkot,Gujarat,auto-traced,,,61.41,little_visible_change,0,5612,9987,28597,True,70.57625,21.69904
+SD0247,Talaja Taluka dumpsite,Talaja Taluka,Gujarat,auto-traced,,,5.19,little_visible_change,1,5446,15969,93073,True,72.01411,21.33231
+SD0248,Tamil Nadu dumpsite,Tamil Nadu,Tamil Nadu,auto-traced,,,33.62,visible_reduction,3,69527,196409,428594,True,77.96222,10.3679
+SD0249,Talaja dumpsite,Talaja,Gujarat,needs-tracing,,,,,0,33845,55541,101270,,72.03441,21.35486
+SD0250,Maharashtra dumpsite,Maharashtra,Maharashtra,auto-traced,,,72.92,little_visible_change,1,23170,101011,202617,True,76.38979,18.75003
+SD0251,Gujarat dumpsite,Gujarat,Gujarat,auto-traced,,,1.45,little_visible_change,0,4417,7052,27178,True,71.75425,21.58265
+SD0252,Baglan dumpsite,Baglan,Maharashtra,auto-traced,,,38.67,visible_reduction,3,17913,45761,79797,True,74.22029,20.60089
+SD0253,Denkada dumpsite,Denkada,Andhra Pradesh,auto-traced,,,1.37,little_visible_change,14,602,3347,64503,True,83.47123,18.10797
+SD0254,Rajkot dumpsite,Rajkot,Gujarat,needs-tracing,,,,,0,44844,163056,762565,,70.75395,22.3016
+SD0255,Ottupatrai Dumping Ground,Coonoor,Tamil Nadu,mapped,,,2.68,visible_reduction,0,14424,58919,169718,True,76.77465,11.34984
+SD0256,Njeliyanparambu Garbage Dump Kozhikode Muncipal Corporation,Kozhikode,Kerala,mapped,,,6.8,little_visible_change,0,94283,304192,1036528,True,75.81654,11.20361
+SD0257,Tamil Nadu dumpsite,Tamil Nadu,Tamil Nadu,auto-traced,,,69.37,visible_reduction,3,37393,108907,466965,True,77.74187,11.33008
+SD0258,Jalgaon dumpsite,Jalgaon,Maharashtra,auto-traced,,,81.32,little_visible_change,2,677,2081,21700,True,75.72673,20.98994
+SD0259,Puducherry District dumpsite,Puducherry District,Puducherry,auto-traced,,,2.47,visible_expansion,1,13131,93353,585835,True,79.76132,11.93638
+SD0260,Pune District dumpsite,Pune District,Maharashtra,needs-tracing,,,,,0,25927,73755,166384,,74.59138,18.15836
+SD0261,Shirur dumpsite,Shirur,Maharashtra,auto-traced,,,86.58,little_visible_change,3,4014,14792,57183,True,74.34736,18.83262
+SD0262,Koida dumpsite,Koida,Odisha,mapped,,,4.66,indeterminate,2,610,2473,5512,True,85.20853,21.97267
+SD0263,Davanagere District dumpsite,Davanagere,Karnataka,auto-traced,,,8.23,little_visible_change,3,2446,5356,54304,True,75.88579,14.51636
+SD0264,Kopargaon dumpsite,Kopargaon,Maharashtra,needs-tracing,,,,,0,4159,27587,106393,,74.49884,19.89214
+SD0265,Surat dumpsite,Surat,Gujarat,needs-tracing,,,,,0,687,5040,47472,,72.98054,21.37267
+SD0266,Ward 126 Jagathgirigutta dumpsite,Ward 126 Jagathgirigutta,Telangana,needs-tracing,,,,,0,26421,202412,1112838,,78.43501,17.50349
+SD0267,Chengalpattu dumpsite,Chengalpattu,Tamil Nadu,needs-tracing,,,,,0,890,4830,100749,,79.9879,12.78825
+SD0268,Sattur dumpsite,Sattur,Tamil Nadu,auto-traced,,,2.72,little_visible_change,1,3867,5896,18469,True,77.90214,9.25745
+SD0269,Jamnagar District dumpsite,Jamnagar District,Gujarat,needs-tracing,,,,,0,2335,16002,93675,,69.837,22.33948
+SD0270,Khargone dumpsite,Khargone,Madhya Pradesh,needs-tracing,,,,,0,786,7351,118067,,75.63546,21.80266
+SD0271,Barwani dumpsite,Barwani,Madhya Pradesh,auto-traced,,,76.82,little_visible_change,5,55006,94489,123968,True,74.90022,22.02168
+SD0272,Rajkot dumpsite,Rajkot,Gujarat,needs-tracing,,,,,0,15880,52182,89453,,70.78551,22.15058
+SD0273,Chengalpattu District dumpsite,Chennai,Tamil Nadu,needs-tracing,,,,,0,4728,12516,132934,,80.14419,12.8639
+SD0274,Zone 1 Tiruvottiyur dumpsite,Chennai,Tamil Nadu,auto-traced,,,2.53,little_visible_change,33,61631,273471,887685,True,80.28694,13.15725
+SD0275,Pune District dumpsite,Pune District,Maharashtra,auto-traced,,,92.17,little_visible_change,14,41040,101301,408828,True,73.82463,18.68269
+SD0276,Bhavnagar District dumpsite,Bhavnagar District,Gujarat,auto-traced,,,31.66,little_visible_change,2,9357,19732,78797,True,72.15756,21.41703
+SD0277,Vijayapura Taluk dumpsite,Vijayapura Taluk,Karnataka,auto-traced,,,78.79,little_visible_change,16,21949,58535,353085,True,75.74627,16.85465
+SD0278,Tamil Nadu dumpsite,Tamil Nadu,Tamil Nadu,needs-tracing,,,,,0,1285,2867,19932,,77.88547,9.24014
+SD0279,Diva Dumping Ground,Dombivali,Maharashtra,mapped,,,4.85,visible_reduction,2,15918,52362,379135,True,73.04597,19.17724
+SD0280,Rajkot dumpsite,Rajkot,Gujarat,needs-tracing,,,,,0,31509,122575,619904,,70.83184,22.31552
+SD0281,Visavadar Taluka dumpsite,Visavadar Taluka,Gujarat,auto-traced,,,1.88,visible_expansion,0,864,5822,42631,True,70.74146,21.32129
+SD0282,Karnal dumpsite,Karnal,Haryana,needs-tracing,,,,,0,2239,6156,45911,,77.04851,29.64379
+SD0283,Gujarat dumpsite,Gujarat,Gujarat,needs-tracing,,,,,0,392,1096,22995,,71.29484,21.28826
+SD0284,Andhra Pradesh dumpsite,Andhra Pradesh,Andhra Pradesh,auto-traced,,,5.94,little_visible_change,2,14664,62035,134554,True,80.45747,15.91334
+SD0285,Kannadapalayam Dumpyard,Chennai,Tamil Nadu,mapped,,,2.1,little_visible_change,1,17166,82774,611131,True,80.10079,12.93463
+SD0286,Tamil Nadu dumpsite,Tamil Nadu,Tamil Nadu,auto-traced,,,3.74,visible_expansion,3,777,7359,137569,True,78.08731,9.48753
+SD0287,Maharashtra dumpsite,Maharashtra,Maharashtra,auto-traced,,,101.2,indeterminate,3,301,5299,106255,True,76.80057,18.9856
+SD0288,Pargi dumpsite,Pargi,Telangana,auto-traced,,,85.33,visible_reduction,11,2837,13784,36482,True,78.02049,17.10639
+SD0289,Kapurthala dumpsite,Jalandhar,Punjab,auto-traced,,,2.64,visible_expansion,2,4598,23626,64736,True,75.33461,31.30299
+SD0290,Paramakudi dumpsite,Paramakudi,Tamil Nadu,needs-tracing,,,,,0,4255,39467,137654,,78.57563,9.53338
+SD0291,Koppala Taluku dumpsite,Koppala Taluku,Karnataka,needs-tracing,,,,,0,442,1726,120846,,76.13339,15.31769
+SD0292,209800 dumpsite,209800,Uttar Pradesh,needs-tracing,,,,,0,19004,76561,383130,,80.52042,26.55583
+SD0293,Gujarat dumpsite,Gujarat,Gujarat,needs-tracing,,,,,0,7745,9524,18303,,70.2187,21.79124
+SD0294,Mandro dumpsite,Mandro,Jharkhand,mapped,,,1.86,visible_reduction,0,143,1162,42048,True,87.57232,25.21656
+SD0295,Isanpur dumpsite,Isanpur,Gujarat,needs-tracing,,,,,0,17200,75864,1440928,,72.55104,22.97133
+SD0296,Akola dumpsite,Akola,Maharashtra,needs-tracing,,,,,0,6338,37392,102351,,77.37986,20.72246
+SD0297,Halol Taluka dumpsite,Halol Taluka,Gujarat,needs-tracing,,,,,0,15818,49475,119822,,73.48358,22.49636
+SD0298,Alangudi Taluk dumpsite,Alangudi Taluk,Tamil Nadu,auto-traced,,,29.66,visible_expansion,4,19166,88408,224504,True,78.84248,10.37798
+SD0299,Serilingampalle Mandal dumpsite,Serilingampalle Mandal,Telangana,needs-tracing,,,,,0,7070,50973,480384,,78.34604,17.50998
+SD0301,Vadodara dumpsite,Vadodara,Gujarat,mapped,,,3.17,little_visible_change,1,41164,173528,990426,True,73.16683,22.2785
+SD0302,Gandhinagar Taluka dumpsite,Gandhinagar Taluka,Gujarat,needs-tracing,,,,,0,5366,30272,142071,,72.68042,23.24822
+SD0303,431400 dumpsite,431400,Maharashtra,needs-tracing,,,,,0,20309,98414,441878,,76.79126,19.2799
+SD0304,Tamil Nadu dumpsite,Chennai,Tamil Nadu,auto-traced,,,80.89,little_visible_change,1,243494,518670,1367119,True,80.14604,12.95592
+SD0305,Moti Jheel dumpsite,Lucknow,Uttar Pradesh,needs-tracing,,,,,0,46684,256828,1537743,,80.90635,26.84453
+SD0306,431400 dumpsite,431400,Maharashtra,needs-tracing,,,,,0,15042,72046,428573,,76.7572,19.25021
+SD0307,Maharashtra dumpsite,Maharashtra,Maharashtra,needs-tracing,,,,,0,921,19745,513755,,74.80265,20.91684
+SD0308,Tamil Nadu dumpsite,Tamil Nadu,Tamil Nadu,auto-traced,,,90.21,little_visible_change,4,111520,194603,358816,True,79.07267,12.24793
+SD0309,Bhavnagar District dumpsite,Bhavnagar District,Gujarat,needs-tracing,,,,,0,30817,133493,546596,,72.13353,21.78195
+SD0310,Ahmednagar dumpsite,Ahmednagar,Maharashtra,auto-traced,,,1.02,indeterminate,0,7839,49193,112458,True,74.46124,19.76793
+SD0311,Bhavnagar Taluka dumpsite,Bhavnagar Taluka,Gujarat,needs-tracing,,,,,0,11950,75386,506712,,72.17781,21.75836
+SD0312,Rajkot dumpsite,Rajkot,Gujarat,auto-traced,,,56.65,little_visible_change,2,70314,178928,874639,True,70.83669,22.28623
+SD0313,Namakkal District dumpsite,Namakkal District,Tamil Nadu,auto-traced,,,60.94,little_visible_change,1,60948,105910,232382,True,78.18106,11.2144
+SD0314,522005 dumpsite,Mangalagiri,Andhra Pradesh,needs-tracing,,,,,0,295,1084,74997,,80.34737,16.28426
+SD0315,Bhramapuram Solid waste treatment plant,Ernakulam District,Kerala,mapped,,,6.58,little_visible_change,10,6806,33140,300252,True,76.36728,9.99203
+SD0316,Miraj dumpsite,Miraj,Maharashtra,needs-tracing,,,,,0,1966,6953,128570,,74.68443,16.80528
+SD0317,Sivagangai District dumpsite,Sivagangai District,Tamil Nadu,needs-tracing,,,,,0,2556,8700,128723,,78.76023,10.04121
+SD0318,Kanchipuram District dumpsite,Kanchipuram District,Tamil Nadu,needs-tracing,,,,,0,10497,91630,369750,,79.72942,12.82763
+SD0319,534001 dumpsite,534001,Andhra Pradesh,auto-traced,,,9.42,visible_expansion,10,5990,17921,335323,True,81.109,16.67771
+SD0320,Municipal Dumping Ground,Nagercoil,Tamil Nadu,mapped,,,6.69,little_visible_change,8,77032,189629,458023,True,77.43494,8.16353
+SD0321,Tamil Nadu dumpsite,Tamil Nadu,Tamil Nadu,auto-traced,,,2.04,little_visible_change,8,752,2252,118031,True,77.91592,9.15715
+SD0322,Bathinda Tahsil dumpsite,Bathinda Tahsil,Punjab,mapped,,,11.53,little_visible_change,3,23690,73207,294498,True,74.95402,30.18265
+SD0323,Rajkot dumpsite,Rajkot,Gujarat,needs-tracing,,,,,0,78360,336160,1284813,,70.79097,22.2843
+SD0324,Rajula Taluka dumpsite,Rajula Taluka,Gujarat,needs-tracing,,,,,0,6245,35869,77589,,71.43834,21.04698
+SD0325,Tamil Nadu dumpsite,Tamil Nadu,Tamil Nadu,auto-traced,,,96.65,little_visible_change,9,4507,17996,217089,True,78.11618,12.10968
+SD0326,Budni Khurd dumpsite,Budni Khurd,Karnataka,auto-traced,,,6.31,little_visible_change,3,3360,17110,74522,True,75.28199,15.96365
+SD0327,Uttar Pradesh dumpsite,Uttar Pradesh,Uttar Pradesh,needs-tracing,,,,,0,44638,155640,488763,,79.01363,28.81546
+SD0328,Amreli District dumpsite,Amreli District,Gujarat,needs-tracing,,,,,0,4611,32127,58685,,71.46525,20.92
+SD0329,Tamil Nadu dumpsite,Tamil Nadu,Tamil Nadu,needs-tracing,,,,,0,2743,6310,38320,,77.78671,9.51753
+SD0330,Indore District dumpsite,Indore District,Madhya Pradesh,auto-traced,,,77.96,little_visible_change,9,30846,73879,521083,True,75.92568,22.67035
+SD0331,Banskhedi dumpsite,Ashoknagar,Madhya Pradesh,auto-traced,,,66.27,little_visible_change,4,11116,57183,99400,True,78.07433,24.41589
+SD0332,Sangrur dumpsite,Sangrur,Punjab,auto-traced,,,2.26,little_visible_change,0,3558,27252,167574,True,75.86479,30.54634
+SD0333,Morbi District dumpsite,Morbi District,Gujarat,auto-traced,,,39.17,little_visible_change,23,8970,23267,84452,True,70.89276,22.77493
+SD0334,Tapi District dumpsite,Tapi District,Gujarat,needs-tracing,,,,,0,42021,94338,122632,,73.39675,21.11654
+SD0335,444001 dumpsite,444001,Maharashtra,needs-tracing,,,,,0,34991,113917,472509,,76.99502,20.72809
+SD0336,Tamil Nadu dumpsite,Tamil Nadu,Tamil Nadu,mapped,,,17.97,visible_reduction,11,6472,11113,275575,True,77.67878,8.76384
+SD0337,Tamil Nadu dumpsite,Tamil Nadu,Tamil Nadu,auto-traced,,,6.34,little_visible_change,2,44106,125512,381391,True,79.12557,10.79175
+SD0338,Uttar Pradesh dumpsite,Uttar Pradesh,Uttar Pradesh,needs-tracing,,,,,0,52757,135044,501262,,78.53836,25.45965
+SD0339,Surat dumpsite,Surat,Gujarat,auto-traced,,,2.44,little_visible_change,0,2274,6986,32215,True,72.87708,21.09845
+SD0340,Chandigarh dumpsite,Chandigarh,Chandigarh,needs-tracing,,,,,0,16225,78955,471040,,76.82761,30.72354
+SD0341,Andhra Pradesh dumpsite,Andhra Pradesh,Andhra Pradesh,needs-tracing,,,,,0,45867,130681,201945,,80.35845,15.8206
+SD0342,Theni District dumpsite,Chinnamanur,Tamil Nadu,auto-traced,,,1.8,little_visible_change,0,169,215,1730,True,77.34996,10.07179
+SD0343,Maharashtra dumpsite,Maharashtra,Maharashtra,needs-tracing,,,,,0,13502,68940,690540,,79.15244,21.14155
+SD0344,Gujarat dumpsite,Gujarat,Gujarat,needs-tracing,,,,,0,2634,3232,7067,,70.49332,22.03029
+SD0345,Ysr dumpsite,Ysr,Andhra Pradesh,auto-traced,,,7.13,little_visible_change,13,1900,27318,247518,True,78.55685,14.77963
+SD0346,Bhiwani District dumpsite,Bhiwani District,Haryana,needs-tracing,,,,,0,17808,100650,300714,,76.12473,28.78139
+SD0347,Kukatpally Mandal dumpsite,Kukatpally Mandal,Telangana,needs-tracing,,,,,0,4023,48701,815809,,78.39256,17.4645
+SD0348,Seelampur dumpsite,Delhi,Delhi,needs-tracing,,,,,0,94897,472882,3447981,,77.25154,28.68659
+SD0349,Pune District dumpsite,Pune District,Maharashtra,auto-traced,,,57.64,little_visible_change,5,2516,10080,41158,True,74.4915,18.14765
+SD0350,Ramapuram dumpsite,Ramapuram,Andhra Pradesh,auto-traced,,,33.37,little_visible_change,46,83,151,2219,True,78.78026,14.36062
+SD0351,Maharashtra dumpsite,Maharashtra,Maharashtra,auto-traced,,,90.62,little_visible_change,3,3468,24947,113634,True,74.0231,19.85618
+SD0352,Rangangoan Fhata dumpsite,Rangangoan Fhata,Maharashtra,auto-traced,,,32.97,little_visible_change,0,58617,123458,231768,True,75.22039,19.8507
+SD0353,Himachal Pradesh dumpsite,Himachal Pradesh,Himachal Pradesh,needs-tracing,,,,,0,1512,9111,69092,,76.77397,30.93467
+SD0354,Siruguppa Taluku dumpsite,Siruguppa Taluku,Karnataka,needs-tracing,,,,,0,2774,11677,123642,,76.89198,15.60377
+SD0355,Karaikal Taluk dumpsite,Karaikal Taluk,Puducherry,auto-traced,,,1.81,little_visible_change,1,13637,73202,142042,True,79.84711,10.93158
+SD0356,Hennur dumpsite,Bengaluru,Karnataka,needs-tracing,,,,,0,206961,705946,2394787,,77.62602,13.01924
+SD0357,Haveli dumpsite,Haveli,Maharashtra,needs-tracing,,,,,0,13390,76899,600232,,73.82053,18.61421
+SD0358,Junnar Waste Management Plant Junnar Council,Maharashtra,Maharashtra,mapped,,,1.8,visible_reduction,0,1742,9120,61866,True,73.8871,19.19108
+SD0359,Rajkot dumpsite,Rajkot,Gujarat,needs-tracing,,,,,0,60457,225490,1035569,,70.81148,22.27264
+SD0360,Hosakote Taluk dumpsite,Hosakote Taluk,Karnataka,needs-tracing,,,,,0,268,2538,37915,,77.86876,12.95431
+SD0361,Satara dumpsite,Satara,Maharashtra,auto-traced,,,95.29,little_visible_change,4,78376,140063,254492,True,74.18933,17.27662
+SD0362,Hunagunda Taluku dumpsite,Hunagunda Taluku,Karnataka,auto-traced,,,1.38,little_visible_change,0,2701,14582,110955,True,76.12531,15.98671
+SD0363,Khandwa dumpsite,Khandwa,Madhya Pradesh,auto-traced,,,4.28,little_visible_change,0,70176,186803,395179,True,76.35253,21.81537
+SD0364,Ujjain dumpsite,Ujjain,Madhya Pradesh,auto-traced,,,93.0,little_visible_change,9,4527,5865,29298,True,75.73817,23.08995
+SD0365,Gujarat dumpsite,Gujarat,Gujarat,needs-tracing,,,,,0,680,1974,22106,,72.81622,23.6246
+SD0366,Karur District dumpsite,Karur District,Tamil Nadu,auto-traced,,,71.37,little_visible_change,12,3095,22977,173275,True,78.09411,10.99853
+SD0367,Ajmer dumpsite,Ajmer,Rajasthan,auto-traced,,,35.81,visible_reduction,6,22774,27921,93120,True,74.86035,26.53381
+SD0368,Ratnagiri dumpsite,Ratnagiri,Maharashtra,auto-traced,,,3.92,visible_reduction,0,27911,53449,132468,True,73.54436,17.5245
+SD0369,Virudhunagar District dumpsite,Virudhunagar District,Tamil Nadu,auto-traced,,,1.08,visible_expansion,3,1868,8009,20868,True,77.84564,9.56276
+SD0370,Bagalakote Taluk dumpsite,Bagalakote Taluk,Karnataka,needs-tracing,,,,,0,15436,51268,166908,,75.70547,16.17825
+SD0371,Kalol Taluka dumpsite,Kalol Taluka,Gujarat,needs-tracing,,,,,0,38691,103442,170738,,72.49925,23.24942
+SD0372,Jevargi Taluku dumpsite,Kalaburagi,Karnataka,needs-tracing,,,,,0,1041,7732,52738,,76.77586,16.99253
+SD0373,Mahadevapura Zone dumpsite,Bengaluru,Karnataka,needs-tracing,,,,,0,1338,6814,37471,,77.71279,12.94279
+SD0374,Sathyamangalam dumpsite,Sathyamangalam,Tamil Nadu,needs-tracing,,,,,0,5953,36445,98842,,77.25752,11.50715
+SD0375,Junagadh Taluka dumpsite,Junagadh Taluka,Gujarat,auto-traced,,,5.06,visible_expansion,0,699,2186,67296,True,70.44866,21.69389
+SD0376,Rajkot dumpsite,Rajkot,Gujarat,needs-tracing,,,,,0,447,2078,31403,,70.80386,22.09991
+SD0377,Temporaray GHMC Burning Dump yard,Greater Hyderabad Municipal Corporation East Zone,Telangana,mapped,,,0.3,indeterminate,0,11087,80001,953300,True,78.55992,17.39033
+SD0378,Raichur District dumpsite,Raichur District,Karnataka,needs-tracing,,,,,0,1043,22783,291965,,77.33278,16.22259
+SD0379,Uttar Pradesh dumpsite,Delhi,Delhi,needs-tracing,,,,,0,31730,219311,1850292,,77.33186,28.71638
+SD0380,Yadagiri District dumpsite,Yadagiri District,Karnataka,auto-traced,,,1.81,visible_expansion,2,167,2486,24245,True,77.117,16.70505
+SD0381,India dumpsite,India,Uttar Pradesh,auto-traced,,,4.25,visible_expansion,1,11877,41536,114159,True,78.82416,28.95811
+SD0382,Haveli dumpsite,Haveli,Maharashtra,auto-traced,,,77.73,little_visible_change,13,24633,85869,405820,True,73.77071,18.6741
+SD0383,Kuchaman City Tehsil dumpsite,Kuchaman City Tehsil,Rajasthan,needs-tracing,,,,,0,5315,25394,109507,,74.85405,27.12944
+SD0384,Gidderbaha Tahsil dumpsite,Mandi Dabwali,Haryana,auto-traced,,,4.0,little_visible_change,1,14187,35532,61008,True,74.67168,30.20137
+SD0385,Tamil Nadu dumpsite,Tamil Nadu,Tamil Nadu,auto-traced,,,93.54,little_visible_change,0,49069,109107,199675,True,77.68613,11.45226
+SD0386,Krishna dumpsite,Mangalagiri,Andhra Pradesh,auto-traced,,,10.92,little_visible_change,5,27,689,36937,True,80.6563,16.60274
+SD0387,Madurai District dumpsite,Madurai,Tamil Nadu,auto-traced,,,1.79,little_visible_change,1,3481,40044,94935,True,77.97735,9.81182
+SD0388,Ring Road dumpsite,Ring Road,Odisha,auto-traced,,,11.4,visible_expansion,0,7294,54340,451289,True,84.81902,22.25066
+SD0389,Muddebihala Taluku dumpsite,Muddebihala Taluku,Karnataka,needs-tracing,,,,,0,3437,19787,72076,,76.12856,16.35692
+SD0390,Bandhwari landfill,Gurugram,Haryana,mapped,,,11.45,little_visible_change,4,678,5998,69351,True,77.17218,28.40242
+SD0391,Deopur dumpsite,Deopur,Madhya Pradesh,auto-traced,,,106.79,little_visible_change,2,1732,8820,102515,True,77.66903,24.12391
+SD0392,Pulivendla dumpsite,Pulivendla,Andhra Pradesh,auto-traced,,,113.42,visible_expansion,12,55,130,15961,True,78.21383,14.36828
+SD0393,Surendranagar District dumpsite,Surendranagar District,Gujarat,auto-traced,,,2.23,little_visible_change,0,6916,48427,107671,True,71.21694,22.57236
+SD0394,Greater Hyderabad Municipal Corporation Central Zone dumpsite,Greater Hyderabad Municipal Corporation Central Zone,Telangana,auto-traced,,,4.38,visible_expansion,1,61158,270980,1723677,True,78.52449,17.38007
+SD0395,Hanumangarh Tehsil dumpsite,Hanumangarh Tehsil,Rajasthan,auto-traced,,,68.82,little_visible_change,3,8150,48606,187054,True,74.32273,29.64506
+SD0396,Andhra Pradesh dumpsite,Mangalagiri,Andhra Pradesh,needs-tracing,,,,,0,10675,61217,143023,,80.55887,16.43227
+SD0397,West Bengal dumpsite,West Bengal,West Bengal,auto-traced,,,3.82,visible_expansion,1,14188,73873,191062,True,87.34121,22.42184
+SD0398,Mumbai Metropolitan Region dumpsite,Mumbai Metropolitan Region,Maharashtra,needs-tracing,,,,,0,7256,17070,270961,,73.03758,19.1452
+SD0399,Kurnool District dumpsite,Kurnool District,Andhra Pradesh,needs-tracing,,,,,0,11280,32275,49591,,77.78186,15.68017
+SD0400,Ratlam dumpsite,Ratlam,Madhya Pradesh,mapped,,,7.37,little_visible_change,11,1313,5553,202539,True,74.99743,23.35188
+SD0401,Uttar Pradesh dumpsite,Uttar Pradesh,Uttar Pradesh,auto-traced,,,1.36,visible_reduction,0,4951,24431,182331,True,77.53269,28.50219
+SD0402,Dhar dumpsite,Dhar,Madhya Pradesh,auto-traced,,,91.12,little_visible_change,9,2149,24971,67773,True,74.78425,22.20844
+SD0403,Chengalpattu District dumpsite,Chengalpattu District,Tamil Nadu,needs-tracing,,,,,0,1208,8072,21994,,80.19267,12.63492
+SD0404,Dhar dumpsite,Dhar,Madhya Pradesh,needs-tracing,,,,,0,555,18762,59565,,75.4869,22.2035
+SD0405,Kalyan dumpsite,Kalyan,Maharashtra,auto-traced,,,7.93,little_visible_change,5,1333,16364,368210,True,73.12495,19.27707
+SD0406,Panch Mahal District dumpsite,Panch Mahal District,Gujarat,auto-traced,,,10.38,little_visible_change,0,3277,28148,324476,True,73.58778,22.75027
+SD0407,Bommanahalli Zone dumpsite,Bengaluru,Karnataka,needs-tracing,,,,,0,10374,43840,146876,,77.63313,12.88466
+SD0408,Ramchak Bairiya landfill,Patna,Bihar,mapped,,,34.08,little_visible_change,5,24090,146774,1393160,True,85.17767,25.56771
+SD0409,Krishnagiri District dumpsite,Krishnagiri District,Tamil Nadu,auto-traced,,,75.83,little_visible_change,1,42923,96683,207585,True,78.21245,12.54305
+SD0410,Uran Dumping Ground,Uran,Maharashtra,mapped,,,1.28,indeterminate,0,4506,29161,81686,True,72.93571,18.89097
+SD0411,Bhiwandi dumpsite,Bhiwandi,Maharashtra,mapped,,,5.69,visible_reduction,5,31872,141932,422924,True,73.08243,19.30786
+SD0412,Tamil Nadu dumpsite,Tamil Nadu,Tamil Nadu,mapped,,,5.67,visible_reduction,9,1224,24208,153537,True,78.86161,9.34482
+SD0413,Ahmedabad dumpsite,Ahmedabad,Gujarat,needs-tracing,,,,,0,138394,599111,3258254,,72.61864,23.00949
+SD0414,Satna dumpsite,Satna,Madhya Pradesh,needs-tracing,,,,,0,4274,28819,355063,,80.87542,24.56292
+SD0415,Gorai Landfill BMC,Zone 4,Maharashtra,mapped,,,15.84,visible_reduction,0,38939,237902,2099847,True,72.82668,19.2362
+SD0416,Gujarat dumpsite,Gujarat,Gujarat,needs-tracing,,,,,0,27286,52239,210752,,70.46848,21.55872
+SD0417,Dumping Ground,Tirupati (Urban),Andhra Pradesh,mapped,,,3.36,visible_reduction,0,8822,13900,14228,True,79.35704,13.68623
+SD0418,Thiruthangal dumpsite,Thiruthangal,Tamil Nadu,auto-traced,,,3.84,visible_expansion,1,1919,17820,131965,True,77.8212,9.49695
+SD0419,Shantiniketan dumpsite,Shantiniketan,West Bengal,auto-traced,,,1.43,visible_expansion,0,2551,14470,163300,True,87.72226,23.6809
+SD0420,Pune District dumpsite,Pune District,Maharashtra,auto-traced,,,104.36,little_visible_change,4,1890,12729,108557,True,73.8952,18.70128
+SD0421,Basavana Bagevadi Taluku dumpsite,Basavana Bagevadi Taluku,Karnataka,auto-traced,,,79.88,little_visible_change,2,1846,18190,44003,True,75.98845,16.55561
+SD0422,Tadpatri dumpsite,Tadipatri,Andhra Pradesh,auto-traced,,,1.3,little_visible_change,1,14511,47892,124651,True,78.02162,14.89882
+SD0423,Chandranagar dumpsite,Chandranagar,Kerala,auto-traced,,,6.38,little_visible_change,3,22719,61113,272363,True,76.68811,10.76845
+SD0424,Vadodara District dumpsite,Vadodara District,Gujarat,auto-traced,,,1.96,visible_expansion,1,8320,23365,43725,True,73.18406,22.14414
+SD0425,Hyderabad dumpsite,Hyderabad,Telangana,needs-tracing,,,,,0,2885,10871,144323,,78.32038,17.43452
+SD0426,Tumkur District dumpsite,Tumkur District,Karnataka,auto-traced,,,98.62,little_visible_change,7,5604,18603,87440,True,77.24237,13.66115
+SD0427,Tiruppur District dumpsite,Tiruppur District,Tamil Nadu,auto-traced,,,1.88,little_visible_change,0,3327,10705,85072,True,77.52442,10.76083
+SD0428,Vijayapura Taluk dumpsite,Vijayapura Taluk,Karnataka,auto-traced,,,80.27,little_visible_change,2,42819,148299,416195,True,75.73825,16.83974
+SD0429,Haveli dumpsite,Haveli,Maharashtra,auto-traced,,,83.86,little_visible_change,0,51152,111513,334264,True,73.85757,18.63118
+SD0430,Raigad dumpsite,Raigad,Maharashtra,needs-tracing,,,,,0,12420,27812,65613,,73.48253,18.1116
+SD0431,Poonamallee dumpsite,Chennai,Tamil Nadu,auto-traced,,,4.18,little_visible_change,8,7214,71193,346958,True,80.07862,13.09985
+SD0432,Sikar dumpsite,Sikar,Rajasthan,needs-tracing,,,,,0,430,9149,80052,,75.01401,27.79676
+SD0433,Solapur dumpsite,Solapur,Maharashtra,needs-tracing,,,,,0,49754,228624,805004,,75.92647,17.68358
+SD0434,Gujarat dumpsite,Gujarat,Gujarat,auto-traced,,,3.07,visible_reduction,7,10075,79838,3524051,True,72.81769,21.1576
+SD0435,Gujarat dumpsite,Gujarat,Gujarat,needs-tracing,,,,,0,580,5374,15080,,70.30318,21.43468
+SD0436,Tiruppur District dumpsite,Tiruppur District,Tamil Nadu,needs-tracing,,,,,0,2377,13352,146469,,77.42141,11.09951
+SD0437,Gujarat dumpsite,Silvassa,Daman Diu And Dadra Nagar Haveli,needs-tracing,,,,,0,11579,41256,89205,,72.76035,20.1707
+SD0438,Maharashtra dumpsite,Maharashtra,Maharashtra,mapped,,,7.24,little_visible_change,7,1563,41538,335071,True,73.99174,17.66375
+SD0439,Kishangarh Tehsil dumpsite,Kishangarh Tehsil,Rajasthan,auto-traced,,,9.31,visible_reduction,0,6856,33620,64250,True,74.77261,26.87242
+SD0440,Bheemunipatnam dumpsite,Visakhapatnam,Andhra Pradesh,needs-tracing,,,,,0,1250,7341,42786,,83.42482,17.90937
+SD0441,Tamil Nadu dumpsite,Tamil Nadu,Tamil Nadu,needs-tracing,,,,,0,3846,15445,66047,,77.59398,11.25988
+SD0442,Belgaum District dumpsite,Belgaum District,Karnataka,auto-traced,,,86.41,little_visible_change,0,1901,4764,71470,True,74.56987,16.39199
+SD0443,Bangalore Urban dumpsite,Bengaluru,Karnataka,needs-tracing,,,,,0,1745,5637,73567,,77.73818,12.85436
+SD0444,Sholinganallur dumpsite,Chennai,Tamil Nadu,needs-tracing,,,,,0,35964,101909,626651,,80.19584,12.91722
+SD0445,Andhra Pradesh dumpsite,Srikakulam,Andhra Pradesh,auto-traced,,,56.66,little_visible_change,4,2891,14321,82563,True,83.94823,18.34304
+SD0446,Karimnagar dumpsite,Karimnagar,Telangana,needs-tracing,,,,,0,137,2638,49914,,79.21167,18.16348
+SD0447,Maharashtra dumpsite,Maharashtra,Maharashtra,needs-tracing,,,,,0,9045,45629,645295,,79.15113,21.1684
+SD0448,Gandipet Mandal dumpsite,Gandipet Mandal,Telangana,needs-tracing,,,,,0,5821,37525,212297,,78.34577,17.38548
+SD0449,Maharashtra dumpsite,Maharashtra,Maharashtra,auto-traced,,,88.47,little_visible_change,1,100083,109239,127301,True,76.20569,19.15803
+SD0450,Zone 2 Manali dumpsite,Chennai,Tamil Nadu,mapped,,,0.84,indeterminate,1,26775,134528,557058,True,80.28319,13.18056
+SD0451,Gurgaon dumpsite,Gurugram,Haryana,needs-tracing,,,,,0,31945,101248,491001,,77.07112,28.51334
+SD0452,Tamil Nadu dumpsite,Tamil Nadu,Tamil Nadu,auto-traced,,,21.36,little_visible_change,0,2689,11914,42747,True,77.08527,10.73304
+SD0453,Tuni dumpsite,Tuni,Andhra Pradesh,needs-tracing,,,,,0,14590,74715,155811,,82.53082,17.3559
+SD0454,Morbi District dumpsite,Morbi District,Gujarat,needs-tracing,,,,,0,3253,7577,82299,,70.85298,22.77226
+SD0455,Porbandar Taluka dumpsite,Porbandar Taluka,Gujarat,needs-tracing,,,,,0,480,4285,54768,,69.6463,21.60044
+SD0456,Manavadar Taluka dumpsite,Manavadar Taluka,Gujarat,needs-tracing,,,,,0,7384,33459,59029,,70.1237,21.49332
+SD0457,Sivakasi dumpsite,Sivakasi,Tamil Nadu,needs-tracing,,,,,0,486,3431,72532,,77.78746,9.39752
+SD0458,Bijapur District dumpsite,Bijapur District,Karnataka,auto-traced,,,84.45,little_visible_change,3,101087,193978,417120,True,75.71861,16.84537
+SD0459,Raisen dumpsite,Raisen,Madhya Pradesh,needs-tracing,,,,,0,19039,91757,180048,,77.53083,23.10218
+SD0460,Gujarat dumpsite,Gujarat,Gujarat,auto-traced,,,59.22,little_visible_change,0,535,1974,16680,True,70.51334,21.94185
+SD0461,Nashik dumpsite,Nashik,Maharashtra,needs-tracing,,,,,0,6573,25277,56404,,74.09895,20.08218
+SD0462,401400 dumpsite,401400,Maharashtra,auto-traced,,,3.38,little_visible_change,2,699,4838,150142,True,72.74873,19.72015
+SD0463,131001 dumpsite,131001,Haryana,needs-tracing,,,,,0,1611,12899,164547,,77.05928,29.03574
+SD0464,Maharashtra dumpsite,Maharashtra,Maharashtra,needs-tracing,,,,,0,8129,39599,133922,,73.84269,19.89871
+SD0465,Tamil Nadu dumpsite,Tamil Nadu,Tamil Nadu,needs-tracing,,,,,0,1773,5799,47457,,77.30437,10.95256
+SD0466,Chengalpattu District dumpsite,Chennai,Tamil Nadu,needs-tracing,,,,,0,16398,81633,279185,,80.08119,12.90312
+SD0467,ವಡ್ಡರಪಾಳ್ಯ dumpsite,Channarayapatna,Karnataka,needs-tracing,,,,,0,2206,16855,128568,,77.54946,13.32724
+SD0468,Pudukkottai District dumpsite,Pudukkottai District,Tamil Nadu,needs-tracing,,,,,0,17894,66479,108620,,78.9848,10.17391
+SD0469,Vadodara Taluka dumpsite,Vadodara Taluka,Gujarat,needs-tracing,,,,,0,65009,233294,927959,,73.14955,22.32654
+SD0470,Vadodara Taluka dumpsite,Vadodara Taluka,Gujarat,needs-tracing,,,,,0,51044,216194,959946,,73.21789,22.28527
+SD0471,Burravani Gollapalem dumpsite,Burravani Gollapalem,Andhra Pradesh,needs-tracing,,,,,0,977,7077,31260,,83.61794,18.39112
+SD0472,Panch Mahal District dumpsite,Panch Mahal District,Gujarat,needs-tracing,,,,,0,919,5123,81025,,73.57357,22.72972
+SD0473,Erode District dumpsite,Erode District,Tamil Nadu,needs-tracing,,,,,0,7449,32676,59561,,77.17517,11.34816
+SD0474,Jaipur dumpsite,Jaipur,Rajasthan,auto-traced,,,50.22,little_visible_change,33,2665,14547,211569,True,75.80102,27.03986
+SD0475,Zone 7 Ambattur dumpsite,Chennai,Tamil Nadu,auto-traced,,,1.36,visible_reduction,2,26370,109110,790715,True,80.15052,13.09937
+SD0476,Delhi dumpsite,Delhi,Delhi,needs-tracing,,,,,0,93154,413104,2769368,,77.13315,28.67499
+SD0477,Manapparai dumpsite,Manapparai,Tamil Nadu,needs-tracing,,,,,0,24013,64602,107524,,78.42186,10.61376
+SD0478,Gurgaon dumpsite,Gurugram,Haryana,needs-tracing,,,,,0,15882,63382,324270,,76.98963,28.42215
+SD0479,Sangli dumpsite,Sangli,Maharashtra,auto-traced,,,55.44,visible_expansion,36,819,2142,137939,True,74.52515,16.87705
+SD0480,Ahmedabad District dumpsite,Ahmedabad District,Gujarat,auto-traced,,,140.32,little_visible_change,7,3262,10576,64753,True,72.36517,22.85862
+SD0481,281001 dumpsite,281001,Uttar Pradesh,auto-traced,,,1.31,visible_expansion,0,4002,11986,110152,True,77.71215,27.46074
+SD0482,Jammu District dumpsite,Jammu,Jammu And Kashmir,auto-traced,,,1.22,visible_expansion,1,2340,14690,56662,True,74.9321,32.97164
+SD0483,Jaipur dumpsite,Jaipur,Rajasthan,auto-traced,,,60.51,little_visible_change,1,2429,13770,50154,True,76.03991,27.44647
+SD0484,Bachupally Mandal dumpsite,Bachupally Mandal,Telangana,needs-tracing,,,,,0,39271,134445,553984,,78.38145,17.52667
+SD0485,Rangareddy dumpsite,Rangareddy,Telangana,auto-traced,,,3.69,little_visible_change,5,731,3515,70227,True,78.21505,17.03594
+SD0486,Surat dumpsite,Surat,Gujarat,auto-traced,,,1.4,little_visible_change,2,3986,30632,125108,True,73.09924,21.10723
+SD0487,Dhar dumpsite,Dhar,Madhya Pradesh,auto-traced,,,83.95,little_visible_change,1,9737,40880,125424,True,75.07388,22.25623
+SD0488,Kudair dumpsite,Kudair,Andhra Pradesh,auto-traced,,,76.77,little_visible_change,2,1926,3502,15494,True,77.40176,14.74458
+SD0489,Dhar dumpsite,Dhar,Madhya Pradesh,auto-traced,,,61.91,little_visible_change,6,18149,32801,54624,True,75.2192,23.01327
+SD0490,Uttar Pradesh dumpsite,Uttar Pradesh,Uttar Pradesh,needs-tracing,,,,,0,1785,10834,213438,,81.80538,25.37967
+SD0491,Jaipur dumpsite,Jaipur,Rajasthan,needs-tracing,,,,,0,28744,88888,619485,,75.8225,26.85981
+SD0492,Delhi dumpsite,Gurugram,Haryana,needs-tracing,,,,,0,6141,38958,321854,,76.96512,28.6652
+SD0493,Damoh dumpsite,Damoh,Madhya Pradesh,needs-tracing,,,,,0,11606,113262,312633,,79.46061,23.83968
+SD0494,Tamil Nadu dumpsite,Tamil Nadu,Tamil Nadu,needs-tracing,,,,,0,27613,43208,110116,,78.4482,10.95597
+SD0495,Tiruporur dumpsite,Tiruporur,Tamil Nadu,needs-tracing,,,,,0,3365,21474,93615,,80.2399,12.78706
+SD0496,Alandur dumpsite,Chennai,Tamil Nadu,needs-tracing,,,,,0,16896,101160,836502,,80.14112,13.02703
+SD0497,Gujarat dumpsite,Gujarat,Gujarat,auto-traced,,,45.96,little_visible_change,8,2468,15202,170122,True,71.59372,22.73937
+SD0498,Panvel dumpsite,Panvel,Maharashtra,mapped,,,11.34,visible_expansion,0,8514,22115,143918,True,73.11688,19.09198
+SD0499,Tamil Nadu dumpsite,Tamil Nadu,Tamil Nadu,auto-traced,,,1.4,little_visible_change,2,47112,118195,190429,True,79.45841,10.65683
+SD0500,Koteshwar dumpsite,Koteshwar,Gujarat,needs-tracing,,,,,0,3169,33245,498392,,72.61721,23.09561
+SD0501,Contai-I dumpsite,Contai-I,West Bengal,needs-tracing,,,,,0,8677,75614,218356,,87.73045,21.76501
+SD0502,Gadarwara Tahsil dumpsite,Gadarwara Tahsil,Madhya Pradesh,needs-tracing,,,,,0,32395,90893,149521,,78.77988,22.92994
+SD0503,Tiruppur District dumpsite,Tiruppur District,Tamil Nadu,auto-traced,,,79.9,little_visible_change,1,83470,189422,663016,True,77.35843,11.07614
+SD0504,Maharashtra dumpsite,Maharashtra,Maharashtra,auto-traced,,,26.58,little_visible_change,5,27246,119885,1021123,True,73.96028,18.53252
+SD0505,Bommanahalli Zone dumpsite,Bengaluru,Karnataka,auto-traced,,,74.94,little_visible_change,6,39679,77321,166877,True,77.65832,12.88347
+SD0506,Dhar dumpsite,Dhar,Madhya Pradesh,auto-traced,,,113.52,little_visible_change,3,14830,61471,162834,True,75.68354,22.63226
+SD0507,Gujarat dumpsite,Gujarat,Gujarat,needs-tracing,,,,,0,690,2472,38994,,73.01571,21.52452
+SD0508,Valsad Taluka dumpsite,Valsad Taluka,Gujarat,auto-traced,,,5.28,little_visible_change,9,10932,85265,302837,True,72.94085,20.62699
+SD0509,Uttar Pradesh dumpsite,Uttar Pradesh,Uttar Pradesh,auto-traced,,,2.01,little_visible_change,1,30498,121158,248635,True,77.25695,29.0853
+SD0510,Chengalpattu District dumpsite,Chennai,Tamil Nadu,auto-traced,,,4.56,little_visible_change,0,52028,155621,720000,True,80.12331,12.97713
+SD0511,Haryana dumpsite,Rohtak,Haryana,needs-tracing,,,,,0,1643,1848,25640,,76.66984,28.72929
+SD0512,Tamil Nadu dumpsite,Tamil Nadu,Tamil Nadu,needs-tracing,,,,,0,1189,8556,104435,,78.89451,11.21743
+SD0513,Vadodara District dumpsite,Vadodara District,Gujarat,auto-traced,,,1.93,little_visible_change,0,5146,13129,78011,True,73.19296,22.45373
+SD0514,Thoothukkudi District dumpsite,Thoothukkudi District,Tamil Nadu,needs-tracing,,,,,0,26718,53666,91042,,78.11711,8.56196
+SD0515,415639 dumpsite,415639,Maharashtra,auto-traced,,,84.49,visible_expansion,9,73592,143171,235777,True,73.32927,16.99709
+SD0516,Andhra Pradesh dumpsite,Visakhapatnam,Andhra Pradesh,auto-traced,,,1.02,indeterminate,1,295,2263,104419,True,83.28997,17.76962
+SD0517,Madhya Pradesh dumpsite,Madhya Pradesh,Madhya Pradesh,auto-traced,,,37.17,little_visible_change,0,1321,6037,79911,True,76.67609,23.03018
+SD0518,Odisha dumpsite,Bhubaneswar,Odisha,needs-tracing,,,,,0,1883,12336,109599,,85.70351,20.18499
+SD0519,Mandsaur dumpsite,Mandsaur,Madhya Pradesh,auto-traced,,,44.53,little_visible_change,9,2967,6080,36052,True,75.03558,24.13668
+SD0520,Satna dumpsite,Satna,Madhya Pradesh,auto-traced,,,3.49,little_visible_change,0,41037,182714,511620,True,80.84926,24.5612
+SD0521,Kundrathur Landfill,Chennai,Tamil Nadu,mapped,,,1.32,visible_reduction,3,22469,47529,302716,True,80.08859,12.99346
+SD0522,Dehradun dumpsite,Dehradun,Uttarakhand,auto-traced,,,5.66,visible_expansion,2,1567,10807,68420,True,77.86943,30.34344
+SD0523,Anekal dumpsite,Bengaluru,Karnataka,needs-tracing,,,,,0,3255,26192,205329,,77.70904,12.83518
+SD0524,North 24 Parganas dumpsite,Naihati,West Bengal,needs-tracing,,,,,0,32658,213812,1334841,,88.41082,22.89545
+SD0525,Ahmedabad District dumpsite,Ahmedabad District,Gujarat,needs-tracing,,,,,0,14659,53361,248221,,72.60961,23.10681
+SD0526,Nav Sari District dumpsite,Nav Sari District,Gujarat,auto-traced,,,5.33,little_visible_change,8,14460,78118,345151,True,72.90038,20.95757
+SD0527,Mumbai Metropolitan Region dumpsite,Mumbai Metropolitan Region,Maharashtra,needs-tracing,,,,,0,49718,101981,125093,,72.88022,18.64479
+SD0528,Wallajah dumpsite,Wallajah,Tamil Nadu,needs-tracing,,,,,0,17985,55021,174844,,79.36584,12.93421
+SD0529,Medchal–Malkajgiri dumpsite,Medchal–Malkajgiri,Telangana,needs-tracing,,,,,0,2821,14764,171318,,78.39913,17.56977
+SD0530,Birbhum dumpsite,Birbhum,West Bengal,needs-tracing,,,,,0,191,6938,132297,,87.75696,24.18793
+SD0531,Kathua District dumpsite,Kathua District,Jammu and Kashmir,auto-traced,,,10.54,little_visible_change,0,1720,7743,33150,True,75.41701,32.42936
+SD0532,Junagadh City Taluka dumpsite,Junagadh City Taluka,Gujarat,needs-tracing,,,,,0,5770,25855,90113,,70.4745,21.57848
+SD0533,Shirol dumpsite,Shirol,Maharashtra,auto-traced,,,64.02,little_visible_change,4,14864,65546,189863,True,74.53418,16.7676
+SD0534,Mundra Taluka dumpsite,Mundra Taluka,Gujarat,needs-tracing,,,,,0,8214,33886,71100,,69.71771,22.84318
+SD0535,Surat dumpsite,Surat,Gujarat,needs-tracing,,,,,0,2773,17208,63121,,72.98336,21.1471
+SD0536,Gujarat dumpsite,Gujarat,Gujarat,auto-traced,,,8.28,little_visible_change,14,414,2216,36941,True,70.43722,21.45447
+SD0537,Ahmednagar dumpsite,Ahmednagar,Maharashtra,needs-tracing,,,,,0,3104,20263,122638,,74.20623,19.55124
+SD0538,Jhabua dumpsite,Jhabua,Madhya Pradesh,auto-traced,,,80.53,little_visible_change,1,2724,9105,59202,True,74.61772,23.00614
+SD0539,Bastar dumpsite,Bastar,Chhattisgarh,needs-tracing,,,,,0,8151,25587,188226,,81.99079,19.07638
+SD0540,Ramanathapuram District dumpsite,Ramanathapuram District,Tamil Nadu,needs-tracing,,,,,0,3094,16875,62656,,79.30578,9.26707
+SD0541,Markapur dumpsite,Markapur,Andhra Pradesh,auto-traced,,,3.49,little_visible_change,7,1525,11094,92824,True,79.28297,15.76206
+SD0542,Karur District dumpsite,Karur District,Tamil Nadu,needs-tracing,,,,,0,13429,22033,32206,,77.88972,10.71482
+SD0543,Uttar Pradesh dumpsite,Uttar Pradesh,Uttar Pradesh,needs-tracing,,,,,0,4042,67987,283177,,77.68235,27.55622
+SD0544,Akrani dumpsite,Akrani,Maharashtra,auto-traced,,,86.77,little_visible_change,0,4809,22569,53135,True,74.21703,21.80936
+SD0545,Greater Hyderabad Municipal Corporation East Zone dumpsite,Greater Hyderabad Municipal Corporation East Zone,Telangana,needs-tracing,,,,,0,23000,123124,558656,,78.58017,17.49565
+SD0546,Gurugram dumpsite,Gurugram,Haryana,needs-tracing,,,,,0,12030,48749,262430,,77.00233,28.49833
+SD0547,Gurugram dumpsite,Manesar,Haryana,auto-traced,,,2.83,visible_expansion,0,29639,64222,212662,True,76.94546,28.35761
+SD0548,Ysr dumpsite,Ysr,Andhra Pradesh,needs-tracing,,,,,0,8877,46279,55864,,78.45237,14.37458
+SD0549,Nandyal dumpsite,Nandyal,Andhra Pradesh,auto-traced,,,114.35,indeterminate,9,14498,51126,85243,True,77.88903,15.39096
+SD0550,Summer Hill dumpsite,Summer Hill,Maharashtra,needs-tracing,,,,,0,5191,18899,115350,,73.43995,18.75771
+SD0551,Chengalpattu District dumpsite,Chennai,Tamil Nadu,needs-tracing,,,,,0,26178,100487,606228,,80.11727,13.01554
+SD0552,Chikkaballapura Taluk dumpsite,Chikkaballapura,Karnataka,auto-traced,,,7.74,little_visible_change,4,666,5852,83551,True,77.77383,13.45638
+SD0553,Jaipur dumpsite,Jaipur,Rajasthan,auto-traced,,,1.52,little_visible_change,3,15872,28716,56406,True,75.60593,27.17583
+SD0554,Chengalpattu District dumpsite,Chennai,Tamil Nadu,needs-tracing,,,,,0,13047,41674,153138,,80.23561,12.8285
+SD0555,Telangana dumpsite,Telangana,Telangana,needs-tracing,,,,,0,9664,37014,284942,,78.61552,17.39669
+SD0556,Bangalore Urban dumpsite,Bengaluru,Karnataka,needs-tracing,,,,,0,1330,6157,30917,,77.74119,12.89876
+SD0557,Chidambaram dumpsite,Chidambaram,Tamil Nadu,needs-tracing,,,,,0,35324,147813,273651,,79.68489,11.38885
+SD0558,Gujarat dumpsite,Gujarat,Gujarat,needs-tracing,,,,,0,3232,13676,65530,,72.96734,21.17437
+SD0559,Gautam Buddha Nagar dumpsite,Delhi,Delhi,auto-traced,,,1.13,visible_expansion,3,5178,25124,265290,True,77.41734,28.51861
+SD0560,Ameenpur Mandal dumpsite,Ameenpur Mandal,Telangana,needs-tracing,,,,,0,5983,26919,221547,,78.30553,17.52991
+SD0561,Gir Somnath District dumpsite,Gir Somnath District,Gujarat,auto-traced,,,1.18,little_visible_change,0,18879,71243,123697,True,71.04789,20.83561
+SD0562,Delhi dumpsite,Delhi,Delhi,mapped,,,0.22,indeterminate,0,138104,393492,2459709,True,77.16194,28.72352
+SD0563,Pushpagiri dumpsite,Pushpagiri,Tamil Nadu,needs-tracing,,,,,0,6290,23434,76628,,80.02349,12.89585
+SD0564,Gandhinagar District dumpsite,Gandhinagar District,Gujarat,needs-tracing,,,,,0,5874,21503,68641,,72.45568,23.14528
+SD0565,Tamil Nadu dumpsite,Tamil Nadu,Tamil Nadu,needs-tracing,,,,,0,534,1497,10826,,77.5158,8.63785
+SD0566,Tirukalukundram dumpsite,Tirukalukundram,Tamil Nadu,auto-traced,,,1.86,visible_reduction,2,2751,22788,53087,True,80.07962,12.60418
+SD0567,Sabar Kantha District dumpsite,Sabar Kantha District,Gujarat,auto-traced,,,83.87,little_visible_change,9,26337,79974,211852,True,72.95706,23.57563
+SD0568,Gujarat dumpsite,Gujarat,Gujarat,needs-tracing,,,,,0,571,2584,21921,,70.97638,22.78128
+SD0569,Chittoor dumpsite,Chittoor,Andhra Pradesh,auto-traced,,,2.18,little_visible_change,4,296,5991,68848,True,78.76651,13.18429
+SD0570,Karnataka dumpsite,Karnataka,Karnataka,auto-traced,,,39.71,little_visible_change,5,2850,13641,99843,True,76.87456,13.75521
+SD0571,Nilakkottai dumpsite,Nilakkottai,Tamil Nadu,needs-tracing,,,,,0,24827,52279,88228,,77.76518,10.16073
+SD0572,Gujarat dumpsite,Gujarat,Gujarat,auto-traced,,,24.97,little_visible_change,1,8257,15498,57128,True,73.13139,21.06972
+SD0573,Tijara Tehsil dumpsite,Tijara Tehsil,Rajasthan,auto-traced,,,1.32,little_visible_change,0,10242,19067,37868,True,76.86492,27.93638
+SD0574,Uttar Pradesh dumpsite,Delhi,Delhi,auto-traced,,,9.47,little_visible_change,0,50375,158447,761382,True,77.44239,28.70262
+SD0575,Bengaluru dumpsite,Bengaluru,Karnataka,needs-tracing,,,,,0,763,4705,76550,,77.61097,12.85241
+SD0576,Nanjanagudu Taluk dumpsite,Mysore,Karnataka,auto-traced,,,91.53,visible_reduction,4,3157,5813,84638,True,76.72342,12.09755
+SD0577,271801 dumpsite,271801,Uttar Pradesh,auto-traced,,,4.52,little_visible_change,0,75709,262147,537317,True,81.60006,27.5905
+SD0578,Dausa dumpsite,Dausa,Rajasthan,auto-traced,,,25.91,visible_expansion,1,16477,21083,70552,True,76.79519,26.94262
+SD0579,Vadodara Taluka dumpsite,Vadodara Taluka,Gujarat,needs-tracing,,,,,0,1108,2205,164315,,73.21973,22.37676
+SD0580,Baleshwar (M) dumpsite,Baleshwar (M),Odisha,auto-traced,,,58.73,visible_expansion,1,106175,182996,252746,True,86.93669,21.49903
+SD0581,Kallakkurichi dumpsite,Kallakkurichi,Tamil Nadu,auto-traced,,,1.03,little_visible_change,1,9336,50699,124019,True,78.98029,11.73952
+SD0582,Paschim Medinipur dumpsite,Paschim Medinipur,West Bengal,mapped,,,1.13,indeterminate,0,24999,63453,127597,True,87.72408,22.66343
+SD0583,518500 dumpsite,518500,Andhra Pradesh,needs-tracing,,,,,0,1745,65620,258077,,78.48298,15.50036
+SD0584,Maharashtra dumpsite,Maharashtra,Maharashtra,auto-traced,,,4.31,visible_expansion,4,7569,16880,73053,True,73.8985,17.97364
+SD0585,Madhya Pradesh dumpsite,Madhya Pradesh,Madhya Pradesh,auto-traced,,,5.6,little_visible_change,0,5194,18684,199131,True,81.3607,24.55384
+SD0586,Cuddalore District dumpsite,Cuddalore District,Tamil Nadu,needs-tracing,,,,,0,23370,47303,82676,,79.67912,11.77564
+SD0587,Tamil Nadu dumpsite,Tamil Nadu,Tamil Nadu,needs-tracing,,,,,0,30302,88368,163558,,79.64325,10.76891
+SD0588,Maharashtra dumpsite,Maharashtra,Maharashtra,auto-traced,,,44.97,little_visible_change,4,31619,81589,212903,True,73.81128,18.75452
+SD0589,Pragathi Nagar Dumpyard,Lake View Colony,Telangana,mapped,,,1.13,little_visible_change,1,48002,205434,880372,True,78.39866,17.51298
+SD0590,Gooty dumpsite,Gooty,Andhra Pradesh,auto-traced,,,7.12,visible_expansion,6,11686,32796,77526,True,77.61872,15.1344
+SD0591,Saket Tehsil dumpsite,Delhi,Delhi,auto-traced,,,50.62,little_visible_change,0,230261,477941,1698078,True,77.22506,28.49914
+SD0592,Rajkot dumpsite,Rajkot,Gujarat,needs-tracing,,,,,0,314,3295,19139,,70.52241,21.73625
+SD0593,Gurugram dumpsite,Gurugram,Haryana,auto-traced,,,6.29,visible_expansion,0,1692,17258,159755,True,77.1335,28.41191
+SD0594,Valsad dumpsite,Silvassa,Daman Diu And Dadra Nagar Haveli,auto-traced,,,55.39,visible_reduction,0,8688,52322,379360,True,72.88689,20.36693
+SD0595,Huzur Tahsil dumpsite,Huzur Tahsil,Madhya Pradesh,mapped,,,2.57,indeterminate,2,22033,87953,938392,True,77.46526,23.23777
+SD0596,Pollachi dumpsite,Pollachi,Tamil Nadu,needs-tracing,,,,,0,15286,47248,234201,,77.00669,10.63373
+SD0597,Chhattisgarh dumpsite,Chhattisgarh,Chhattisgarh,auto-traced,,,3.48,little_visible_change,1,618,2694,28998,True,81.85895,21.21351
+SD0598,Panch Mahal District dumpsite,Panch Mahal District,Gujarat,auto-traced,,,33.86,little_visible_change,7,39684,136119,374108,True,73.602,22.75848
+SD0599,Chorasi Taluka dumpsite,Chorasi Taluka,Gujarat,needs-tracing,,,,,0,1593,6531,27198,,72.84592,21.08656
+SD0600,Mathavaram dumpsite,Chennai,Tamil Nadu,needs-tracing,,,,,0,22583,53491,156747,,80.18558,13.19688
+SD0601,Jharkhand dumpsite,Jharkhand,Jharkhand,needs-tracing,,,,,0,4119,36675,225710,,87.8473,24.65611
+SD0602,Gajuwaka dumpsite,Visakhapatnam,Andhra Pradesh,auto-traced,,,35.2,little_visible_change,0,72890,248481,1040087,True,83.21526,17.70279
+SD0603,Ranchi dumpsite,Ranchi,Jharkhand,auto-traced,,,2.94,little_visible_change,1,8107,17200,67842,True,85.42762,23.36723
+SD0604,Uthamapalayam dumpsite,Chinnamanur,Tamil Nadu,auto-traced,,,1.12,little_visible_change,1,879,14000,177802,True,77.2721,9.71445
+SD0605,Harda dumpsite,Harda,Madhya Pradesh,auto-traced,,,1.44,little_visible_change,6,15681,60651,95296,True,77.07831,22.338
+SD0606,Padrauna dumpsite,Padrauna,Uttar Pradesh,auto-traced,,,12.39,little_visible_change,0,15270,31639,112842,True,83.92154,26.92615
+SD0607,Kanchipuram District dumpsite,Kanchipuram District,Tamil Nadu,needs-tracing,,,,,0,624,4511,53992,,79.79104,12.62541
+SD0608,Sholinganallur dumpsite,Chennai,Tamil Nadu,needs-tracing,,,,,0,57334,190299,1151589,,80.18638,12.94237
+SD0609,Andhra Pradesh dumpsite,Andhra Pradesh,Andhra Pradesh,needs-tracing,,,,,0,23075,73859,98866,,80.83392,16.02736
+SD0610,Raisen dumpsite,Raisen,Madhya Pradesh,auto-traced,,,1.11,indeterminate,0,4809,31492,85555,True,77.76574,23.31809
+SD0611,South 24 Parganas dumpsite,Maheshtala,West Bengal,auto-traced,,,1.45,visible_expansion,0,20399,92049,497133,True,88.20555,22.49227
+SD0612,Madhya Pradesh dumpsite,Madhya Pradesh,Madhya Pradesh,auto-traced,,,91.28,visible_reduction,15,1934,6297,39292,True,77.55952,23.26707
+SD0613,Mhalunge dumpsite,Mhalunge,Maharashtra,needs-tracing,,,,,0,2033,13704,239483,,73.74727,18.57102
+SD0614,Ud&Pa Dumping Ground,Aizawl,Mizoram,auto-traced,,,1.44,visible_expansion,7,884,1432,20342,True,92.79809,23.74369
+SD0615,Kochbihar dumpsite,Kochbihar,West Bengal,auto-traced,,,3.32,little_visible_change,0,5045,44047,263509,True,89.46799,26.2991
+SD0616,Maharashtra dumpsite,Maharashtra,Maharashtra,needs-tracing,,,,,0,6918,13715,28570,,74.12811,16.97896
+SD0617,Tamil Nadu dumpsite,Tamil Nadu,Tamil Nadu,auto-traced,,,1.69,little_visible_change,1,1119,6121,139741,True,79.69944,13.11087
+SD0618,Tamil Nadu dumpsite,Tamil Nadu,Tamil Nadu,needs-tracing,,,,,0,13981,67900,392343,,79.41191,10.9734
+SD0619,Gurdaspur District dumpsite,Gurdaspur District,Punjab,auto-traced,,,2.09,little_visible_change,0,26774,46424,83346,True,75.46868,32.12773
+SD0620,Vidisha dumpsite,Vidisha,Madhya Pradesh,auto-traced,,,100.96,little_visible_change,7,1412,4367,68530,True,77.81751,23.46897
+SD0621,Paschim Medinipur dumpsite,Paschim Medinipur,West Bengal,auto-traced,,,2.49,little_visible_change,3,85871,262505,779862,True,87.29924,22.33276
+SD0622,Barrackpur - Ii dumpsite,Panihati,West Bengal,mapped,,,0.52,indeterminate,0,37993,158835,645413,True,88.38259,22.74908
+SD0623,Uttar Pradesh dumpsite,Uttar Pradesh,Uttar Pradesh,auto-traced,,,3.41,visible_expansion,0,7049,14365,86652,True,81.1191,27.88772
+SD0624,Gujarat dumpsite,Gujarat,Gujarat,needs-tracing,,,,,0,3901,14364,75892,,72.83817,21.12775
+SD0625,Howrah dumpsite,Howrah,West Bengal,auto-traced,,,9.05,little_visible_change,10,83377,275256,1987594,True,88.32622,22.60933
+SD0626,Gujarat dumpsite,Gujarat,Gujarat,auto-traced,,,4.07,little_visible_change,1,5784,14656,66221,True,72.85399,21.12502
+SD0627,Valsad dumpsite,Silvassa,Daman Diu And Dadra Nagar Haveli,auto-traced,,,10.5,little_visible_change,2,10761,58304,198435,True,72.94541,20.49229
+SD0628,Maharashtra dumpsite,Maharashtra,Maharashtra,needs-tracing,,,,,0,34892,54378,77113,,73.42753,18.07851
+SD0629,Barrackpur - Ii dumpsite,Kamarhati,West Bengal,needs-tracing,,,,,0,13911,56934,411800,,88.38587,22.69177
+SD0630,Kavdara dumpsite,Kavdara,Maharashtra,needs-tracing,,,,,0,2897,7158,32018,,73.76562,19.75745
+SD0631,Valsad dumpsite,Silvassa,Daman Diu And Dadra Nagar Haveli,auto-traced,,,1.17,indeterminate,0,16462,38695,132224,True,72.92707,20.45589
+SD0632,Bhadrak Rural dumpsite,Bhadrak Rural,Odisha,needs-tracing,,,,,0,4448,32656,140974,,86.52823,21.10313
+SD0633,Dhenkanal dumpsite,Dhenkanal,Odisha,needs-tracing,,,,,0,785,2518,45790,,85.60656,20.61124
+SD0634,Udupi District dumpsite,Udupi,Karnataka,auto-traced,,,5.9,visible_expansion,3,1037,6315,85747,True,74.80412,13.31347
+SD0635,Cuttack dumpsite,Cuttack,Odisha,auto-traced,,,6.83,visible_expansion,0,101520,230947,554448,True,85.8515,20.47648
+SD0636,Mapusa Municipal Landfill,Mapusa,Goa,mapped,,,6.68,little_visible_change,0,1942,13642,75261,True,73.79645,15.60851
+SD0637,Jorhat East dumpsite,Jorhat East,Assam,needs-tracing,,,,,0,17817,65786,219163,,94.22411,26.75202
+SD0638,Deonar dumping ground,Mumbai,Maharashtra,mapped,,,123.09,little_visible_change,15,184298,556442,2252578,True,72.93297,19.06696
+SD0639,Adharwadi dumping ground,Kalyan,Maharashtra,mapped,,,7.68,little_visible_change,4,60036,212072,1145754,True,73.11883,19.25031
+SD0640,Bhandewadi dumping yard,Nagpur,Maharashtra,needs-tracing,,,,,0,2124,5633,15996,,79.45294,21.32331
+SD0641,Diva dumping ground,Thane,Maharashtra,mapped,,,4.11,visible_reduction,5,15631,59187,400568,True,73.04394,19.17664
+SD0642,Turbhe landfill,Navi Mumbai,Maharashtra,mapped,,,15.45,little_visible_change,14,38961,124086,369364,True,73.02251,19.08073
+SD0643,Uttan dumping ground,Mira-Bhayandar,Maharashtra,mapped,,,11.33,little_visible_change,11,15261,21979,106572,True,72.79432,19.28776
+SD0644,Pirana dumpsite,Ahmedabad,Gujarat,mapped,,,40.52,little_visible_change,208,103964,302047,2634193,True,72.56634,22.97999
+SD0645,Jawahar Nagar dumpyard,Hyderabad,Telangana,needs-tracing,,,,,0,35949,202264,1638391,,78.4928,17.40766
+SD0646,Vellalore dumpyard,Coimbatore,Tamil Nadu,auto-traced,,,1.22,little_visible_change,0,50666,82467,575797,True,77.02999,10.98044
+SD0647,Boragaon dumpsite,Guwahati,Assam,auto-traced,,,3.06,visible_expansion,0,2650,30617,203839,True,91.68508,26.11077
+SD0648,Dhapa dumpsite,Kolkata,West Bengal,mapped,,,5.56,visible_expansion,1,166108,552567,2881589,True,88.38043,22.53913
+SD0649,Perungudi dumpyard,Chennai,Tamil Nadu,mapped,,,103.85,visible_reduction,8,41157,224954,1339251,True,80.22617,12.95444
+SD0650,Kodungaiyur dumpyard,Chennai,Tamil Nadu,mapped,True,4550886.5,127.12,little_visible_change,15,113283,423853,1742902,True,80.26942,13.13482
+SD0651,Moshi garbage depot,Pimpri-Chinchwad,Maharashtra,needs-tracing,,,,,0,28806,65640,411204,,73.8442,18.65232
+SD0652,Uruli Devachi depot,Pune,Maharashtra,needs-tracing,,,,,0,259,3746,75341,,74.00216,18.4572
+SD0653,Dadu Majra dumping ground,Chandigarh,Chandigarh,mapped,,,19.81,little_visible_change,2,34340,118952,602083,True,76.74082,30.75689
+SD0654,Adampur Chhawni landfill,Bhopal,Madhya Pradesh,needs-tracing,,,,,0,414,4003,40552,,77.55066,23.26983

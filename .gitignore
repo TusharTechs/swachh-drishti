@@ -8,3 +8,4 @@ data/processed/chips/
 data/processed/*.log
 .env
 .claude/
+.codenow/

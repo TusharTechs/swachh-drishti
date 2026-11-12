@@ -235,6 +235,20 @@ def cmd_publish():
         tot["sites_with_fire"] += p["fire_days"] > 0
     (web / "sites.geojson").write_text(json.dumps({"type": "FeatureCollection", "features": feats,
                                                    "attribution": fc.get("attribution")}))
+    import csv
+    csv_path = web / "sites.csv"
+    csv_columns = ["site_id", "display_name", "city", "state", "status", "drap_priority", "legacy_waste_t", 
+                   "area_ha", "trend", "fire_days", "pop_1km", "pop_2km", "pop_5km", "review_passed", "lon", "lat"]
+    with open(csv_path, 'w', newline='') as f:
+        writer = csv.DictWriter(f, fieldnames=csv_columns)
+        writer.writeheader()
+        for feat in feats:
+            props = feat["properties"]
+            row = {col: props.get(col) for col in csv_columns[:-2]}
+            lonlat = props.get("lonlat", [None, None])
+            row["lon"] = lonlat[0]
+            row["lat"] = lonlat[1]
+            writer.writerow(row)
     tot["repo"] = "https://github.com/TusharTechs/swachh-drishti"
     tot["sites_with_imagery"] = sum(1 for k in imagery if any(f["properties"]["site_id"] == k for f in feats))
     tot["packs_published"] = sum(1 for r in ag.values() if r.get("review", {}).get("passed"))
