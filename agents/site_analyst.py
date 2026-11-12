@@ -27,11 +27,14 @@ Rules:
 
 def assess(site: dict, obs: list[dict], chips_dir: Path, fires: dict, exposure: dict) -> SiteAssessment:
     content: list = [{"type": "text", "text": "Gazetteer record:\n" + json.dumps(site["properties"], indent=1)}]
-    for o in obs:
+    show = {0, len(obs) - 1}  # images for first and latest year; all years as numbers
+    for i, o in enumerate(obs):
         content.append({"type": "text", "text": f"Year {o['year']} scene {o['scene_id']} ({o['date']}), stats: "
                         + json.dumps({k: o[k] for k in ('site_area_ha', 'valid_frac', 'veg_ha', 'water_ha', 'exposed_ha', 'mean_ndvi')})})
-        content.append(png_block(chips_dir / o["chip_rgb"]))
-        content.append(png_block(chips_dir / o["chip_swir"]))
+        if i in show:
+            content.append({"type": "text", "text": f"Images for {o['year']}: true colour, then SWIR false colour."})
+            content.append(png_block(chips_dir / o["chip_rgb"]))
+            content.append(png_block(chips_dir / o["chip_swir"]))
     content.append({"type": "text", "text": "Fire record (VIIRS 375 m, static industrial sources removed):\n" + json.dumps(fires)})
     content.append({"type": "text", "text": "Population exposure (GHSL):\n" + json.dumps(exposure)})
     content.append({"type": "text", "text": f"Return the SiteAssessment for site_id {site['properties']['site_id']}."})

@@ -94,28 +94,53 @@ def _load(name):
     f = PROC / name
     return json.loads(f.read_text()) if f.exists() else {}
 
-def cmd_agents(limit=None):
-    from agents import site_analyst, evidence_writer, reviewer
+def cmd_agents(limit=None, refresh=False):
+    """analyst (LLM vision if available, cross-checked by rules) -> evidence pack -> reviewer gate."""
+    from agents import site_analyst, rules, reviewer
+    from agents.llm import backend, model_name
     imagery, fires, expo = _load("imagery.json"), _load("fires.json").get("sites", {}), _load("exposure.json")
     out_f = PROC / "agents.json"
-    done = _load("agents.json")
+    done = {} if refresh else _load("agents.json")
     todo = [s for s in sites() if s["properties"]["site_id"] in imagery and s["properties"]["site_id"] not in done]
     if limit:
         todo = todo[: int(limit)]
-    print(len(todo), "sites for agents")
-    for s in todo:
+    b = backend()
+    print(len(todo), "sites for agents; analyst backend:", b, model_name())
+    for i, s in enumerate(todo, 1):
         sid = s["properties"]["site_id"]
         f, e, obs = fires.get(sid, {}), expo.get(sid, {}), imagery[sid]
-        try:
-            a = site_analyst.assess(s, obs, CHIPS, f, e).model_dump()
-            pack = evidence_writer.write(s, a, obs, f, e)
-            source = {"site": s["properties"], "assessment": a, "imagery": obs, "fires": f, "exposure": e}
-            v = reviewer.review(sid, pack, source).model_dump()
-            done[sid] = {"assessment": a, "pack_md": pack, "review": v}
-            print(f"  {sid}: {a['surface_type']} / {a['remediation_trend']} / review {'PASS' if v['passed'] else 'HOLD'}", flush=True)
-        except Exception as ex:
-            print("  error", sid, repr(ex)[:200])
-        out_f.write_text(json.dumps(done, indent=1))
+        base = rules.assess(s, obs, f, e).model_dump()
+        llm, err = None, None
+        if b != "none" and obs:
+            try:
+                llm = site_analyst.assess(s, obs, CHIPS, f, e).model_dump()
+            except Exception as ex:
+                err = repr(ex)[:200]
+        a = dict(base)
+        if llm:
+            # vision model decides surface type & location; numbers/trend stay rule-based unless the model
+            # says the evidence is indeterminate (it saw clouds, wrong place, etc.)
+            a["surface_type"] = llm["surface_type"]
+            a["location_ok"] = llm["location_ok"]
+            if llm["remediation_trend"] == "indeterminate":
+                a["remediation_trend"] = "indeterminate"
+            a["caveats"] = base["caveats"] + [c for c in llm["caveats"] if c not in base["caveats"]][:3]
+        a["analyst"] = {"backend": b if llm else "rules", "model": model_name() if llm else "rules", "error": err,
+                        "llm_raw": llm}
+        hold = a["surface_type"] in ("industrial_dump", "not_a_dump")
+        pack = rules.write(s, a, obs, f, e)
+        source = {"site": s["properties"], "assessment": {k: v for k, v in a.items() if k != "analyst"},
+                  "imagery": obs, "fires": f, "exposure": e}
+        v = reviewer.review(sid, pack, source).model_dump()
+        if hold:
+            v["passed"] = False
+            v["problems"].append(f"analyst classified surface as {a['surface_type']}: held for human review")
+        done[sid] = {"assessment": a, "pack_md": pack, "review": v}
+        print(f"  [{i}/{len(todo)}] {sid}: {a['surface_type']} / {a['remediation_trend']} / "
+              f"{'PASS' if v['passed'] else 'HOLD'} ({a['analyst']['model']})", flush=True)
+        if i % 10 == 0 or i == len(todo):
+            out_f.write_text(json.dumps(done, indent=1))
+    out_f.write_text(json.dumps(done, indent=1))
 
 def _numeric_trend(obs):
     if len(obs) < 2:

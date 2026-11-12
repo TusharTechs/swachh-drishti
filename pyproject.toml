@@ -18,6 +18,8 @@ dependencies = [
   "anthropic>=2.8.0",
   "pydantic>=2.14.3",
   "scipy>=1.17.1",
+  "hyp3-sdk>=7.7.8",
+  "asf-search>=14.1.0",
 ]
 
 [tool.uv]

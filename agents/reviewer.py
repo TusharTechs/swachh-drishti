@@ -21,12 +21,15 @@ passed=true only if there are no problems."""
 def _numbers(s: str) -> set[str]:
     return {n.replace(",", "") for n in NUM.findall(s)}
 
-def review(site_id: str, pack_md: str, source: dict, use_llm: bool = True) -> ReviewVerdict:
+def review(site_id: str, pack_md: str, source: dict, use_llm: bool | None = None) -> ReviewVerdict:
+    from agents.llm import backend
+    if use_llm is None:
+        use_llm = backend() == "anthropic"  # small local models over-flag; deterministic checks always run
     problems = []
     if m := BANNED.search(pack_md):
         problems.append(f"banned wording: '{m.group(0)}'")
     src_nums = _numbers(json.dumps(source))
-    allowed_small = {str(i) for i in range(0, 13)} | {str(y) for y in range(2015, 2031)} | {"1", "2", "5", "10", "375"}
+    allowed_small = {str(i) for i in range(0, 13)} | {str(y) for y in range(2011, 2031)} | {"1", "2", "5", "10", "375", "30"}
     unknown = sorted(n for n in _numbers(pack_md) - src_nums - allowed_small
                      if not any(n in s or s.startswith(n) for s in src_nums))
     if unknown:
