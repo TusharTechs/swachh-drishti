@@ -30,9 +30,12 @@ function renderKpis(s) {
     [fmt.format(s.sites_total), 'dumpsites in the open gazetteer'],
     [fmt.format(s.sites_mapped), 'with a traced site boundary'],
     [fmt.format(Math.round(s.legacy_waste_t / 1e5) / 10) + ' cr t', 'legacy waste at DRAP priority sites'],
-    [fmt.format(s.pop_2km || 0), 'people living within 2 km (GHSL)'],
-    [fmt.format(s.sites_with_fire || 0), 'sites with satellite fire detections'],
+    [fmt.format(s.pop_1km || 0), 'people living within 1 km of a mapped site (GHSL 2025)'],
+    [fmt.format(s.sites_with_fire || 0), 'sites with VIIRS fire detections, 2019→'],
+    [fmt.format(s.packs_published || 0), 'reviewed evidence packs published'],
   ];
+  if (s.sites_with_insar) k.push([fmt.format(s.sites_with_insar), 'mounds screened with Sentinel-1 InSAR']);
+  if (s.fire_backtest) k.push([Math.round(s.fire_backtest.recall * 100) + '%', `of ${s.fire_backtest.evaluable_events} documented fires detected (backtest)`]);
   $('#kpis').innerHTML = k.map(([b, t]) => `<div class="kpi"><b>${b}</b><span>${t}</span></div>`).join('');
 }
 
@@ -113,8 +116,10 @@ async function select(id) {
     ${p.mapped ? '' : `<p class="note">⚠ No reliable site boundary yet; marker shows the city centre. Help trace it on OpenStreetMap (landuse=landfill).</p>`}
     ${obs.length ? chipsBlock(obs) : '<p class="note">No imagery series yet for this site.</p>'}
     ${fireBlock(d.fires)}
+    ${insarBlock(d.insar)}
     ${expoBlock(d.exposure)}
-    ${d.pack_md ? `<div class="pack">${marked.parse(d.pack_md)}</div>` : (d.assessment ? '' : '<p class="note">Evidence pack pending agent review.</p>')}
+    ${d.assessment ? `<p class="note">Analyst: ${d.assessment.analyst ? d.assessment.analyst.model : 'rules'} · surface: ${(d.assessment.surface_type || '').replace(/_/g, ' ')} · trend: ${(d.assessment.remediation_trend || '').replace(/_/g, ' ')}</p>` : ''}
+    ${d.pack_md ? `<div class="pack">${marked.parse(d.pack_md)}</div>` : (d.assessment ? '<p class="note">Evidence pack held for human review by the reviewer gate.</p>' : '<p class="note">Evidence pack pending agent review.</p>')}
     <p class="note">Observations from open satellite data; not a certificate of remediation. <a href="${window.REPO ? window.REPO + encodeURIComponent(p.site_id + ' ' + name(p)) : '#'}" target="_blank" rel="noopener">Right of reply / corrections</a></p>`;
   panel.querySelector('.close').onclick = () => { panel.classList.add('hidden'); history.replaceState(null, '', ' '); };
   if (obs.length) wireChips(panel, obs);
@@ -155,6 +160,21 @@ function fireBlock(f) {
   if (!f) return '<h3>Fire record</h3><p class="note">No VIIRS detections attributed in the scanned period.</p>';
   return `<h3>Fire record</h3><p>${f.fire_days} day(s) with VIIRS 375 m detections touching the site (${f.first} → ${f.last}).</p>
   <p class="note">VIIRS misses small or smouldering fires and cannot see under the surface; detections are evidence of heat, not of cause.</p>`;
+}
+
+function insarBlock(ins) {
+  if (!ins || !ins.series || !ins.series.length) return '';
+  const pts = ins.series.filter(x => x.cumulative_mm != null);
+  if (!pts.length) return '<h3>Mound movement (Sentinel-1 InSAR)</h3><p class="note">Radar pairs processed but decorrelated over the mound; no reliable measurement.</p>';
+  const v = pts.map(x => x.cumulative_mm), lo = Math.min(0, ...v), hi = Math.max(0, ...v), rng = (hi - lo) || 1;
+  const X = i => 10 + i * (280 / Math.max(pts.length - 1, 1)), Y = y => 55 - 45 * (y - lo) / rng;
+  const d = s => `${s.slice(0, 4)}-${s.slice(4, 6)}-${s.slice(6, 8)}`;
+  return `<h3>Mound movement (Sentinel-1 InSAR)</h3>
+  <svg class="spark" viewBox="0 0 300 60" role="img" aria-label="Cumulative vertical movement of the mound relative to surroundings">
+    <line x1="0" x2="300" y1="${Y(0)}" y2="${Y(0)}" stroke="var(--line)"/>
+    <polyline fill="none" stroke="#7c3aed" stroke-width="2.5" points="${pts.map((x, i) => `${X(i)},${Y(x.cumulative_mm)}`).join(' ')}"/>
+  </svg>
+  <p class="note">Cumulative vertical movement of the mound relative to a 300–800 m ring, ${d(pts[0].d1)} → ${d(pts[pts.length - 1].d2)}: <b>${v[v.length - 1]} mm</b> (${pts.length} radar pairs). Negative = settling/sinking. C-band radar decorrelates on active tipping faces; treat as a screening signal, not a stability verdict.</p>`;
 }
 
 function expoBlock(e) {

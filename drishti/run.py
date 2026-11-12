@@ -94,6 +94,44 @@ def _load(name):
     f = PROC / name
     return json.loads(f.read_text()) if f.exists() else {}
 
+def _combine(s, base, llm, err, backend_name, model, obs, f, e):
+    """Merge the vision analyst with the rule baseline. The vision model judges WHAT and WHERE (surface type,
+    whether the boundary sits on the mound); the trend always comes from the measured series."""
+    from agents import rules, reviewer
+    a = dict(base)
+    if llm:
+        a["surface_type"] = llm["surface_type"]
+        a["location_ok"] = llm["location_ok"]
+        a["caveats"] = base["caveats"] + [c for c in llm["caveats"] if c not in base["caveats"]][:3]
+    a["analyst"] = {"backend": backend_name, "model": model, "error": err, "llm_raw": llm}
+    pack = rules.write(s, a, obs, f, e)
+    source = {"site": s["properties"], "assessment": {k: v for k, v in a.items() if k != "analyst"},
+              "imagery": obs, "fires": f, "exposure": e}
+    v = reviewer.review(s["properties"]["site_id"], pack, source).model_dump()
+    if a["surface_type"] in ("industrial_dump", "not_a_dump"):
+        v["passed"] = False
+        v["problems"].append(f"vision analyst classified surface as {a['surface_type']}: held for human review")
+    return {"assessment": a, "pack_md": pack, "review": v}
+
+def cmd_repack():
+    """Rebuild assessments, packs and reviews from stored model outputs (no model calls)."""
+    from agents import rules
+    imagery, fires, expo = _load("imagery.json"), _load("fires.json").get("sites", {}), _load("exposure.json")
+    done = _load("agents.json")
+    by_id = {s["properties"]["site_id"]: s for s in sites()}
+    for sid, rec in list(done.items()):
+        s = by_id.get(sid)
+        if not s or sid not in imagery:
+            done.pop(sid); continue
+        obs, f, e = imagery[sid], fires.get(sid, {}), expo.get(sid, {})
+        an = rec["assessment"].get("analyst", {})
+        done[sid] = _combine(s, rules.assess(s, obs, f, e).model_dump(), an.get("llm_raw"), an.get("error"),
+                             an.get("backend", "rules"), an.get("model", "rules"), obs, f, e)
+    (PROC / "agents.json").write_text(json.dumps(done, indent=1))
+    from collections import Counter
+    print(len(done), "packs;", Counter(r["review"]["passed"] for r in done.values()),
+          Counter(r["assessment"]["remediation_trend"] for r in done.values()))
+
 def cmd_agents(limit=None, refresh=False):
     """analyst (LLM vision if available, cross-checked by rules) -> evidence pack -> reviewer gate."""
     from agents import site_analyst, rules, reviewer
@@ -102,6 +140,9 @@ def cmd_agents(limit=None, refresh=False):
     out_f = PROC / "agents.json"
     done = {} if refresh else _load("agents.json")
     todo = [s for s in sites() if s["properties"]["site_id"] in imagery and s["properties"]["site_id"] not in done]
+    # most important first: DRAP priority, named sites, then by legacy tonnage / Climate TRACE activity
+    todo.sort(key=lambda s: (not s["properties"].get("drap_priority"), "named" not in s["properties"].get("sources", []),
+                             -(s["properties"].get("legacy_waste_t") or 0), -(s["properties"].get("ct_waste_activity_t") or 0)))
     if limit:
         todo = todo[: int(limit)]
     b = backend()
@@ -116,26 +157,8 @@ def cmd_agents(limit=None, refresh=False):
                 llm = site_analyst.assess(s, obs, CHIPS, f, e).model_dump()
             except Exception as ex:
                 err = repr(ex)[:200]
-        a = dict(base)
-        if llm:
-            # vision model decides surface type & location; numbers/trend stay rule-based unless the model
-            # says the evidence is indeterminate (it saw clouds, wrong place, etc.)
-            a["surface_type"] = llm["surface_type"]
-            a["location_ok"] = llm["location_ok"]
-            if llm["remediation_trend"] == "indeterminate":
-                a["remediation_trend"] = "indeterminate"
-            a["caveats"] = base["caveats"] + [c for c in llm["caveats"] if c not in base["caveats"]][:3]
-        a["analyst"] = {"backend": b if llm else "rules", "model": model_name() if llm else "rules", "error": err,
-                        "llm_raw": llm}
-        hold = a["surface_type"] in ("industrial_dump", "not_a_dump")
-        pack = rules.write(s, a, obs, f, e)
-        source = {"site": s["properties"], "assessment": {k: v for k, v in a.items() if k != "analyst"},
-                  "imagery": obs, "fires": f, "exposure": e}
-        v = reviewer.review(sid, pack, source).model_dump()
-        if hold:
-            v["passed"] = False
-            v["problems"].append(f"analyst classified surface as {a['surface_type']}: held for human review")
-        done[sid] = {"assessment": a, "pack_md": pack, "review": v}
+        done[sid] = _combine(s, base, llm, err, b if llm else "rules", model_name() if llm else "rules", obs, f, e)
+        a, v = done[sid]["assessment"], done[sid]["review"]
         print(f"  [{i}/{len(todo)}] {sid}: {a['surface_type']} / {a['remediation_trend']} / "
               f"{'PASS' if v['passed'] else 'HOLD'} ({a['analyst']['model']})", flush=True)
         if i % 10 == 0 or i == len(todo):
@@ -179,6 +202,9 @@ def cmd_publish():
         published_pack = a.get("pack_md") if a.get("review", {}).get("passed") else None
         trend = (a.get("assessment") or {}).get("remediation_trend") or _numeric_trend(obs)
         e, fi = expo.get(sid, {}), fires.get(sid)
+        asm = a.get("assessment") or {}
+        p.update({"surface_type": asm.get("surface_type"), "review_passed": a.get("review", {}).get("passed"),
+                  "analyst_model": (asm.get("analyst") or {}).get("model")})
         p.update({"lonlat": [round(c.x, 5), round(c.y, 5)], "mapped": mapped, "trend": trend,
                   "fire_days": (fi or {}).get("fire_days", 0), **e})
         p["priority_score"] = round((p.get("legacy_waste_t") or 0) / 1e5 + (e.get("pop_2km", 0) / 1e5) + 3 * (p["fire_days"] > 0), 2)
@@ -194,15 +220,30 @@ def cmd_publish():
                 o[k] = jpg
             pub_obs.append(o)
         obs = pub_obs
+        ins_f = PROC / "insar" / f"{sid}.json"
+        ins = json.loads(ins_f.read_text()) if ins_f.exists() else None
+        p["insar"] = bool(ins)
         (web / "sites" / f"{sid}.json").write_text(json.dumps({"imagery": obs, "fires": fi, "exposure": e or None,
-            "assessment": a.get("assessment"), "pack_md": published_pack}))
+            "assessment": a.get("assessment"), "pack_md": published_pack, "insar": ins}))
         tot["sites_total"] += 1; tot["sites_mapped"] += mapped
         tot["legacy_waste_t"] += p.get("legacy_waste_t") or 0
         tot["pop_2km"] += e.get("pop_2km", 0) if mapped else 0
+        tot["pop_1km"] = tot.get("pop_1km", 0) + (e.get("pop_1km", 0) if mapped else 0)
         tot["sites_with_fire"] += p["fire_days"] > 0
     (web / "sites.geojson").write_text(json.dumps({"type": "FeatureCollection", "features": feats,
                                                    "attribution": fc.get("attribution")}))
     tot["repo"] = "https://github.com/TusharTechs/swachh-drishti"
+    tot["sites_with_imagery"] = sum(1 for k in imagery if any(f["properties"]["site_id"] == k for f in feats))
+    tot["packs_published"] = sum(1 for r in ag.values() if r.get("review", {}).get("passed"))
+    tot["packs_held"] = sum(1 for r in ag.values() if not r.get("review", {}).get("passed"))
+    bt = _load("backtest_fires.json")
+    if bt:
+        tot["fire_backtest"] = {k: bt[k] for k in ("evaluable_events", "detected", "recall")}
+    tot["sites_with_insar"] = len(list((PROC / "insar").glob("SD????.json"))) if (PROC / "insar").exists() else 0
+    un = _load("exposure_union.json")
+    if un:  # people counted once even if near several sites
+        tot["pop_1km"], tot["pop_2km"] = un["pop_union_1km"], un["pop_union_2km"]
+        tot["people_note"] = f"union of rings around {un['n_sites']} sites with a boundary; GHSL 2025"
     tot["generated"] = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d")
     (web / "summary.json").write_text(json.dumps(tot))
     print(tot)
@@ -210,5 +251,5 @@ def cmd_publish():
 if __name__ == "__main__":
     cmd = sys.argv[1] if len(sys.argv) > 1 else "help"
     fn = {"imagery": cmd_imagery, "fires": cmd_fires, "exposure": cmd_exposure,
-          "agents": cmd_agents, "publish": cmd_publish}.get(cmd)
+          "agents": cmd_agents, "repack": cmd_repack, "publish": cmd_publish}.get(cmd)
     fn(*sys.argv[2:]) if fn else print(__doc__)

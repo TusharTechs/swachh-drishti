@@ -1,1 +1,1 @@
-{"imagery": [], "fires": null, "exposure": null, "assessment": null, "pack_md": null}
+{"imagery": [], "fires": null, "exposure": {"pop_1km": 15882, "pop_2km": 63382, "pop_5km": 324270}, "assessment": null, "pack_md": null, "insar": null}

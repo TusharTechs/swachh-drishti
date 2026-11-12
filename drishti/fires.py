@@ -80,7 +80,7 @@ def fetch_archive(start: dt.date, end: dt.date, sources=("VIIRS_SNPP_SP", "VIIRS
             d += dt.timedelta(days=10)
     return rows
 
-def attribute(fires: list[dict], sites: list[dict], buffer_m: float = 200) -> dict[str, list[dict]]:
+def attribute(fires: list[dict], sites: list[dict], buffer_m: float = 190, mode: str = "center") -> dict[str, list[dict]]:
     """Map site_id -> detections whose footprint touches the buffered site polygon."""
     geoms, ids = [], []
     for s in sites:
@@ -93,12 +93,16 @@ def attribute(fires: list[dict], sites: list[dict], buffer_m: float = 200) -> di
         if f.get("type") == "2":  # static land source
             continue
         x, y = TO_M.transform(float(f["longitude"]), float(f["latitude"]))
-        half = 1000 * max(float(f.get("scan") or 0.375), float(f.get("track") or 0.375)) / 2
-        foot = Point(x, y).buffer(half, cap_style=3)
+        if mode == "center":   # detection centre within half a VIIRS pixel of the boundary
+            foot = Point(x, y)
+        else:                  # whole pixel footprint touching the buffered boundary (looser)
+            half = 1000 * max(float(f.get("scan") or 0.375), float(f.get("track") or 0.375)) / 2
+            foot = Point(x, y).buffer(half, cap_style=3)
         for i in tree.query(foot, predicate="intersects"):
             hits.setdefault(ids[i], []).append(f)
     return hits
 
 def _proj(g):
-    import shapely
-    return shapely.geometry.mapping(shapely.ops.transform(lambda x, y, z=None: TO_M.transform(x, y), g))["coordinates"]
+    from shapely.geometry import mapping
+    from shapely.ops import transform
+    return mapping(transform(lambda x, y, z=None: TO_M.transform(x, y), g))["coordinates"]

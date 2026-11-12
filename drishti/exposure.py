@@ -53,3 +53,22 @@ def ring_population(geom_ll: dict, radii_km=(1, 2, 5)) -> dict:
                 total += a.sum()
         out[f"pop_{k}km"] = int(round(total))
     return out
+
+def union_population(geoms_ll: list[dict], km: float) -> int:
+    """People living within `km` of ANY site, counted once (union of rings), GHSL 2025."""
+    from shapely.ops import unary_union
+    rings = unary_union([transform(TO_MOLL, shape(g)).buffer(km * 1000) for g in geoms_ll])
+    parts = list(rings.geoms) if hasattr(rings, "geoms") else [rings]
+    total = 0.0
+    for part in parts:
+        minx, miny, maxx, maxy = part.bounds
+        tiles = {tile_of(x, y) for x in (minx, maxx) for y in (miny, maxy)}
+        for r, c in tiles:
+            with rasterio.open(tile_path(r, c)) as src:
+                try:
+                    arr, _ = mask(src, [mapping(part)], crop=True, filled=True, nodata=0)
+                except ValueError:
+                    continue
+                a = arr[0].astype("float64"); a[a < 0] = 0
+                total += a.sum()
+    return int(round(total))

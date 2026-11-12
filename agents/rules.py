@@ -67,7 +67,7 @@ def write(site: dict, a: dict, obs: list[dict], fires: dict, exposure: dict) -> 
         L.append(f"- DRAP priority list (MoHUA): legacy waste {_fmt(p.get('legacy_waste_t') or 0)} t for this site; "
                  f"approved cost ₹{p.get('approved_cost_cr')} cr.")
     if p.get("mound_volume_m3_glo30"):
-        L.append(f"- Copernicus GLO-30 elevation (2011–15 epoch): mound up to {p.get('max_height_m_glo30')} m above surroundings, "
+        L.append(f"- Copernicus GLO-30 elevation (2011–2015 epoch): mound up to {p.get('max_height_m_glo30')} m above surroundings, "
                  f"about {_fmt(p['mound_volume_m3_glo30'])} m³.")
     L += ["", "## Fire record"]
     if fires:
