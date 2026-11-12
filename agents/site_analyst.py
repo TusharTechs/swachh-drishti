@@ -22,6 +22,14 @@ Rules:
 - Exposed area from 10 m imagery is NOT tonnage; biomining can lower a mound without shrinking its footprint.
   Say 'indeterminate' when the evidence cannot separate these.
 - Industrial slag/ash/ore dumps and quarries are not municipal dumpsites: classify them as industrial_dump.
+  Visual cues (Sentinel-2, 10 m):
+  * municipal_dumpsite: mottled, multi-coloured, fine-grained texture (mixed refuse, plastics, soil cover);
+    irregular mound edges; dense housing or city roads right up to the edge; leachate-dark patches; often
+    smoke or burn scars (dark in true colour, bright orange/red in SWIR false colour).
+  * industrial_dump: large uniform surfaces - pale grey/white fly-ash ponds (often with standing water and
+    straight embankments), very dark uniform slag or coal heaps, reddish ore/red-mud; geometric terraces or
+    rectangular cells; next to a plant, rail sidings or conveyors; few houses at the edge.
+  * Decide from the images first; do not default to municipal_dumpsite when the cues point the other way.
 - Never name or blame people, contractors or officials. Never speculate about causes of fires.
 - Set needs_human_review=true whenever confidence is not high or any trend is not indeterminate."""
 

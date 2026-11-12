@@ -80,12 +80,19 @@ def collect(sid):
     jobs = jobs.filter_jobs(succeeded=True, running=False, failed=False)
     d = DL / sid; d.mkdir(parents=True, exist_ok=True)
     series = []
-    for zf in jobs.download_files(d):
-        with zipfile.ZipFile(zf) as z:
-            tif = [m for m in z.namelist() if m.endswith("_vert_disp.tif")]
-            if not tif:
-                continue
-            z.extract(tif[0], d); t = d / tif[0]
+    tifs = []
+    for job in jobs:  # one product at a time: keep only the vertical-displacement GeoTIFF, delete the ~600 MB zip
+        have = list(d.glob(f"{job.files[0]['filename'][:-4]}*/*_vert_disp.tif")) if job.files else []
+        if have:
+            tifs.append(have[0]); continue
+        for zf in job.download_files(d):
+            with zipfile.ZipFile(zf) as z:
+                m = [n for n in z.namelist() if n.endswith("_vert_disp.tif")]
+                if m:
+                    z.extract(m[0], d); tifs.append(d / m[0])
+            Path(zf).unlink(missing_ok=True)
+    for t in tifs:
+        tif = [str(t.relative_to(d))]
         mound, ref = _mean_in(t, f["geometry"]), _mean_in(t, f["geometry"], ring=True)
         name = Path(tif[0]).name  # S1AA_<date1>T..._<date2>T...
         parts = name.split("_")

@@ -1,0 +1,175 @@
+{
+ "run_at": "2026-11-12T15:28:30.280094+00:00",
+ "n": 24,
+ "accuracy": 0.5,
+ "results": [
+  {
+   "case_id": "SD0001",
+   "label": "municipal_dumpsite",
+   "pred": "municipal_dumpsite",
+   "ok": true,
+   "confidence": "high"
+  },
+  {
+   "case_id": "SD0002",
+   "label": "municipal_dumpsite",
+   "pred": "municipal_dumpsite",
+   "ok": true,
+   "confidence": "high"
+  },
+  {
+   "case_id": "SD0006",
+   "label": "municipal_dumpsite",
+   "pred": "municipal_dumpsite",
+   "ok": true,
+   "confidence": "high"
+  },
+  {
+   "case_id": "SD0194",
+   "label": "municipal_dumpsite",
+   "pred": "municipal_dumpsite",
+   "ok": true,
+   "confidence": "high"
+  },
+  {
+   "case_id": "SD0390",
+   "label": "municipal_dumpsite",
+   "pred": "municipal_dumpsite",
+   "ok": true,
+   "confidence": "high"
+  },
+  {
+   "case_id": "SD0408",
+   "label": "municipal_dumpsite",
+   "pred": "municipal_dumpsite",
+   "ok": true,
+   "confidence": "high"
+  },
+  {
+   "case_id": "SD0638",
+   "label": "municipal_dumpsite",
+   "pred": "municipal_dumpsite",
+   "ok": true,
+   "confidence": "high"
+  },
+  {
+   "case_id": "SD0639",
+   "label": "municipal_dumpsite",
+   "pred": "municipal_dumpsite",
+   "ok": true,
+   "confidence": "high"
+  },
+  {
+   "case_id": "SD0641",
+   "label": "municipal_dumpsite",
+   "pred": "municipal_dumpsite",
+   "ok": true,
+   "confidence": "low"
+  },
+  {
+   "case_id": "SD0642",
+   "label": "municipal_dumpsite",
+   "pred": "municipal_dumpsite",
+   "ok": true,
+   "confidence": "high"
+  },
+  {
+   "case_id": "SD0643",
+   "label": "municipal_dumpsite",
+   "pred": "municipal_dumpsite",
+   "ok": true,
+   "confidence": "high"
+  },
+  {
+   "case_id": "SD0648",
+   "label": "municipal_dumpsite",
+   "pred": "municipal_dumpsite",
+   "ok": true,
+   "confidence": "high"
+  },
+  {
+   "case_id": "IND01",
+   "label": "industrial_dump",
+   "pred": "municipal_dumpsite",
+   "ok": false,
+   "confidence": "high"
+  },
+  {
+   "case_id": "IND02",
+   "label": "industrial_dump",
+   "pred": "municipal_dumpsite",
+   "ok": false,
+   "confidence": "high"
+  },
+  {
+   "case_id": "IND03",
+   "label": "industrial_dump",
+   "pred": "municipal_dumpsite",
+   "ok": false,
+   "confidence": "high"
+  },
+  {
+   "case_id": "IND04",
+   "label": "industrial_dump",
+   "pred": "municipal_dumpsite",
+   "ok": false,
+   "confidence": "high"
+  },
+  {
+   "case_id": "IND05",
+   "label": "industrial_dump",
+   "pred": "municipal_dumpsite",
+   "ok": false,
+   "confidence": "high"
+  },
+  {
+   "case_id": "IND06",
+   "label": "industrial_dump",
+   "pred": "municipal_dumpsite",
+   "ok": false,
+   "confidence": "high"
+  },
+  {
+   "case_id": "IND07",
+   "label": "industrial_dump",
+   "pred": "municipal_dumpsite",
+   "ok": false,
+   "confidence": "high"
+  },
+  {
+   "case_id": "IND08",
+   "label": "industrial_dump",
+   "pred": "municipal_dumpsite",
+   "ok": false,
+   "confidence": "high"
+  },
+  {
+   "case_id": "IND09",
+   "label": "industrial_dump",
+   "pred": "municipal_dumpsite",
+   "ok": false,
+   "confidence": "high"
+  },
+  {
+   "case_id": "IND10",
+   "label": "industrial_dump",
+   "pred": "municipal_dumpsite",
+   "ok": false,
+   "confidence": "high"
+  },
+  {
+   "case_id": "IND11",
+   "label": "industrial_dump",
+   "pred": "municipal_dumpsite",
+   "ok": false,
+   "confidence": "high"
+  },
+  {
+   "case_id": "IND12",
+   "label": "industrial_dump",
+   "pred": "municipal_dumpsite",
+   "ok": false,
+   "confidence": "high"
+  }
+ ]
+}
