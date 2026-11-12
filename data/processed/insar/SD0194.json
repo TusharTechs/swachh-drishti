@@ -1,0 +1,183 @@
+{
+ "site_id": "SD0194",
+ "generated": "2026-11-12",
+ "method": "HyP3 INSAR_GAMMA 10x2 looks, vertical displacement, mound minus 300-800 m ring",
+ "series": [
+  {
+   "pair": "S1AA_20260314T125502_20260326T125502_VVP012_INT40_G_ueF_F08A_vert_disp.tif",
+   "d1": "20260314",
+   "d2": "20260326",
+   "mound_m": null,
+   "ref_m": null,
+   "relative_mm": null
+  },
+  {
+   "pair": "S1AA_20260326T125502_20260407T125502_VVP012_INT40_G_ueF_670C_vert_disp.tif",
+   "d1": "20260326",
+   "d2": "20260407",
+   "mound_m": null,
+   "ref_m": null,
+   "relative_mm": null
+  },
+  {
+   "pair": "S1AA_20260407T125502_20260419T125502_VVP012_INT40_G_ueF_B3FC_vert_disp.tif",
+   "d1": "20260407",
+   "d2": "20260419",
+   "mound_m": null,
+   "ref_m": null,
+   "relative_mm": null
+  },
+  {
+   "pair": "S1AA_20260419T125502_20260501T125518_VVP012_INT40_G_ueF_22BD_vert_disp.tif",
+   "d1": "20260419",
+   "d2": "20260501",
+   "mound_m": null,
+   "ref_m": null,
+   "relative_mm": null
+  },
+  {
+   "pair": "S1AA_20260501T125518_20260513T125518_VVP012_INT40_G_ueF_45D5_vert_disp.tif",
+   "d1": "20260501",
+   "d2": "20260513",
+   "mound_m": 0.017580250309864907,
+   "ref_m": 0.020294195776528974,
+   "relative_mm": -2.7,
+   "cumulative_mm": -2.7
+  },
+  {
+   "pair": "S1AA_20260513T125518_20260525T125518_VVP012_INT40_G_ueF_2787_vert_disp.tif",
+   "d1": "20260513",
+   "d2": "20260525",
+   "mound_m": -0.07059728148901327,
+   "ref_m": -0.06847545826821705,
+   "relative_mm": -2.1,
+   "cumulative_mm": -4.8
+  },
+  {
+   "pair": "S1AA_20260525T125518_20260606T125517_VVP012_INT40_G_ueF_77FC_vert_disp.tif",
+   "d1": "20260525",
+   "d2": "20260606",
+   "mound_m": 0.04388267204336736,
+   "ref_m": 0.04328307201798708,
+   "relative_mm": 0.6,
+   "cumulative_mm": -4.2
+  },
+  {
+   "pair": "S1AA_20260606T125517_20260618T125516_VVP012_INT40_G_ueF_D9AB_vert_disp.tif",
+   "d1": "20260606",
+   "d2": "20260618",
+   "mound_m": 0.037625558452088044,
+   "ref_m": 0.03780710238176699,
+   "relative_mm": -0.2,
+   "cumulative_mm": -4.4
+  },
+  {
+   "pair": "S1AD_20260618T125516_20260625T125435_VVP007_INT40_G_ueF_FF42_vert_disp.tif",
+   "d1": "20260618",
+   "d2": "20260625",
+   "mound_m": -0.03042550275462087,
+   "ref_m": -0.03487520778054342,
+   "relative_mm": 4.4,
+   "cumulative_mm": -0.0
+  },
+  {
+   "pair": "S1DD_20260625T125435_20260707T125436_VVP012_INT40_G_ueF_360D_vert_disp.tif",
+   "d1": "20260625",
+   "d2": "20260707",
+   "mound_m": 0.0412898651345379,
+   "ref_m": 0.043074135166344216,
+   "relative_mm": -1.8,
+   "cumulative_mm": -1.8
+  },
+  {
+   "pair": "S1DD_20260707T125436_20260719T125437_VVP012_INT40_G_ueF_AD62_vert_disp.tif",
+   "d1": "20260707",
+   "d2": "20260719",
+   "mound_m": -0.030179023504553534,
+   "ref_m": -0.028207453660887855,
+   "relative_mm": -2.0,
+   "cumulative_mm": -3.8
+  },
+  {
+   "pair": "S1DD_20260719T125437_20260731T125437_VVP012_INT40_G_ueF_1054_vert_disp.tif",
+   "d1": "20260719",
+   "d2": "20260731",
+   "mound_m": 0.02381632271333894,
+   "ref_m": 0.023157688931625935,
+   "relative_mm": 0.7,
+   "cumulative_mm": -3.1
+  },
+  {
+   "pair": "S1DD_20260731T125437_20260812T125438_VVP012_INT40_G_ueF_AEE0_vert_disp.tif",
+   "d1": "20260731",
+   "d2": "20260812",
+   "mound_m": -0.0365480029087683,
+   "ref_m": -0.0359056278621131,
+   "relative_mm": -0.6,
+   "cumulative_mm": -3.7
+  },
+  {
+   "pair": "S1DD_20260812T125438_20260824T125438_VVP012_INT40_G_ueF_D8D5_vert_disp.tif",
+   "d1": "20260812",
+   "d2": "20260824",
+   "mound_m": 0.07746143123933247,
+   "ref_m": 0.07809029902935237,
+   "relative_mm": -0.6,
+   "cumulative_mm": -4.3
+  },
+  {
+   "pair": "S1DD_20260824T125438_20260905T125439_VVP012_INT40_G_ueF_554F_vert_disp.tif",
+   "d1": "20260824",
+   "d2": "20260905",
+   "mound_m": -0.007976623463409023,
+   "ref_m": -0.009106312237212316,
+   "relative_mm": 1.1,
+   "cumulative_mm": -3.2
+  },
+  {
+   "pair": "S1DD_20260905T125439_20260917T125439_VVP012_INT40_G_ueF_7857_vert_disp.tif",
+   "d1": "20260905",
+   "d2": "20260917",
+   "mound_m": 0.10058796079829335,
+   "ref_m": 0.10173829224495919,
+   "relative_mm": -1.2,
+   "cumulative_mm": -4.4
+  },
+  {
+   "pair": "S1DD_20260917T125439_20260929T125439_VVP012_INT40_G_ueF_26EE_vert_disp.tif",
+   "d1": "20260917",
+   "d2": "20260929",
+   "mound_m": 0.17320970496670765,
+   "ref_m": 0.1740344575475717,
+   "relative_mm": -0.8,
+   "cumulative_mm": -5.2
+  },
+  {
+   "pair": "S1DD_20260929T125439_20261011T125439_VVP012_INT40_G_ueF_6A00_vert_disp.tif",
+   "d1": "20260929",
+   "d2": "20261011",
+   "mound_m": -0.01718005921694302,
+   "ref_m": -0.016028556872241594,
+   "relative_mm": -1.2,
+   "cumulative_mm": -6.4
+  },
+  {
+   "pair": "S1DD_20261011T125439_20261023T125439_VVP012_INT40_G_ueF_64AD_vert_disp.tif",
+   "d1": "20261011",
+   "d2": "20261023",
+   "mound_m": -0.023324275778246705,
+   "ref_m": -0.02505269498467324,
+   "relative_mm": 1.7,
+   "cumulative_mm": -4.7
+  },
+  {
+   "pair": "S1DD_20261023T125439_20261104T125439_VVR012_INT40_G_ueF_137F_vert_disp.tif",
+   "d1": "20261023",
+   "d2": "20261104",
+   "mound_m": 0.01415402175453809,
+   "ref_m": 0.015240552402824736,
+   "relative_mm": -1.1,
+   "cumulative_mm": -5.8
+  }
+ ]
+}
