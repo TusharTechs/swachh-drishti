@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use Swachh Drishti data or code, please cite it as below."
+title: "Swachh Drishti: open satellite evidence for India's legacy dumpsites"
+type: software
+authors:
+  - name: "Swachh Drishti contributors"
+repository-code: "https://github.com/TusharTechs/swachh-drishti"
+url: "https://tushartechs.github.io/swachh-drishti/"
+license: Apache-2.0
+version: "1.0.0"
+date-released: "2026-11-13"
+keywords: [India, dumpsites, landfill, Sentinel-2, Sentinel-1, InSAR, NASA FIRMS, Swachh Bharat, open data]

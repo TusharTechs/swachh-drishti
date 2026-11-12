@@ -9,3 +9,4 @@ data/processed/*.log
 .env
 .claude/
 .codenow/
+docs/strategy.md
