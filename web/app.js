@@ -6,7 +6,7 @@ const STYLE = 'https://tiles.openfreemap.org/styles/positron';
 const COLORS = { visible_reduction: '#15803d', little_visible_change: '#b45309', visible_expansion: '#b91c1c',
                  indeterminate: '#64748b', unassessed: '#0f766e' };
 
-function name(p) { return p.site_name || p.osm_name || `${p.city} dumpsite`; }
+function name(p) { return p.display_name || p.site_name || p.osm_name || `${p.city || 'Unnamed'} dumpsite`; }
 function trend(p) { return p.trend || 'unassessed'; }
 
 async function load() {
@@ -17,7 +17,7 @@ async function load() {
   state.sites = sites;
   renderKpis(summary);
   if (summary.repo) { $('#repo-link').href = summary.repo; window.REPO = summary.repo + '/issues/new?template=right-of-reply.yml&title=Right%20of%20reply%3A%20'; }
-  const states = [...new Set(sites.features.map(f => f.properties.state))].sort();
+  const states = [...new Set(sites.features.map(f => f.properties.state).filter(Boolean))].sort();
   $('#f-state').insertAdjacentHTML('beforeend', states.map(s => `<option>${s}</option>`).join(''));
   initMap();
   applyFilters();
@@ -86,7 +86,7 @@ function applyFilters() {
   }).sort((a, b) => (b.priority_score || 0) - (a.priority_score || 0));
   $('#list').innerHTML = state.filtered.map(p => `<li data-id="${p.site_id}" class="${p.site_id === state.selected ? 'sel' : ''}">
     <div class="t">${name(p)}</div>
-    <div class="s">${p.city}, ${p.state}${p.legacy_waste_t ? ' · ' + fmt.format(Math.round(p.legacy_waste_t / 1000)) + 'k t' : ''}</div>
+    <div class="s">${[p.city, p.state].filter(Boolean).join(', ') || 'Location pending'}${p.legacy_waste_t ? ' · ' + fmt.format(Math.round(p.legacy_waste_t / 1000)) + 'k t' : ''}</div>
     <div class="s">${p.drap_priority ? '<span class="badge drap">DRAP</span>' : ''}${p.fire_days ? `<span class="badge fire">${p.fire_days} fire days</span>` : ''}${p.mapped ? '' : '<span class="badge trace">needs tracing</span>'}</div></li>`).join('');
 }
 
@@ -106,7 +106,7 @@ async function select(id) {
   panel.classList.remove('hidden');
   panel.innerHTML = `<button class="close" aria-label="Close">×</button>
     <h2>${name(p)}</h2>
-    <div class="sub">${p.city}, ${p.state} · ULB: ${p.ulb}${p.drap_priority ? ' · DRAP priority site' : ''}</div>
+    <div class="sub">${[p.city, p.state].filter(Boolean).join(', ')}${p.ulb ? ' · ULB: ' + p.ulb : ''}${p.drap_priority ? ' · DRAP priority site' : ''}</div>
     <div class="grid2">
       ${stat(p.legacy_waste_t ? fmt.format(p.legacy_waste_t) + ' t' : '—', 'legacy waste (DRAP annexure)')}
       ${stat(p.approved_cost_cr ? '₹' + p.approved_cost_cr + ' cr' : '—', 'approved remediation cost')}

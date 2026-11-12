@@ -51,7 +51,7 @@ def _fmt(n):
 
 def write(site: dict, a: dict, obs: list[dict], fires: dict, exposure: dict) -> str:
     p = site["properties"]
-    name = p.get("site_name") or p.get("osm_name") or f"{p.get('city') or 'Unnamed'} dumpsite"
+    name = p.get("display_name") or p.get("site_name") or p.get("osm_name") or f"{p.get('city') or 'Unnamed'} dumpsite"
     good = [o for o in obs if o.get("valid_frac", 0) >= 0.8]
     L = [f"# {name} — Satellite evidence pack (site {p['site_id']})", ""]
     if len(good) >= 2:

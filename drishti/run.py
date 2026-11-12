@@ -7,7 +7,7 @@
   uv run python -m drishti.run publish     # write web/data/*.json for the dashboard
 """
 from __future__ import annotations
-import json, sys, datetime as dt
+import json, re, sys, datetime as dt
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import asdict
 from pathlib import Path
@@ -208,6 +208,9 @@ def cmd_publish():
         p.update({"lonlat": [round(c.x, 5), round(c.y, 5)], "mapped": mapped, "trend": trend,
                   "fire_days": (fi or {}).get("fire_days", 0), **e})
         p["priority_score"] = round((p.get("legacy_waste_t") or 0) / 1e5 + (e.get("pop_2km", 0) / 1e5) + 3 * (p["fire_days"] > 0), 2)
+        for k in ("osm_name", "climatetrace_name", "site_name", "note"):  # public layer: neutral display_name only
+            if k != "note" or (p.get(k) and re.search(r"(?i)\b(ltd|pvt|limited)\b", p.get(k) or "")):
+                p.pop(k, None)
         feats.append({"type": "Feature", "geometry": f["geometry"], "properties": p})
         pub_obs = []
         for o in obs:
