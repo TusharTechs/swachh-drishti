@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" role="img" aria-label="Swachh Drishti logo">
+  <title>Swachh Drishti</title>
+  <defs>
+    <linearGradient id="sd-eye" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2dd4bf"/>
+      <stop offset="1" stop-color="#0f766e"/>
+    </linearGradient>
+    <radialGradient id="sd-iris" cx="0.5" cy="0.45" r="0.6">
+      <stop offset="0" stop-color="#134e4a"/>
+      <stop offset="1" stop-color="#0b2f2c"/>
+    </radialGradient>
+  </defs>
+  <g transform="rotate(-16 60 60)">
+    <ellipse cx="60" cy="60" rx="56" ry="19" fill="none" stroke="#f2994a" stroke-width="1.6" stroke-dasharray="2 4" opacity=".75"/>
+  </g>
+  <path d="M10 60 C 30 26, 90 26, 110 60 C 90 94, 30 94, 10 60 Z" fill="#fff" fill-opacity=".04" stroke="url(#sd-eye)" stroke-width="6" stroke-linejoin="round"/>
+  <circle cx="60" cy="60" r="25" fill="url(#sd-iris)"/>
+  <circle cx="60" cy="60" r="25" fill="none" stroke="#f2994a" stroke-width="2.4"/>
+  <circle cx="60" cy="60" r="18" fill="none" stroke="#5eead4" stroke-width="1.8" opacity=".9"/>
+  <circle cx="60" cy="60" r="11" fill="none" stroke="#5eead4" stroke-width="1.6" opacity=".7"/>
+  <circle cx="60" cy="60" r="5.5" fill="#f8fafc"/>
+  <circle cx="113" cy="47" r="4.5" fill="#f2994a" stroke="#fff" stroke-width="1.5"/>
+</svg>

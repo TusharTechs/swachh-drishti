@@ -226,6 +226,12 @@ def cmd_publish():
         ins_f = PROC / "insar" / f"{sid}.json"
         ins = json.loads(ins_f.read_text()) if ins_f.exists() else None
         p["insar"] = bool(ins)
+        cum = [x["cumulative_mm"] for x in (ins or {}).get("series", []) if x.get("cumulative_mm") is not None]
+        p["insar_mm"] = cum[-1] if cum else None
+        p["fire_last"] = (fi or {}).get("last")
+        if obs:
+            p["exposed_first"], p["exposed_last"] = obs[0]["exposed_ha"], obs[-1]["exposed_ha"]
+            p["year_first"], p["year_last"] = obs[0]["year"], obs[-1]["year"]
         (web / "sites" / f"{sid}.json").write_text(json.dumps({"imagery": obs, "fires": fi, "exposure": e or None,
             "assessment": a.get("assessment"), "pack_md": published_pack, "insar": ins}))
         tot["sites_total"] += 1; tot["sites_mapped"] += mapped

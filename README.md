@@ -1,7 +1,13 @@
-# Swachh Drishti
+<p align="center"><img src="web/assets/logo.svg" width="96" alt="Swachh Drishti logo"></p>
+
+# Swachh Drishti <sub>स्वच्छ दृष्टि</sub>
 
 **Open, independent satellite evidence for India's legacy dumpsites.**
 Code for a Billion 2026 · Impact area: **Waste Management** (also Clean Air)
+
+**Live:** https://tushartechs.github.io/swachh-drishti/
+
+![Swachh Drishti](web/assets/og.png)
 
 India has committed to clearing every legacy dumpsite under SBM-U 2.0's *Lakshya Zero Dumpsite* mission
 (~2,479 sites, ~25 crore tonnes, ~15,000 acres). The deadline has slipped from Oct 2026 to Dec 2027, official
