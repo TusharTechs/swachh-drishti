@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+data/raw/nominatim_cache.json
+data/raw/*.log
+data/processed/chips/
+data/processed/*.log
+.env
+.claude/

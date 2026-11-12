@@ -1,0 +1,533 @@
+ct_id,name,lon,lat,waste_activity_t,area_capacity_m2,co2e_100yr_t
+46013687,"Kanjurmarg East, Zone 6, Mumbai",72.951754,19.125387,2513094,38354,810850
+46013788,"Majura Taluka, Surat, Gujarat",72.804579,21.107957,1601586,17243,516752
+46015342,Pirana,72.56568,22.983622,19293671,649995,423205
+46015331,Pallikaranai Dumpyard,80.22561,12.954267,17714510,809405,403717
+46015325,Ghazipur,77.327442,28.625025,12422124,300505,348853
+46015322,Bhalaswa,77.157412,28.74042,7601985,161800,345075
+46011197,Ntpc,77.319856,28.518976,67836213,3048973,324438
+46015341,Dhapa,88.423312,22.538938,5352786,310002,281826
+46015329,Kodungaiyur,80.269589,13.137487,6012136,217616,264689
+46011204,Openstreetmap Landfill,83.897633,21.792792,18064478,1643196,228018
+46011198,Okhla Landfill,77.284232,28.511693,9233502,258033,205458
+51118175,Openstreetmap Landfill,83.834037,21.766129,15224507,1346372,192171
+46015323,Deonar,72.926774,19.072319,14032824,1325080,189995
+46013694,"Pimpri-Chinchwad, Haveli, Pune District",73.856797,18.65672,2002004,34103,161740
+46015076,"Summer Sprint Py, Asola, Sohna",77.171151,28.401847,338118,1362,109094
+46013830,"Mathura Das Pura, Jamwa Ramgarh Tehsil, Jaipur",75.917888,26.947361,985383,14094,107699
+46015043,"Kalyan-Dombivli, Mumbai Metropolitan Region, Kalyan",73.124838,19.278151,317069,1418,102302
+46011192,Mulund Dumping Ground,72.974301,19.16883,6150714,556664,97034
+46011203,Openstreetmap Landfill,83.854459,21.760443,6472317,463175,81697
+46011196,Municipal Landfill,80.234149,26.448791,15053913,466502,71807
+46011205,Openstreetmap Landfill,83.904259,21.818339,5182164,352010,65412
+46015367,Bruhat Banaglore Mahanagara Palike (Bbmp)  (Mandur Dumpsite),77.725784,13.084375,13398523,326087,64129
+46011201,Openstreetmap Landfill,83.552242,21.677548,7859915,109480,61997
+46011208,Openstreetmap Landfill,85.732375,22.414941,7194129,315171,57291
+46011199,Municipal Landfill,74.786019,34.12443,11132837,269170,43165
+46011202,Openstreetmap Landfill,83.56045,21.70682,5191425,204713,40949
+46013887,"Bhiwandi - Nizampur, Mumbai Metropolitan Region, Bhiwandi",73.082438,19.307713,307556,11883,39526
+46011190,Mavallipura Bbmp Landfill,77.538315,13.120964,8048001,216469,38511
+46011193,Naregaon Municipal Dumping Ground,75.398441,19.89277,6884817,179457,32929
+46011191,Terra Firma Landfill,77.373577,13.320673,6851892,178060,32784
+46011207,Openstreetmap Landfill,85.364961,22.211969,3944559,148389,31486
+46013640,"Madurai, Madurai South, Madurai District",78.089546,9.873027,6067952,135154,27925
+46011195,Openstreetmap Landfill,79.040239,20.076841,3248631,115041,25431
+46011186,Karnataka Compost Development Centre - Kcdc,77.649102,12.895888,5257659,127394,25168
+46011187,Karuvadikuppam Landfill,79.81038,11.973586,3199990,109022,24752
+46013714,"Kalyan, Kalyan-Dombivli, Mumbai Metropolitan Region",73.117785,19.250866,1409512,29867,22102
+46011200,Openstreetmap Landfill,81.366538,21.183887,2753162,92641,21742
+46013641,"Lalpur Taluka, Jamnagar District, Gujarat",69.912642,22.321877,4479680,94903,21262
+46011189,Hdmc Landfill,75.109546,15.324183,4314427,99586,20664
+46011194,Openstreetmap Landfill,79.027674,20.095019,2539661,85134,19881
+46013646,"Sewage Treatment Plant, Nh751, Bhavnagar",72.092474,21.796972,4026049,82113,18966
+46011184,Njeliyanparambu Garbage Dump,75.816781,11.203543,1145761,67366,18002
+46013655,"Chandaka, Khordha, Odisha",85.786699,20.39089,1421297,62485,17987
+46013648,"Jetpur Taluka, Rajkot, Gujarat",70.653736,21.757039,3752587,74716,17806
+46013651,"Ariyamangalam, Ariyamangalam Zone, Trichy Corporation Limits",78.724502,10.803814,3624595,70043,16677
+46013652,"Bhusawal, Jalgaon, Maharashtra",75.81483,21.012519,3314285,63944,15588
+46013654,"Malegaon, Nashik, Maharashtra",74.560368,20.565921,3267384,62893,15530
+46013656,"Bhavnagar, Bhavnagar Taluka, Bhavnagar District",72.040533,21.735386,3120618,59764,14701
+46013981,Diva Dumping Ground,73.045808,19.177279,893266,50112,14007
+46013659,"Sihor, Sihor Taluka, Bhavnagar District",71.970369,21.721874,2929481,54629,13801
+46011206,Openstreetmap Landfill,85.208465,21.972755,1051960,48432,13417
+46013663,"Botad, Botad Taluka, Botad District",71.686273,22.174436,2756497,49979,12983
+46013665,"Solapur, Solapur North, Solapur",75.908115,17.705663,2711766,48921,12790
+46013664,"Nh160D, Loni, Rahta",74.448205,19.594943,2654489,49153,12693
+46013667,"Mandavagan, Rahuri, Ahmednagar",74.59589,19.427423,2626485,47946,12556
+46013683,"Gp Block, Bhangar - Ii, South 24 Parganas",88.448142,22.564361,975610,39800,12360
+46013668,"Guntur - Parchuru Road, Pedanandipadu, Guntur",80.32816,16.065452,2666220,47629,12260
+46011211,Openstreetmap Landfill,87.663141,25.197605,1515747,44519,12094
+46013673,"Sh25, Yeola, Yevla",74.506807,20.062763,2508711,45238,11991
+46011209,Openstreetmap Landfill,86.240088,24.220178,1472553,43390,11744
+46013686,"Midc Hingoli, Hingoli, Maharashtra",77.099756,19.692365,1451805,38849,11490
+46013677,"Malegaon, Nashik, Maharashtra",74.543359,20.576928,2335937,41359,11103
+46013678,"Mandal, Sindkhede, Dhule",74.58268,21.307609,2351093,41258,11048
+46013700,"Mira-Bhayander, Mumbai Metropolitan Region, Thane",72.79392,19.286949,690324,33798,10901
+46013680,"Midc - Jalgaon, Jalgaon, Maharashtra",75.59685,20.968521,2317463,40869,10893
+46013696,"Baravanipalem, Visakhapatnam (Rural), Visakhapatnam",83.37089,17.839015,1320264,34063,10316
+46013688,"Dhandhuka, Dhandhuka Taluka, Ahmedabad District",71.98228,22.353834,2156231,37874,10128
+46013725,"Brahmapuram Substation Road, Kunnathunad, Ernakulam District",76.366289,9.991354,607099,28211,9521
+46013695,"Malegaon, Nashik, Maharashtra",74.541999,20.527082,1991433,34086,9466
+46013716,"Ramabhadrapuram, Gunupurupeta, Denkada",83.471236,18.107279,1194210,29770,9333
+46013704,"Rajkot, Rajkot Taluka, Rajkot",70.778194,22.321362,1942758,32672,9228
+46013706,"Sh6, Jamnagar, Jamnagar City Taluka",70.025604,22.454824,1891808,31565,8983
+46013708,"Vadodara Bypass, Vadodara, Vadodara Taluka",73.207105,22.233543,1866255,31461,8791
+46013727,"Villianur, Villianur Taluk, Puducherry District",79.761862,11.934563,1124186,27438,8696
+46013712,"Iscon Kaliyabid Road, Bhavnagar, Bhavnagar Taluka",72.128604,21.755529,1823735,30531,8591
+46013713,"Tankara Taluka, Morbi District, Gujarat",70.711604,22.715322,1812763,30157,8583
+46013720,"Gondal, Gondal Taluka, Rajkot",70.792487,21.942464,1780465,29231,8450
+46013722,"Vijayawada, Vijayawada (Urban), Krishna",80.646407,16.540333,1772344,28516,8227
+46013735,"Sh65, Mangrol Taluka, Surat",72.980541,21.37267,1043725,25116,8210
+46011183,Tisaiyanvili Garbage Yard,77.860106,8.343025,1793701,31580,8192
+46013723,"Nh65, Bhigwan, Indapur",74.746534,18.316194,1713674,28313,8180
+46013724,"Udanuru, Kalaburagi Taluku, Kalaburagi District",76.784896,17.283199,1707753,28295,8062
+46013728,"Manter Wadi, Haveli, Pune District",73.951603,18.470794,1668329,27393,7987
+46013738,"Kolattūr, Sriperumbudur, Chengalpattu",79.987905,12.788247,1019370,24256,7876
+46011185,Ottupatrai Dumping Ground,76.774367,11.349991,1153206,26622,7833
+46013751,"Barang, Cuttack, Odisha",85.77673,20.415113,610077,21974,7721
+46013747,"Rathinamangalam, Chengalpattu, Chengalpattu District",80.144192,12.863898,964953,22444,7445
+46013753,"Pimpri-Chinchwad, Haveli, Pune District",73.824041,18.684505,916976,21804,7320
+46013741,"Udachiwadi, Purandhar, Pune District",74.078784,18.35761,1491221,23709,7142
+46013757,"Cmwssb Division 6, Ward 6, Zone 1 Tiruvottiyur",80.286717,13.156625,923085,21312,7074
+46013743,"Rajkot, Rajkot Taluka, Rajkot",70.757358,22.256443,1477916,23126,7020
+46013752,"Lenin Nagar, Chittoor, Andhra Pradesh",79.089143,13.237327,1397314,21921,6585
+46013754,"Nh151, Jetpur Taluka, Rajkot",70.575232,21.696902,1386925,21702,6581
+46011188,Kannadapalayam Dumpyard,80.100832,12.934804,840920,21055,6488
+46011182,Vadavathoor Msw Dumping Yard,76.559565,9.591122,412715,19038,6470
+46013782,"Vyara, Vyara Taluka, Tapi District",73.396755,21.116536,513157,17869,6467
+46013759,"Nh51, Talaja, Talaja Taluka",72.013062,21.330656,1357719,20942,6414
+46013764,"Dindigul, Dindigul District, Tamil Nadu",77.959775,10.370296,1356003,20494,6335
+46013796,"Sachin, Chorasi Taluka, Surat",72.87721,21.099109,494766,16585,6232
+46011210,Openstreetmap Landfill,87.572231,25.216517,776358,19363,6194
+46013804,"Chiplun Road, Chiplun, Ratnagiri",73.543021,17.523399,382739,16003,6065
+46013772,"Ambejogai, Beed, Maharashtra",76.390301,18.749963,1269741,19303,6054
+46013770,"Talaja Shwetambar Derasar, Nh51;Sh6, Talaja",72.034414,21.354856,1280730,19427,6047
+46013802,"Halol Bypass Sh-05, Halol, Halol Taluka",73.483576,22.496363,746777,16298,5877
+46013779,"Odr86, Satana, Baglan",74.218212,20.597841,1222911,18362,5847
+46013781,"Palitana Taluka, Bhavnagar District, Gujarat",71.753583,21.583293,1237645,18323,5843
+46013809,"Ayyanar Puram, Veppankudi, Alangudi Taluk",78.838323,10.375701,724933,15349,5574
+46013792,"Rajkot, Rajkot Taluka, Rajkot",70.753946,22.3016,1156438,16955,5493
+46013794,"Erode, Erode District, Tamil Nadu",77.743769,11.331723,1144159,16727,5346
+46013798,"Sh190, Bhusawal, Jalgaon",75.726777,20.992021,1134289,16503,5330
+46013801,"Pushpak Apartment, Baramati, Pune District",74.591378,18.158359,1108339,16300,5300
+46013861,"Shill Phata, Thane, Mumbai Metropolitan Region",73.037583,19.1452,324789,12861,5098
+46013813,"Ramling-Shirur Road, Malthan, Shirur",74.345283,18.832432,1053042,15208,5036
+46013812,"Avaragolla, Davanagere Taluku, Davanagere District",75.887016,14.515451,1050278,15223,5026
+46013810,"Midc Kopargaon, Annapurna Nagar, Kopargaon",74.498843,19.892142,1047921,15331,5012
+46013846,"Pallavaram, Chengalpattu District, Tamil Nadu",80.15017,12.956006,647052,13547,4992
+46013849,"Foster Supermarket, E331, Industrial Area",76.682549,30.709642,623376,13430,4971
+46013853,"Tiruvannamalai, Tiruvanamalai District, Tamil Nadu",79.073846,12.247794,633684,13331,4916
+46013819,"Jagathgiri Gutta, Jagadgirigutta, Ward 126 Jagathgirigutta",78.435011,17.503489,1025797,14751,4888
+46013817,"Devaragudi, Sindhanur, Sindhanuru Taluku",76.744643,15.785292,1024550,14786,4873
+46014112,"Uran, Mumbai Metropolitan Region, Uran",72.935481,18.891292,309672,6416,4870
+46013859,"Madapam, Narasannapeta, Srikakulam",83.997968,18.373092,616960,12989,4844
+46013822,"Meghpar, Lalpur Taluka, Jamnagar District",69.837001,22.339482,1011514,14642,4806
+46014096,"Gorai, R/C Ward, Zone 4",72.827992,19.234371,301895,6632,4767
+46013828,"Khargone, Khargone Tahsil, Khargone",75.63546,21.802663,1000734,14206,4737
+46013868,"Dimapur, Dimapur Sadar, Dimapur",93.747675,25.922441,591803,12497,4722
+46013895,"Siliguri, Rajganj, Jalpaiguri District",88.450415,26.746538,293191,11479,4679
+46013835,"Shapar - Veraval, Kotda Sangani Taluka, Rajkot",70.785511,22.150585,983740,13999,4677
+46013836,"Barwani, Barwani Tahsil, Barwani",74.899171,22.023137,991723,13993,4673
+46013843,"Hadapsar Industrial Estate, Fatima Nagar, Pune",73.913083,18.510682,962476,13718,4609
+46013841,"Nh44, Sadaiyampatti, Sattur",77.902591,9.258775,1012972,13738,4608
+46013876,"Dindigul - Natham - Singampunari - Thiruppathur - Karaikudi Road, Karaikkudi, Sivagangai District",78.760229,10.041209,599137,12181,4591
+46013874,"Kanchipuram, Kancheepuram, Kanchipuram District",79.72942,12.827629,593013,12255,4581
+46013881,"Eluru, Andhra Pradesh, 534001",81.109109,16.677483,586359,12104,4547
+46013884,"Vn Colony, Erulappapuram, Nagercoil",77.434673,8.16323,580736,11922,4528
+46013924,"Midc Mahad, Mahad, Raigad",73.482529,18.111603,274247,10378,4326
+46013865,"Manar, Talaja Taluka, Bhavnagar District",72.15995,21.414549,908909,12616,4291
+46013869,"Nh548B, Vijayapura, Vijayapura Taluk",75.74628,16.854436,895464,12461,4256
+46013933,"Umbergaon Taluka, Valsad, Gujarat",72.760345,20.170698,269100,10209,4253
+46013909,"Indore, Indore Tahsil, Indore District",75.925708,22.67111,532615,11014,4249
+46013905,"Sh11, Chhitari, Banskhedi",78.075427,24.414176,532387,11108,4235
+46013871,"Rajkot, Rajkot Taluka, Rajkot",70.831844,22.315523,890544,12324,4230
+46013880,"Compost Yard-Vellalore, Podanur Road, Ward 99",77.002052,10.959248,880219,12113,4183
+46013877,"Sh111, Visavadar, Visavadar Taluka",70.741038,21.32062,872287,12138,4161
+46013879,"Meerut-Karnal Marg, Mirgain, Karnal",77.048507,29.643793,862393,12127,4130
+46013885,"Sattur, Virudhunagar District, Tamil Nadu",77.885467,9.240142,895419,11901,4073
+46013893,"Savar Kundla Taluka, Amreli District, Gujarat",71.294842,21.28826,855501,11667,4061
+46013790,"Abohar, Abohar Tahsil, Fazilka",74.1822,30.141901,1883921,17116,4011
+46013898,"Bapatla - Pedanandipadu Road, Bapatla, Andhra Pradesh",80.457803,15.913352,847265,11348,3925
+46013943,"Ward 26, Kishangarh, Chandigarh",76.827615,30.72354,491025,9975,3915
+46013964,"Sh185, Dadra, Dadra And Nagar Haveli",72.944691,20.333535,245961,9229,3885
+46013952,"Bodinayakkanur, Bodinayakanur, Theni District",77.350015,10.071536,485266,9779,3863
+46013911,"Pargi Road, Jaffarpally, Pargi",78.02395,17.106229,808612,10951,3858
+46013915,"Gangakhed, Parbhani, Maharashtra",76.798638,18.985508,810139,10847,3836
+46013912,"Kapurthala, Kapurthala Tahsil, Kapurthala",75.334696,31.303424,795229,10907,3802
+46013954,"Nagpur Urban Taluka, Nagpur District, Maharashtra",79.15244,21.141554,481805,9707,3794
+46013916,"Aruppukkottai, Virudhunagar District, Tamil Nadu",78.08785,9.487406,825234,10755,3749
+46013920,"Unnao, Uttar Pradesh, 209800",80.520416,26.555831,783759,10551,3743
+46013921,"Sh23, Chukanakalla, Koppala Taluku",76.133385,15.31769,783812,10537,3738
+46013923,"Upleta Taluka, Rajkot, Gujarat",70.2187,21.791235,779375,10410,3697
+46013996,"Palghar, Maharashtra, 401400",72.748295,19.720756,232125,8508,3662
+46013925,"Khargone Power Station, Barwaha Tahsil, Khargone",75.864289,22.057928,773517,10287,3645
+46013931,"Pirana Sewage Treatment Plant, Narol Sarkhej Road, Isanpur",72.551037,22.971331,770489,10231,3637
+46013967,"ಅಡಿಬಟ್ಟಿ, Gokak Taluku, Belgaum District",74.863437,16.1615,455624,9057,3637
+46013932,"Nh87, Paramakkudi, Paramakudi",78.57563,9.533377,789700,10209,3607
+46014006,"Muncipality Recyling Palakkad, Palakkad - Pollachi Road, Chandranagar",76.68819,10.766268,286515,8369,3600
+46013942,"Mdr61, Murtijapur, Akola",77.379859,20.722463,761137,9982,3578
+46013815,"Makhupura, Ajmer Tehsil, Ajmer",74.680894,26.388165,1671289,15026,3558
+46013977,"Rajamahendravaram, Rajahmundry (Urban), East Godavari",81.780058,17.028838,457752,8840,3553
+46013951,"Rohtak, Haryana, 124001",76.55314,28.877924,741232,9814,3549
+46013979,"Baddi, Solan, Himachal Pradesh",76.773966,30.934671,445647,8804,3547
+46013988,"Kakinada, Kakinada (Urban), Kakinada",82.250301,16.9429,450553,8632,3509
+46013995,"Kasarwadi, Pimpri-Chinchwad, Haveli",73.820526,18.614212,435473,8535,3476
+46014002,"Nehru Nagar, Karaikal, Karaikal Taluk",79.846624,10.931759,442890,8413,3411
+46014027,"Thoseghar Road, Satara, Maharashtra",73.991696,17.664023,267140,7914,3401
+46013965,"Nh67, Tadipatri, Tadpatri",78.053094,14.88074,715743,9158,3306
+46013968,"Swarnapuri Colony, Ward 108 Miyapur, Serilingampalle Mandal",78.346039,17.509977,693014,8986,3302
+46013970,"Mathura Das Pura, Jamwa Ramgarh Tehsil, Jaipur",75.94105,26.95523,688770,8965,3295
+46013982,"Atladara Sewage Treatment Plant, Akshar Chawk, Vadodara",73.168368,22.279169,682684,8749,3216
+46013991,"Vasant Vihar Tehsil, New Delhi, Delhi",77.127151,28.53301,670531,8609,3207
+46013860,"Sikar, Sikar Tehsil, Sikar",75.113054,27.614879,1482201,12863,3155
+46014003,"Geb Colony Road, Gandhinagar, Gandhinagar Taluka",72.680424,23.248216,666811,8402,3155
+46014044,"Swargdwar, Puri, Puri (M)",85.810593,19.797023,397539,7500,3143
+46014008,"Parbhani, Maharashtra, 431400",76.791258,19.279905,652138,8341,3090
+46015347,Moti Jheel,80.906347,26.844528,641858,32800,3066
+46014014,"Parbhani, Maharashtra, 431400",76.757203,19.250207,636600,8159,3016
+46014098,"Panvel, Mumbai Metropolitan Region, Panvel",73.116534,19.091793,191237,6599,3002
+46014024,"Other District Road 106, Dhule, Maharashtra",74.802653,20.916842,636097,7955,2998
+46014061,"Maramalai Nagar Industrial Area, Maraimalai Nagar Industrial Area, Maraimalai Nagar",80.031748,12.773811,386789,7078,2989
+46014073,"Ambagada, Brahmapur Sadar, Ganjam",84.750283,19.329641,377484,6995,2985
+46014038,"Sainagar, Rahta, Ahmednagar",74.461364,19.768598,616560,7693,2946
+46014029,"Bhavnagar, Bhavnagar Taluka, Bhavnagar District",72.133532,21.781948,618488,7869,2914
+46014036,"Rajkot, Rajkot Taluka, Rajkot",70.836155,22.286192,610835,7704,2905
+46014039,"Kolhapur-Miraj Road, Haji Chand Colony, Miraj",74.684429,16.805278,605121,7652,2895
+46014041,"Airport Road, Bhavnagar, Bhavnagar Taluka",72.177805,21.758361,612488,7635,2891
+46014124,"Sh183, Valsad, Valsad Taluka",72.94055,20.627211,182985,6277,2889
+46014043,"Bharathiar Nagar, Namakkal, Namakkal District",78.182657,11.215498,610012,7557,2866
+46014093,"Nigdi, Pimpri-Chinchwad, Haveli",73.772161,18.674381,356090,6676,2842
+46014134,"Ratnagiri, Maharashtra, 415639",73.326818,16.997081,179683,6122,2839
+46014054,"Guntur, Andhra Pradesh, 522005",80.347373,16.284257,607860,7284,2810
+46014064,"Jp Nagar, Mysuru, Mysuru Taluk",76.65529,12.268647,570636,7057,2733
+46014067,"Rajkot, Rajkot Taluka, Rajkot",70.790974,22.2843,575325,7041,2733
+46014069,"Sh139, Udapudi, Budni Khurd",75.282085,15.965016,567137,7020,2716
+46014118,"Biju Patnaik University Of Technology, Odisha, Ring Road",84.81871,22.250751,342300,6321,2712
+46014062,"Nallampalli, Dharmapuri District, Tamil Nadu",78.115,12.109641,572136,7063,2710
+46014065,"Rampur, Rampur District, Uttar Pradesh",79.013627,28.815458,565019,7050,2705
+46014068,"Sh34, Rajula, Rajula Taluka",71.438342,21.046977,572399,7041,2696
+46014165,"Koliwada, Alibag, Mumbai Metropolitan Region",72.880216,18.644787,170594,5679,2689
+46014139,"Sh10, Bishanpur, Deopur",77.671553,24.123864,337104,6076,2683
+46014082,"Pipavav, Rajula Taluka, Amreli District",71.465255,20.919998,560629,6890,2639
+46014083,"Ettayapuram, Thoothukkudi District, Tamil Nadu",77.915922,9.157527,577606,6876,2632
+46014144,"Midnapore, Paschim Medinipur, West Bengal",87.341004,22.422262,327522,5945,2592
+46014152,"Junwaniya, Ratlam Nagar Tahsil, Ratlam",74.997073,23.35251,322113,5853,2566
+46014115,"Malerkotla, Malerkotla Tahsil, Sangrur",75.864079,30.546833,528500,6388,2528
+46014111,"Akshaya Nagar, Ramamurthy Nagar, Mahadevapura Zone",77.689313,13.017858,526148,6417,2518
+46014170,"Jaggadal, Barrackpur - I, North 24 Parganas",88.388144,22.859748,314296,5622,2495
+46014109,"Sivakasi, Virudhunagar District, Tamil Nadu",77.786712,9.517528,543091,6427,2493
+46014198,"Bardoli, Bardoli Taluka, Surat",73.099277,21.107299,197478,5240,2490
+46014113,"Karimnagar Bypass, Karimnagar Mandal, Karimnagar",79.143907,18.413157,529992,6402,2489
+46014173,"Godhra, Godhra Taluka, Panch Mahal District",73.587814,22.750598,314501,5577,2479
+46014202,"Toll Plaza, Nh48, Summer Hill",73.439948,18.757707,154704,5179,2470
+46014128,"Morbi, Morbi Taluka, Morbi District",70.893401,22.775871,517819,6222,2453
+46014171,"Mahabalipuram, Tirukalukundram, Chengalpattu District",80.192675,12.634916,317964,5619,2450
+46014213,"Digha Contai Road, Contai, Contai-I",87.730445,21.765007,190499,5135,2416
+46014137,"Akola, Maharashtra, 444001",76.995021,20.728093,512157,6091,2404
+46014156,"Azad Ganj, Jhansi, Uttar Pradesh",78.538356,25.459652,495797,5832,2359
+46014159,"Thanjavur, Thanjavur District, Tamil Nadu",79.124979,10.79203,500894,5770,2312
+46014158,"Tirunelveli, Tirunelveli District, Tamil Nadu",77.679144,8.763345,503050,5776,2306
+46014210,"Bolpur Nursing Home, Nh114, Shantiniketan",87.722475,23.680781,289086,5150,2295
+46014167,"Jam Kandoma Taluka, Rajkot, Gujarat",70.493324,22.030292,481663,5644,2289
+46014172,"Chirala, Bapatla, Andhra Pradesh",80.358447,15.820601,488513,5595,2255
+46014263,"Jatani, Khordha, Odisha",85.703507,20.184987,177929,4617,2248
+46014224,"Por, Vadodara Taluka, Vadodara District",73.184147,22.145586,284197,4961,2239
+46014175,"Pusta Road, Khajuri, Seelampur",77.251543,28.686594,466989,5565,2235
+46014178,"Ward 115 Balaji Nagar, Hyderabad, Kukatpally Mandal",78.392556,17.464502,469408,5519,2229
+46014181,"Gopavaram, Proddatur, Ysr",78.55655,14.780315,480691,5464,2201
+46014191,"Malegaon, Baramati, Pune District",74.492709,18.146126,456116,5333,2182
+46014185,"Sinnar, Nashik, Maharashtra",74.024863,19.856117,455294,5405,2180
+46014284,"Badu, Barasat - Ii, North 24 Parganas",88.501298,22.691622,170752,4450,2170
+46014285,"Singhniwāla, Vikasnagar, Dehradun",77.867182,30.343386,173374,4446,2166
+46014289,"Jalalpore, Jalalpore Taluka, Nav Sari District",72.904647,20.956269,170839,4415,2156
+46014254,"Vanthali Taluka, Junagadh District, Gujarat",70.303182,21.434677,271010,4666,2142
+46014197,"Cimes Corner, Main Road Of Rangangoan, Rangangoan Fhata",75.217037,19.851186,447672,5257,2140
+46014258,"Majura Taluka, Surat, Gujarat",72.816663,21.156381,271449,4651,2137
+46014270,"Sekkadu, Sorancheri, Poonamallee",80.078707,13.09974,274073,4537,2113
+46014216,"Bidar Srirangapattana Highway, Halekote, Siruguppa Taluku",76.891979,15.603771,442955,5067,2098
+46014206,"Nh40, Musalreddigaripalle, Ramapuram",78.77942,14.362565,455372,5173,2095
+46014214,"Bettadasanpura, Bangalore South, Bangalore Urban",77.629188,12.836841,436441,5111,2089
+46014217,"Temple, 80 Feet Main Road, Hennur",77.626025,13.019241,435806,5030,2085
+46014280,"Edidasaripalem, Mamidipalem, Bheemunipatnam",83.424817,17.90937,265387,4477,2074
+46014223,"Junnar, Pune District, Maharashtra",73.88671,19.191254,433204,4972,2074
+46014277,"Chikkodi, Chikodi Taluk, Belgaum District",74.569274,16.392044,259196,4490,2069
+46014324,"Nh30;Nh63, Tokapal Tahsil, Bastar",81.990793,19.076379,161589,4161,2061
+46014218,"Banarahalli, Handenahalli, Hosakote Taluk",77.868764,12.954311,430278,5028,2060
+46014227,"Rajkot, Rajkot Taluka, Rajkot",70.81148,22.272642,432574,4932,2055
+46014322,"Makhinga, Palsana Taluka, Surat",72.983355,21.147096,162772,4179,2050
+46014317,"Tandemvalasa, Srikakulam, Andhra Pradesh",83.950056,18.344349,253652,4208,1991
+46014242,"Kharade Colony, Karad, Satara",74.192039,17.276467,415402,4783,1989
+46014319,"Jayachandran Nagar, Medavakkam, Sholinganallur",80.19584,12.917218,256870,4198,1976
+46014311,"Nagpur Urban Taluka, Nagpur District, Maharashtra",79.151132,21.168405,249847,4251,1972
+46014252,"Kesarabhavi, Chinnapura, Hunagunda Taluku",76.124766,15.986769,410866,4686,1964
+46014368,"Tezpur, Sonitpur, Assam",92.815763,26.631455,153226,3889,1957
+46014081,"Sh13, Chirawa, Chirawa Tehsil",75.640194,28.260298,918199,6898,1955
+46014257,"Ujjain, Ujjain Tahsil, Ujjain",75.741335,23.089885,407732,4652,1951
+46014261,"Khandwa, Khandwa Tahsil, Khandwa",76.352158,21.815296,408339,4631,1933
+46014383,"Vapi, Vapi Taluka, Valsad",72.88407,20.366902,122342,3793,1932
+46014269,"Vijapur Taluka, Mahesana District, Gujarat",72.816224,23.624603,400158,4538,1896
+46014346,"Hosa Mandli, Shivamogga, Shivamogga Taluku",75.553029,13.910534,237133,4005,1893
+46014364,"Nh16, Velamakotturu, Tuni",82.530824,17.3559,238981,3911,1871
+46014366,"Mandideep, Goharganj Tahsil, Raisen",77.530826,23.10218,234420,3906,1865
+46014367,"Cmwssb Division 16, Ward 16, Zone 2 Manali",80.282885,13.180933,240241,3905,1852
+46014304,"Karur - Vangal Road, Karur, Karur District",78.094798,10.995891,395003,4304,1819
+46014325,"Sh57, Bagalkote, Bagalakote Taluk",75.705474,16.178249,373721,4156,1786
+46014337,"Munekolala, Varthuru, Mahadevapura Zone",77.712786,12.942791,369102,4082,1766
+46014334,"Sathy - Athani - Bhavani Road, Satyamangalam, Sathyamangalam",77.25752,11.507152,368795,4102,1766
+46014333,"Nh150A, Kellur, Jevargi Taluku",76.775863,16.992527,370044,4106,1750
+46014332,"Sh138, Kalol, Kalol Taluka",72.499246,23.249416,370233,4110,1747
+46014342,"Sh26, Dhoraji, Junagadh Taluka",70.45209,21.694365,365927,4021,1737
+46014357,"Sh233, Kotda Sangani Taluka, Rajkot",70.803857,22.099911,365252,3951,1736
+46014412,"Perungalathur, Tambaram, Chengalpattu District",80.081191,12.90312,223519,3566,1725
+46014353,"Saraswati Colony, Ward 10 Uppal, Greater Hyderabad Municipal Corporation East Zone",78.55993,17.390597,363325,3974,1723
+46014345,"Amattur, Virudhunagar, Virudhunagar District",77.847251,9.562329,375573,4006,1713
+46014358,"Ghaziabad, Ghaziabad District, Uttar Pradesh",77.331861,28.716385,357871,3931,1713
+46014461,"Bally, Bally Jagachha, Howrah",88.334129,22.635668,134937,3308,1709
+46014430,"Aranthangi, Aranthangi Taluk, Pudukkottai District",78.984797,10.173908,222659,3480,1709
+46014363,"Moradabad, Uttar Pradesh, India",78.824456,28.957354,356846,3913,1709
+46014474,"Mahuva Taluka, Surat, Gujarat",73.129724,21.071248,135255,3255,1706
+46014431,"Vizianagaram - Palakonda Road, Appannavalasa, Burravani Gollapalem",83.617941,18.391123,216879,3459,1705
+46014426,"Godhra, Godhra Taluka, Panch Mahal District",73.573568,22.729717,216195,3497,1704
+46014362,"Eklasapura, Rayachuru Taluku, Raichur District",77.332778,16.222587,362220,3914,1696
+46014381,"Babalada, Shahapura Taluku, Yadagiri District",77.117013,16.704888,357478,3800,1684
+46014486,"Lalbahadur Shastri Marg, Balasore, Baleshwar (M)",86.939883,21.501176,130612,3180,1655
+46014451,"Cmwssb Division 86, Ward 86, Zone 7 Ambattur",80.149706,13.098958,212705,3350,1640
+46014518,"Pilerne, Bardez, North Goa",73.781964,15.53051,103800,3021,1633
+46014393,"Bhavani, Erode District, Tamil Nadu",77.689185,11.452206,348830,3685,1625
+46014392,"Sh41, Dhavalagi, Muddebihala Taluku",76.128556,16.35692,339709,3692,1620
+46014517,"Barasat, Barasat - I, North 24 Parganas",88.518677,22.70558,126476,3030,1607
+46014402,"Venkatapuram, Vijayawada (Rural), Krishna",80.66,16.602065,344975,3608,1601
+46014410,"Thangadh, Thangadh Taluka, Surendranagar District",71.218091,22.57282,331569,3573,1573
+46014407,"Karisalpatti, Thirumangalam, Madurai District",77.977575,9.811942,343219,3582,1572
+46014491,"Domel, Jammu, Jammu District",74.93227,32.971639,201047,3147,1571
+46014427,"Patel Nagar, Ward 83 Amberpet, Greater Hyderabad Municipal Corporation Central Zone",78.523672,17.380265,330613,3492,1567
+46014500,"Damoh, Damoh Tahsil, Damoh",79.460613,23.839681,196062,3094,1560
+46014436,"Greater Noida, Gautam Buddha Nagar, Uttar Pradesh",77.532388,28.503838,320487,3433,1534
+46014428,"Jammalamadugu - Kadiri Road, Venkatapuram, Pulivendla",78.21397,14.369257,332243,3487,1534
+46014555,"Guwahati, Kamrup Metropolitan, Assam",91.677976,26.114428,119857,2872,1525
+46014437,"Mangalagiri, Guntur, Andhra Pradesh",80.558873,16.432269,327958,3425,1518
+46014443,"Kodumuru, Kodumur, Kurnool District",77.781859,15.680171,322987,3375,1510
+46014452,"Kukshi, Kukshi Tahsil, Dhar",74.77995,22.208388,318579,3345,1502
+46014453,"Dhamnod, Dharampuri Tahsil, Dhar",75.486905,22.203499,317442,3344,1499
+46014539,"Sh20;67, Gadarwara, Gadarwara Tahsil",78.77988,22.929935,188372,2930,1499
+46014458,"Beguru, Begur, Bommanahalli Zone",77.633131,12.884661,312728,3314,1497
+46014530,"Kovalam Road, Covelong, Tiruporur",80.239905,12.787059,193066,2970,1488
+46014469,"Sampatchak, Patna District, Bihar",85.17827,25.566131,311204,3272,1488
+46014540,"Moulivakkam, Kulathuvancheri, Alandur",80.141117,13.027025,193009,2928,1488
+46014551,"Pithampur, Pithampur Tahsil, Dhar",75.684994,22.632242,185885,2875,1483
+46014471,"Krishnagiri - Maharajakadai Road, Krishnagiri, Krishnagiri District",78.216463,12.542833,310995,3266,1482
+46014584,"Gidc, Sachin, Chorasi Taluka",72.845924,21.086563,117387,2712,1479
+46014542,"Mannargudi, Thiruvarur District, Tamil Nadu",79.458335,10.657205,191175,2922,1475
+46014478,"Satna, Raghurajnagar Tahsil, Satna",80.875417,24.562924,303569,3219,1450
+46014608,"Cooch Behar, Koch Bihār, Kochbihar",89.467859,26.298819,90262,2609,1441
+46014489,"Amraiwadi, Rajpur Gomtipur, Ahmedabad",72.618637,23.00949,305956,3162,1440
+46014568,"Mangrol Taluka, Surat, Gujarat",73.015708,21.524522,183264,2802,1435
+46014567,"Ashta Tahsil, Sehore, Madhya Pradesh",76.676784,23.028522,178454,2807,1421
+46014504,"Junagadh City Taluka, Junagadh District, Gujarat",70.468479,21.558724,297355,3077,1412
+46014577,"Anakaputhur, Pallavaram, Chengalpattu District",80.123051,12.97783,182643,2746,1409
+46014507,"Madhava Nagar, Tirumala, Tirupati (Urban)",79.356978,13.685671,295466,3065,1406
+46014586,"Visakhapatnam (Rural), Visakhapatnam, Andhra Pradesh",83.289738,17.769461,178650,2704,1398
+46014501,"Ramanathapuram, Ramanathapuram District, Tamil Nadu",78.862655,9.34468,306265,3087,1398
+46014630,"Dindigul - Theni - Kollam Road, Cumbum, Uthamapalayam",77.272093,9.714567,108680,2526,1388
+46014521,"Kota, Ladpura Tehsil, Kota District",75.798166,25.191974,291290,2999,1383
+46014511,"Alandi, Khed, Pune District",73.896935,18.701278,288478,3048,1382
+46014524,"Sh124, Ivanagi, Basavana Bagevadi Taluku",75.985433,16.555595,287620,2989,1373
+46014595,"Naihati, Barrackpur - I, North 24 Parganas",88.410819,22.895449,172653,2661,1371
+46014594,"Orr Service Road, Nazarathpet, Varadarajapuram",80.088456,12.993562,176354,2661,1361
+46014645,"Uttarpara Kotrung, Serampur Uttarpara, Hugli",88.335396,22.666768,107214,2452,1361
+46014525,"Ward 105 Gachibowli, Serilingampalle Mandal, Hyderabad",78.320381,17.434518,283921,2984,1352
+46014535,"Sogenahalli, Madhugiri Taluk, Tumkur District",77.244089,13.661321,281351,2944,1347
+46014545,"Pataudi, Gurugram, Haryana",76.774828,28.31979,280227,2889,1342
+46014544,"Srivilliputhur - Sivakasi - Virudhunagar - Aruppukottai - Narikudi - Parthibanur Road, Parasakthi Colony, Thiruthangal",77.823678,9.497564,293558,2898,1342
+46014622,"Rampurhat, Rampurhat - I, Birbhum",87.756965,24.187933,167614,2546,1332
+46014548,"Nh67, Tadipatri, Tadpatri",78.021544,14.899059,286653,2881,1324
+46014623,"Muthi Jagir, Kathua, Kathua District",75.41722,32.430392,166786,2544,1324
+46014628,"Walaja Road, Walajapet, Wallajah",79.365841,12.93421,170358,2534,1321
+46014561,"Bhosari, Pimpri-Chinchwad, Haveli",73.859729,18.630815,274689,2842,1315
+46014557,"Kuppuchi Palayam, Dharapuram, Tiruppur District",77.524041,10.760933,280321,2849,1312
+46014566,"Yogapur, Vijayapura, Vijayapura Taluk",75.740843,16.840845,275844,2810,1311
+46014682,"Maheshtala, Thakurpukur Maheshtala, South 24 Parganas",88.205595,22.492967,101402,2294,1288
+46014573,"Solapur, Solapur North, Solapur",75.926473,17.683576,272010,2770,1283
+46014653,"Junagadh Taluka, Junagadh District, Gujarat",70.437215,21.455114,161995,2431,1281
+46014656,"Sh64, Meghnagar Tahsil, Jhabua",74.615423,23.006089,161623,2409,1281
+46014585,"Tiruppur, Tiruppur South, Tiruppur District",77.421411,11.099512,270045,2707,1273
+46014601,"Mahbubnagar, Mahabubnagar_Urban Mandal, Mahabubnagar",77.968409,16.755112,262777,2640,1245
+46014593,"Kommasandra, Anekal, Bangalore Urban",77.738176,12.854357,258997,2664,1239
+46014386,"Focal Point - 2, Bathinda, Bathinda Tahsil",74.953383,30.182189,577019,3787,1228
+46014613,"Perundurai, Erode District, Tamil Nadu",77.59398,11.259884,259421,2577,1218
+46014746,"Industrial Estate, Ratnagiri, Maharashtra",73.342208,17.009018,76165,2099,1206
+46014761,"Pardi, Pardi Taluka, Valsad",72.945906,20.493286,76006,2067,1200
+46014637,"Sundharagiri, Chigurumamidi Mandal, Karimnagar",79.211669,18.163478,253546,2495,1196
+46014705,"Kovur, Pallavaram, Chengalpattu District",80.117268,13.015536,154395,2200,1190
+46014780,"Mahad, Raigad, Maharashtra",73.42753,18.07851,75079,2019,1184
+46014713,"Siruseri, Tiruporur, Chengalpattu District",80.235615,12.828504,153518,2188,1183
+46014749,"Ud&Pa Dumping Ground, Tuirial, Aizawl",92.796718,23.741618,94045,2096,1183
+46014726,"Palsana Taluka, Surat, Gujarat",72.967335,21.174367,149599,2154,1178
+46014646,"Kokapet, Manchirevula, Gandipet Mandal",78.345772,17.385476,247673,2451,1176
+46014725,"Tendar, Ranchi, Kanke",85.255367,23.411046,146941,2159,1171
+46014714,"Krishnanagar City, Krishnanagar, Krishnagar-I",88.5116,23.405201,147311,2187,1170
+46014727,"1St Main Road, Shiva Shakthi Nagar, Chidambaram",79.68489,11.388849,150666,2153,1163
+46014659,"Huda, Sector 21, Gurgaon",77.071119,28.513341,239947,2395,1148
+46014664,"Majalgaon, Beed, Maharashtra",76.202076,19.158055,240850,2374,1143
+46014669,"Pollachi, Coimbatore District, Tamil Nadu",77.08234,10.734418,239869,2353,1140
+46014742,"Bdo Office Road, Padappai, Pushpagiri",80.023487,12.895853,147354,2105,1137
+46014673,"Morbi, Morbi Taluka, Morbi District",70.852981,22.772258,236249,2330,1119
+46014681,"Chhaya, Porbandar, Porbandar Taluka",69.646303,21.600442,235800,2297,1119
+46014774,"Pakshitīrtham, Achcharapākkam, Tirukalukundram",80.078976,12.603448,144873,2041,1118
+46014678,"Sh32, Manavadar, Manavadar Taluka",70.123704,21.493322,235395,2303,1115
+46014688,"Sh23, Niphad, Nashik",74.098954,20.082184,232817,2276,1115
+46014692,"Vijayapura, Vijayapura Taluk, Bijapur District",75.721495,16.845268,234504,2247,1114
+46014679,"Jam Kandoma Taluka, Rajkot, Gujarat",70.516336,21.94125,234336,2299,1112
+46014686,"Sonipat, Haryana, 131001",77.059283,29.03574,230977,2285,1106
+46014789,"Jiaganj, Murshidabad Jiaganj, Murshidabad",88.267879,24.226376,138950,1997,1105
+46014711,"Deolali Camp, Nashik, Maharashtra",73.84269,19.898712,228215,2192,1093
+46014855,"Volkswagen Goa, Nh66, Quelossim",73.935206,15.373215,69059,1845,1086
+46014703,"Sattur - Sivakasi - Kalugumalai Road, Vembakottai, Sivakasi",77.787464,9.397517,234817,2209,1073
+46014708,"Watchmen Shed, Way To Landfill Site, ವಡ್ಡರಪಾಳ್ಯ",77.549458,13.327236,223360,2197,1069
+46014829,"Bahraich, Uttar Pradesh, 271801",81.601092,27.589063,133935,1900,1067
+46014719,"Palladam, Tiruppur District, Tamil Nadu",77.304373,10.95256,223996,2170,1064
+46014886,"Nilgunj Road, Kamarhati, Barrackpur - Ii",88.380052,22.678682,82410,1770,1046
+46014737,"Gorwa, Vadodara, Vadodara Taluka",73.149549,22.326541,220967,2117,1044
+46014905,"Udvada, Pardi Taluka, Valsad",72.927111,20.454543,65951,1738,1042
+46014735,"Wadi, Vadodara, Vadodara Taluka",73.217892,22.285272,220680,2122,1039
+46014907,"Sardar Bazar, Barrackpore, Barrackpur - Ii",88.337912,22.770327,81562,1734,1035
+46014852,"Sh4, Ghatal, Paschim Medinipur",87.724012,22.663613,130463,1846,1034
+46014902,"Beltala, Barrackpore, Barrackpur - Ii",88.382582,22.749024,81324,1743,1032
+46014864,"Wai, Satara, Maharashtra",73.89821,17.972438,128219,1825,1022
+46014509,"Jind, Haryana, 126100",76.308864,29.310591,479953,3054,1022
+46014778,"Sewapura, Amber Tehsil, Jaipur",75.798893,27.041832,213209,2027,1021
+46014872,"Raipur-Karchuliyan Tahsil, Rewa, Madhya Pradesh",81.360381,24.553742,127736,1800,1018
+46014783,"Punjabi Bagh Tehsil, West Delhi, Delhi",77.133148,28.674991,212074,2016,1015
+46014498,"Nh148B, Bhiwani, Bhiwani District",76.124732,28.781393,476208,3095,1014
+46014784,"Puliyampatty - Nambiyur Road, Nambiyur, Erode District",77.175169,11.348159,215367,2015,1013
+46014914,"Majura Taluka, Surat, Gujarat",72.838172,21.127749,80433,1714,1013
+46014893,"Khed, Pune District, Maharashtra",73.809295,18.751721,126475,1757,1010
+46014871,"National Highway Nh68, Kallakurichi, Kallakkurichi",78.979894,11.73975,130607,1802,1008
+46014935,"Howrah, Haora, Howrah",88.326226,22.610396,79350,1660,1007
+46014790,"Veerapandi - Seeppalakottai Road, Theni, Theni District",77.43796,9.943847,211267,1994,998
+46014940,"Udupi, Udupi Taluku, Udupi District",74.803783,13.312925,63312,1639,996
+46014797,"Pace Cityii, Sector 36, Gurgaon",76.989633,28.422151,207833,1970,995
+46014795,"Sangli, Miraj, Sangli",74.523652,16.878068,206840,1982,989
+46014888,"Nellikkuppam, Panruti, Cuddalore District",79.679118,11.775643,127583,1768,987
+46014900,"Nizamabad, Nizamabad_South Mandal, Nizamabad",78.050243,18.652883,124971,1744,986
+46014941,"Majura Taluka, Surat, Gujarat",72.853676,21.12392,77717,1637,979
+46014911,"Thiruvarur, Thiruvarur District, Tamil Nadu",79.643248,10.768908,126576,1726,978
+46014821,"Sh144, Sanand Taluka, Ahmedabad District",72.365191,22.858602,206450,1920,976
+46014798,"Nh83, Vellaikal, Manapparai",78.421861,10.613762,210600,1969,976
+46014827,"Mathura, Uttar Pradesh, 281001",77.711975,27.461032,203281,1908,972
+46014919,"Bhel Township, Bhopal, Huzur Tahsil",77.463241,23.234059,121899,1705,971
+46014920,"Pollachi - Valparai Road, Rangasamudram, Pollachi",77.006689,10.633734,121707,1704,964
+46014826,"Jawanpura, Viratnagar Tehsil, Jaipur",76.038325,27.448248,200739,1909,961
+46014928,"Arang Tahsil, Raipur, Chhattisgarh",81.860639,21.213983,121417,1670,960
+46014937,"Godhra, Godhra Taluka, Panch Mahal District",73.599587,22.758169,121041,1657,954
+46014838,"Rajiv Gruhakalpa Colony, Nizampet, Bachupally Mandal",78.381449,17.526666,200090,1877,953
+46014844,"Badnawar, Badnawar Tahsil, Dhar",75.217809,23.01195,197176,1862,943
+46014863,"Chilkamarri, Farooqnagar Mandal, Rangareddy",78.216053,17.03673,197740,1826,943
+46014867,"Jaipur Municipal Corporation, Sanganer Tehsil, Jaipur",75.8225,26.85981,196309,1820,940
+46014861,"Punjabi Bagh Tehsil, West Delhi, Delhi",76.965122,28.665195,196198,1831,939
+46014856,"Karchhana, Prayagraj, Uttar Pradesh",81.80538,25.379675,196892,1842,938
+46014858,"Manawar, Manawar Tahsil, Dhar",75.076627,22.255587,197375,1836,931
+46014851,"Ballari - Badepalli Road, Muddalapuram, Kudair",77.40388,14.744085,197217,1847,927
+46014965,"Pakur, Pakaur, Jharkhand",87.847297,24.656112,115724,1569,921
+46015006,"Sodepur, Panihati, Barrackpur - Ii",88.385869,22.69177,71739,1484,910
+46014882,"Surendranagar Taluka, Surendranagar District, Gujarat",71.591723,22.741097,192807,1776,909
+46014884,"Musiri, Tiruchirappalli District, Tamil Nadu",78.448204,10.955974,195935,1773,904
+46014978,"Red Hills, Alinjivakkam, Mathavaram",80.185579,13.196885,117148,1538,903
+46014894,"Bhat Gidc, Koteshwar Village, Koteshwar",72.61721,23.09561,190986,1756,899
+46015016,"Smbt College, Nh160A, Kavdara",73.76562,19.757453,70104,1466,895
+46014910,"Haveli, Pune District, Maharashtra",73.958356,18.535262,186501,1729,893
+46015037,"Mdr6, Ward No. 10, Duler",73.795617,15.608476,56711,1426,892
+46014896,"Kudlu, Singasandra, Bommanahalli Zone",77.660213,12.883408,186364,1748,892
+46014908,"Tiruppur, Tiruppur South, Tiruppur District",77.356407,11.077028,187998,1729,886
+46015036,"Ajjanadka, Dakshina Kannada, Dakshina Kannada District",74.875311,12.778333,55960,1426,881
+46014924,"Baraut, Baghpat, Uttar Pradesh",77.258556,29.085275,182877,1686,876
+46014917,"Beri, Jhajjar, Haryana",76.669837,28.729292,182227,1712,873
+46015015,"Saraitoli, Namkum, Ranchi",85.424853,23.366711,108923,1466,869
+46015009,"Zinc Colony, Mindi, Gajuwaka",83.218828,17.70578,110431,1478,864
+46014934,"Sama-Savli Road, Savli Taluka, Vadodara District",73.193423,22.452931,181160,1661,854
+46014942,"Guradiya Deda, Mandsaur Nagar Tahsil, Mandsaur",75.034805,24.137416,177579,1637,848
+46015021,"Barharganj, Nh730, Padrauna",83.920827,26.924159,106107,1456,847
+46015027,"Harda, Harda Tahsil, Harda",77.07798,22.338385,106763,1442,846
+46014950,"Satna, Raghurajnagar Tahsil, Satna",80.847881,24.561883,176976,1615,845
+46014954,"Kunnam, Perambalur District, Tamil Nadu",78.894506,11.217429,181586,1604,837
+46014654,"Silora, Kishangarh Tehsil, Ajmer",74.858633,26.534501,392302,2427,835
+46015112,"Jec Road, Jorhat, Jorhat East",94.224112,26.752018,52241,1317,833
+46015054,"Mancherial City, Mancherial Mandal, Mancherial District",79.428897,18.900073,106974,1399,832
+46015128,"Dibrugarh, Dibrugarh East, Dibrugarh",94.933424,27.500712,52170,1298,831
+46014952,"Kayalpattinam, Tiruchendur, Thoothukkudi District",78.117111,8.561957,180532,1609,828
+46014963,"Huskur, Singena Agrahara, Anekal",77.709042,12.83518,172871,1583,827
+46015103,"Bhadrak Bypass, Bhadrak, Bhadrak Rural",86.528231,21.103134,64775,1331,820
+46014979,"Ahmedabad, Ahmedabad City Taluka, Ahmedabad District",72.60961,23.106811,172028,1535,810
+46014981,"Bowrampet, Dundigal_Gandimaisamma Mandal, Medchal–Malkajgiri",78.399134,17.569767,169827,1533,809
+46015136,"Dhenkanal, Dhenkanal Sadar, Dhenkanal",85.60656,20.61124,63834,1285,809
+46015075,"Raisen, Raisen Tahsil, Raisen",77.765291,23.316759,101574,1362,808
+46015092,"Huzur Tahsil, Bhopal, Madhya Pradesh",77.559496,23.264933,101028,1345,804
+46015069,"Vādāvūr, Uthiramerur, Kanchipuram District",79.791036,12.625412,104042,1372,804
+46014989,"Arhala, Gangavati Taluku, Koppal District",76.475269,15.49567,167866,1510,800
+46015172,"Tinsukia Road, Tinsukia, Tinsukia District",95.359217,27.458081,50210,1233,799
+46015087,"Repalle, Bapatla, Andhra Pradesh",80.833919,16.027359,102665,1348,795
+46015085,"Sunnambu Kulathur, Nanmangalam, Sholinganallur",80.186382,12.942365,103322,1350,795
+46014996,"Nh151, Junagadh, Junagadh City Taluka",70.474499,21.578482,166760,1498,792
+46015002,"Kolhapur-Miraj Road, Jaysingpur, Shirol",74.530806,16.769248,163966,1489,785
+46015026,"Pune Nashik Road, Sangamner, Ahmednagar",74.206229,19.551242,161962,1448,775
+46015024,"Mundra-Luni, Sadau, Mundra Taluka",69.717715,22.84318,163533,1449,773
+46015145,"Balewadi - Nande Road, Sus Gaon, Mhalunge",73.747267,18.571018,96671,1274,772
+46015030,"Gudibanda - Gantavarampali Road, Hampasandra, Gudibande Taluk",77.77518,13.771061,159045,1436,761
+46015045,"Vrindavan, Mathura, Uttar Pradesh",77.682354,27.556222,158869,1414,760
+46015057,"Mdr7, Dhadgaon, Akrani",74.218511,21.809373,158254,1394,757
+46015159,"Kanchrapara, Barrackpur - I, North 24 Parganas",88.432822,22.949347,95213,1254,756
+46014754,"Mandi Dabwali, Dabwali, Sirsa",74.690246,29.958109,354969,2085,756
+46015053,"Sector 106, Gurgaon, Gurugram",77.002333,28.498326,157862,1399,755
+46015051,"Sector 1, Manesar, Gurugram",76.943892,28.356732,157268,1404,753
+46015060,"Sri Datta Nagar Colony, Ward 2 Dr A S Rao Nagar, Greater Hyderabad Municipal Corporation East Zone",78.580171,17.495651,158212,1384,750
+46014760,"Sh2, Kuchaman, Kuchaman City Tehsil",74.854046,27.129438,352350,2067,750
+46014755,"Odr32, Giddarbaha, Gidderbaha Tahsil",74.671353,30.200936,351172,2081,748
+46015065,"Dhanushkodi Road, Rameswaram, Ramanathapuram District",79.305777,9.267065,160320,1379,739
+46015089,"Ethamakalahalli, Manchanabale, Chikkaballapura Taluk",77.770984,13.456254,154096,1348,737
+46015080,"Kaladera, Chomu Tehsil, Jaipur",75.605791,27.177084,153876,1356,737
+46015072,"Nh565, Darimadugu, Markapur",79.282288,15.762484,159613,1368,736
+46015084,"Pallappatti, Aravakurichi, Karur District",77.88972,10.714818,159074,1350,735
+46015227,"Ring Road, Cda Sector - 6, Cuttack",85.848625,20.476482,57991,1137,732
+46015093,"Buggapalli, Dhone, Nandyal",77.887628,15.390869,155588,1343,731
+46015098,"Industrial Modern Township Manesar, Manesar, Gurugram",76.913789,28.357708,152384,1337,729
+46014788,"Gajsar, Churu Tehsil, Churu",74.94934,28.319229,342200,1997,728
+46015111,"Mulluru, Bangalore East, Bangalore Urban",77.741185,12.898763,150949,1317,722
+46015119,"Medipally Mandal, Medchal–Malkajgiri, Telangana",78.615517,17.396685,151486,1308,718
+46015129,"Allahbas, Dadri, Gautam Buddha Nagar",77.416898,28.518724,149438,1297,715
+46015123,"Kadapa - Pulivendula Road, Vempalle, Ysr",78.452372,14.374579,156024,1306,715
+46015211,"Shirala, Sangli, Maharashtra",74.128113,16.978962,89458,1161,714
+46015108,"Sitaramapuram Colony, Piduguralla, Guntur",79.9191,16.476402,153553,1318,714
+46015109,"Gwalior, Gwalior Tahsil, Gwalior",78.147784,26.148113,148995,1317,712
+46015130,"Saraswati Vihar Tehsil, North West Delhi, Delhi",77.16137,28.714255,148281,1296,710
+46015122,"Navya Duplex, Ilapur, Ameenpur Mandal",78.305527,17.52991,149020,1306,709
+46015142,"Una, Una Taluka, Gir Somnath District",71.048023,20.836027,148724,1276,701
+46014833,"Sangaria Road, Hanumangarh, Hanumangarh Tehsil",74.320629,29.645602,328660,1895,700
+46015225,"Nellore, Sri Potti Sriramulu Nellore, Andhra Pradesh",79.994732,14.467309,90220,1140,691
+46015244,"Dinanagar, Gurdaspur Tahsil, Gurdaspur District",75.469198,32.127418,86666,1112,689
+46015156,"Kalol, Kalol Taluka, Gandhinagar District",72.455683,23.145278,145902,1256,688
+46015255,"Vidisha, Vidisha Tahsil, Vidisha",77.814233,23.468947,86356,1088,687
+46015161,"Himatnagar, Himatnagar Taluka, Sabar Kantha District",72.952564,23.575585,144308,1247,683
+46015248,"Arakonam, Ranipet District, Tamil Nadu",79.698591,13.109899,87986,1096,679
+46015176,"Cheranmahadevi, Tirunelveli District, Tamil Nadu",77.515796,8.637854,145804,1228,677
+46015263,"Thiruvidaimarudur, Thanjavur District, Tamil Nadu",79.411907,10.973402,86981,1076,672
+46015190,"Morbi Taluka, Morbi District, Gujarat",70.976379,22.781281,140368,1199,665
+46015201,"Gobbilikottur, Palamaner, Chittoor",78.766343,13.184481,138214,1176,661
+46015282,"Kharagpur, Kharagpur-I, Paschim Medinipur",87.298631,22.332622,83320,1042,659
+46015206,"Sira Taluk, Tumkur District, Karnataka",76.87127,13.753597,136597,1165,653
+46015291,"Dhaurahara, Kheri, Uttar Pradesh",81.119911,27.888058,81255,1034,648
+46015212,"Shadipur, Roopbas, Tijara Tehsil",76.864601,27.936311,134994,1161,646
+46015224,"Ghaziabad, Ghaziabad District, Uttar Pradesh",77.446686,28.70274,134856,1142,646
+46015221,"Begur, Bommanahalli Zone, Bengaluru",77.610971,12.852408,134772,1144,645
+46015233,"Nh150A, Goluru, Nanjanagudu Taluk",76.725189,12.097252,134315,1131,643
+46015231,"Vathalagundu - Peraiyur - Kariyapatti - Thiruchuli - Kamuthi - Sayalkudi Road, Batlagundu, Nilakkottai",77.765182,10.16073,136436,1133,640
+46015239,"Mehandipur Balaji, Sikari Tehsil, Dausa",76.791285,26.943921,131436,1123,628
+46015250,"Nalgonda, Nalgonda Mandal, Nalgonda",79.325293,17.083169,133122,1093,618
+46015259,"Sh__, Vadodara, Vadodara Taluka",73.219734,22.376758,130684,1082,616
+46015267,"Nandyal, Andhra Pradesh, 518500",78.482985,15.500363,130190,1073,603
+46015278,"Sainik Farm, Tigri, Saket Tehsil",77.222631,28.499144,125619,1050,601
+46015277,"Pragathi Nagar Dumpyard, Pragathi Nagar Road, Lake View Colony",78.398892,17.512915,125745,1050,599
+46015312,"Asola, Sohna, Gurugram",77.133863,28.411361,123048,1004,589
+46015303,"Railway Colony, Latchanipalli, Gooty",77.61733,15.134334,125727,1017,588
+46015295,"Nh27, Jetpur Taluka, Rajkot",70.522406,21.736248,123610,1025,587
+46015000,"Hameerpura, Lachhmangarh Tehsil, Sikar",75.01401,27.796761,272319,1491,580
+46015017,"Sh7, Dardoond, Kishangarh Tehsil",74.773546,26.869041,266798,1465,568
