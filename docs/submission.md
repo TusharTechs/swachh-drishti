@@ -61,6 +61,7 @@ The project was opened and run as an AgentFoundry project.
 - The **Evals** suite (`agents/evals.py`) scores the analyst on telling municipal dumpsites from industrial slag and ash dumps, with names hidden.
 - The fire backtest acts as a second, LLM-free eval.
 - The reviewer gate is the publication policy (TrustModel-style governance).
+- AF's **Smart-Code** agent built the public CSV download feature (commit `29fb87a`). The eval suite was run from the AF terminal; see `docs/agentfoundry.md`.
 
 ## Limits we state up front
 - Footprint is not tonnage, and 10 m imagery cannot measure height change.

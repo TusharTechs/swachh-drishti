@@ -20,3 +20,8 @@ Orchestration is plain code (`drishti/run.py agents`), so every step is visible 
 - The reviewer gate is the publication policy. Nothing reaches the public map unless it passes: no unsupported numbers, no blame, no names of people or companies, no "certificate" language.
 - Every published pack keeps its sources (scene IDs, dates) and a right-of-reply link.
 - Model: set `DRISHTI_MODEL` (default `claude-opus-5-5`). Key: `ANTHROPIC_API_KEY`, or AF's built-in model access.
+
+## Built with AgentFoundry: log
+- Project developed as an AF project (`~/Projects/swachh-drishti`).
+- Analyst eval run from the AF terminal: `uv run python -m agents.evals run` → `data/processed/evals/run_20261112_213711.json` (accuracy 0.542, matching earlier runs, so the result is reproducible).
+- Feature built by the AF **Smart-Code** agent: CSV data download for ULBs and researchers (`web/data/sites.csv`, header link). Commit `29fb87a`, reviewed before merge.
