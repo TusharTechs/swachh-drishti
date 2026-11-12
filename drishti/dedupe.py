@@ -9,7 +9,7 @@ F = ROOT / "data/processed/gazetteer.geojson"
 RANK = {"mapped": 2, "auto-traced": 1}
 
 def main():
-    fc = json.loads(F.read_text())
+    fc = json.loads(F.read_text(encoding="utf-8"))
     feats = fc["features"]
     polys = [(i, shape(f["geometry"])) for i, f in enumerate(feats)
              if f["geometry"] and f["geometry"]["type"] != "Point"]
@@ -37,7 +37,7 @@ def main():
             if lose == i:
                 break
     fc["features"] = [f for k, f in enumerate(feats) if k not in drop]
-    F.write_text(json.dumps(fc))
+    F.write_text(json.dumps(fc), encoding="utf-8")
     print("merged", len(drop), "duplicate records;", len(fc["features"]), "sites remain")
 
 if __name__ == "__main__":

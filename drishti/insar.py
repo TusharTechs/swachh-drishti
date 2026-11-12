@@ -31,7 +31,7 @@ def hyp3():
     return hyp3_sdk.HyP3(token=tok) if tok else hyp3_sdk.HyP3(prompt=False)  # falls back to ~/.netrc
 
 def site(sid):
-    for f in json.loads((ROOT / "data/processed/gazetteer.geojson").read_text())["features"]:
+    for f in json.loads((ROOT / "data/processed/gazetteer.geojson").read_text(encoding="utf-8"))["features"]:
         if f["properties"]["site_id"] == sid:
             return f
     raise SystemExit(f"{sid} not in gazetteer")
@@ -62,7 +62,7 @@ def submit(sid, start, end):
         b = h.submit_insar_job(g1, g2, name=f"drishti-{sid}", looks="10x2", include_displacement_maps=True)
         batch = b if batch is None else batch + b
     OUT.mkdir(parents=True, exist_ok=True)
-    (OUT / f"{sid}_jobs.json").write_text(json.dumps({"site_id": sid, "pairs": pr, "start": start, "end": end}))
+    (OUT / f"{sid}_jobs.json").write_text(json.dumps({"site_id": sid, "pairs": pr, "start": start, "end": end}), encoding="utf-8")
     print("submitted", len(pr), "jobs for", sid)
 
 def _mean_in(tif: Path, geom_ll, ring=False):
@@ -106,7 +106,7 @@ def collect(sid):
             cum += s["relative_mm"]; s["cumulative_mm"] = round(cum, 1)
     OUT.mkdir(parents=True, exist_ok=True)
     (OUT / f"{sid}.json").write_text(json.dumps({"site_id": sid, "generated": dt.date.today().isoformat(),
-        "method": "HyP3 INSAR_GAMMA 10x2 looks, vertical displacement, mound minus 300-800 m ring", "series": series}, indent=1))
+        "method": "HyP3 INSAR_GAMMA 10x2 looks, vertical displacement, mound minus 300-800 m ring", "series": series}, indent=1), encoding="utf-8")
     print(sid, len(series), "pairs; cumulative relative vertical displacement (mm):", round(cum, 1))
 
 if __name__ == "__main__":

@@ -3,7 +3,7 @@ import json, time, urllib.parse, urllib.request
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-QL = (ROOT / "data/raw/overpass_landfill.ql").read_text()
+QL = (ROOT / "data/raw/overpass_landfill.ql").read_text(encoding="utf-8")
 OUT = ROOT / "data/raw/osm_landfill_india.json"
 MIRRORS = ["https://overpass-api.de/api/interpreter",
            "https://overpass.private.coffee/api/interpreter",

@@ -29,6 +29,7 @@
 
 | What | Link | Notes |
 |---|---|---|
+| **Run it locally** | [Windows / macOS / Linux guide](#run-it-locally-windows-macos-linux) | 2-minute dashboard or full pipeline |
 | **Live app** | [tushartechs.github.io/swachh-drishti](https://tushartechs.github.io/swachh-drishti/) | Deployed on GitHub Pages; works on mobile |
 | **Example site (Ghazipur, Delhi)** | [Open the site panel](https://tushartechs.github.io/swachh-drishti/#SD0001) | Before/after imagery, fire record, radar movement, evidence pack |
 | **Hackathon submission** | [karlmehta/code-for-a-billion#110](https://github.com/karlmehta/code-for-a-billion/issues/110) | Impact area: Waste Management (form category: Climate) |
@@ -197,24 +198,120 @@ swachh-drishti/
 ├── ATTRIBUTION.md · LICENSE · pyproject.toml
 ```
 
-## Run it yourself
+## Run it locally (Windows, macOS, Linux)
+
+There are two ways to run it:
+
+- **A. View the dashboard.** This takes about 2 minutes. It needs only Python, because all the processed data is already in the repo.
+- **B. Reproduce the whole pipeline.** This re-downloads open data and recomputes everything.
+
+### Prerequisites
+
+| | Windows 10/11 | macOS 12+ | Linux (Ubuntu/Debian/Fedora…) |
+|---|---|---|---|
+| **Git** | [git-scm.com/download/win](https://git-scm.com/download/win) or `winget install Git.Git` | `xcode-select --install` or `brew install git` | `sudo apt install git` / `sudo dnf install git` |
+| **uv** (installs Python 3.12 for you) | `powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 \| iex"` | `curl -LsSf https://astral.sh/uv/install.sh \| sh` (or `brew install uv`) | `curl -LsSf https://astral.sh/uv/install.sh \| sh` |
+| Disk / RAM | ~1 GB for the repo and environment (pipeline caches: up to ~5 GB). 8 GB RAM recommended | same | same |
+
+After installing uv, **open a new terminal** so the `uv` command is on your PATH. You don't need to install Python yourself: `uv` downloads Python 3.12 into the project. Every dependency ships pre-built packages for Windows, macOS and Linux, so no compiler is needed.
+
+### Get the code
 
 ```bash
-uv sync                                    # Python 3.12 environment
-uv run python -m drishti.geocode_ulbs      # 1. geocode DRAP ULBs
-uv run python -m drishti.gazetteer         # 2. build the gazetteer
-uv run python -m drishti.autotrace         # 3. trace missing boundaries
-uv run python -m drishti.dedupe && uv run python -m drishti.fill_admin
-uv run python -m drishti.run imagery       # 4. Sentinel-2 yearly record
-uv run python -m drishti.run fires         # 5. NASA FIRMS (keyless yearly archives)
-uv run python -m drishti.backtest          #    fire backtest
-uv run python -m drishti.run exposure      # 6. GHSL population
-uv run python -m drishti.run agents        # 7. analyst → writer → reviewer (local model or rules)
-uv run python -m drishti.run publish       # 8. write web/data
-python3 -m http.server -d web 8000         # open http://localhost:8000
+git clone https://github.com/TusharTechs/swachh-drishti.git
+cd swachh-drishti
 ```
 
-InSAR (optional): add a NASA Earthdata login to `~/.netrc`, then run `uv run python -m drishti.insar submit <SITE_ID> 2026-01-01 2026-11-12` and `uv run python -m drishti.insar_watch`.
+### A. View the dashboard (no setup beyond Python)
+
+Any Python 3 can serve the static site. Pick the command for your system, then open **http://localhost:8000** in a browser.
+
+| Windows (PowerShell or cmd) | macOS / Linux |
+|---|---|
+| `py -m http.server 8000 -d web` | `python3 -m http.server 8000 -d web` |
+
+If you only have uv: `uv run python -m http.server 8000 -d web` works on every OS. Press `Ctrl+C` to stop the server.
+
+> Opening `web/index.html` by double-clicking won't work, because browsers block data loading from `file://`. Use the local server above.
+
+### B. Reproduce the pipeline
+
+Install the environment once:
+
+```bash
+uv sync
+```
+
+Then run the steps in order. The commands are identical on Windows (PowerShell / cmd), macOS and Linux:
+
+```bash
+uv run python -m drishti.geocode_ulbs     # 1  geocode DRAP ULBs (OSM Nominatim, 1 req/s, cached)
+uv run python -m drishti.gazetteer        # 2  merge Climate TRACE + named sites + OSM + DRAP
+uv run python -m drishti.autotrace        # 3  trace missing boundaries (Copernicus DEM / Sentinel-2)  ~1 h
+uv run python -m drishti.dedupe           # 4  merge duplicate records
+uv run python -m drishti.fill_admin       # 5  fill city/state, neutral public names
+uv run python -m drishti.run imagery      # 6  Sentinel-2 yearly record + chips                       ~20 min
+uv run python -m drishti.run fires        # 7  NASA FIRMS (keyless yearly archives, ~700 MB cached)
+uv run python -m drishti.backtest         # 8  fire backtest vs documented fires
+uv run python -m drishti.run exposure     # 9  GHSL population rings (downloads ~76 MB tiles)
+uv run python -m drishti.run agents       # 10 analyst → writer → reviewer
+uv run python -m drishti.run publish      # 11 write web/data (GeoJSON, CSV, per-site JSON, chips)
+```
+
+Then serve the dashboard as in **A**. Each step caches its results, so you can stop and resume at any point. Downloads go to `~/.cache/swachh-drishti` on macOS and Linux, and to `%USERPROFILE%\.cache\swachh-drishti` on Windows.
+
+#### Optional: the vision agent (step 10)
+
+Step 10 works without any model: it falls back to rules-based packs. To add the vision check, pick one:
+
+| Backend | Setup | Env var |
+|---|---|---|
+| **Local open model** (default if running) | Install [LM Studio](https://lmstudio.ai) (Windows/macOS/Linux), download `google/gemma-4-e4b`, start the local server (port 1234) | none |
+| **Claude** | An Anthropic API key | `ANTHROPIC_API_KEY` |
+| **Rules only** | none | `DRISHTI_LLM=none` |
+
+Setting an environment variable:
+
+| Windows PowerShell | Windows cmd | macOS / Linux |
+|---|---|---|
+| `$env:DRISHTI_LLM="none"` | `set DRISHTI_LLM=none` | `export DRISHTI_LLM=none` |
+
+To use a different OpenAI-compatible local server (Ollama, llama.cpp, vLLM…), set `DRISHTI_LOCAL_URL` (e.g. `http://localhost:11434/v1`) and `DRISHTI_LOCAL_MODEL`.
+
+#### Optional: InSAR mound movement (Sentinel-1, ASF HyP3)
+
+1. Create a free [NASA Earthdata login](https://urs.earthdata.nasa.gov/users/new). In your profile, set **Study Area** and accept the ASF data agreement.
+2. Store the credentials where HyP3 can find them. Pick one:
+   - **macOS / Linux:** add `machine urs.earthdata.nasa.gov login <user> password <pass>` to `~/.netrc`, then run `chmod 600 ~/.netrc`.
+   - **Windows:** put the same line in `%USERPROFILE%\_netrc`.
+   - **Any OS:** generate a token in your Earthdata profile and set it as `EARTHDATA_TOKEN`.
+3. Submit and collect jobs. This uses about 300 of the free 8,000 monthly credits per site:
+
+```bash
+uv run python -m drishti.insar submit SD0001 2026-01-01 2026-11-12
+uv run python -m drishti.insar_watch      # polls ASF, downloads results, writes data/processed/insar/
+uv run python -m drishti.run publish
+```
+
+#### Optional: evals
+
+```bash
+uv run python -m agents.evals build       # labelled municipal vs industrial cases
+uv run python -m agents.evals run         # scores the vision analyst; results in data/processed/evals/
+```
+
+### Troubleshooting
+
+| Symptom | Fix |
+|---|---|
+| `uv: command not found` / `'uv' is not recognized` | Open a new terminal after installing uv, or add `~/.local/bin` (macOS/Linux) or `%USERPROFILE%\.local\bin` (Windows) to PATH |
+| PowerShell blocks the uv installer script | Run the install command exactly as shown (it includes `-ExecutionPolicy ByPass`) |
+| `python3` not found on Windows | Use `py` or `uv run python` instead |
+| Map is blank when opening `index.html` directly | Serve it with `http.server` (step A); `file://` blocks data loading |
+| Port 8000 already in use | Use another port, e.g. `... http.server 8080 -d web` |
+| Overpass / Nominatim `502` or `503` | Public OSM servers are busy. The scripts retry with backoff; rerun later |
+| Corporate proxy blocks downloads | Set `HTTPS_PROXY` / `HTTP_PROXY` before running `uv sync` and the pipeline |
+| `UnicodeEncodeError` on Windows | Fixed in the code (all text I/O is UTF-8). If you add scripts, set `PYTHONUTF8=1` |
 
 ## Limits we state up front
 

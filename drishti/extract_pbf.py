@@ -35,7 +35,7 @@ def main():
                              "members": [{"type": "way", "role": "outer", "geometry": r} for r in rings]})
     out = {"source": f"Geofabrik extract {PBF.name}", "copyright": "OpenStreetMap contributors, ODbL",
            "elements": elements}
-    (ROOT / "data/raw/osm_landfill_india.json").write_text(json.dumps(out))
+    (ROOT / "data/raw/osm_landfill_india.json").write_text(json.dumps(out), encoding="utf-8")
     print(len(elements), "landfill/waste-disposal areas")
 
 if __name__ == "__main__":

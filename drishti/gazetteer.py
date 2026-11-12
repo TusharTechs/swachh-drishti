@@ -26,7 +26,7 @@ INDUSTRIAL = re.compile(r"\b(slag|ash|fly ?ash|ash ?pond|ash ?dyke|ores?|tailing
 MUNICIPAL = re.compile(r"municipal|dump|dumping|landfill|garbage|waste|kachra|kooda|kuda|msw|trenching|compost|legacy|solid", re.I)
 
 def osm_polygons():
-    data = json.loads((ROOT / "data/raw/osm_landfill_india.json").read_text())
+    data = json.loads((ROOT / "data/raw/osm_landfill_india.json").read_text(encoding="utf-8"))
     out = []
     for e in data["elements"]:
         tags = e.get("tags", {})
@@ -82,7 +82,7 @@ def main():
     """
     from shapely.geometry import Point
     from drishti.geocode_ulbs import nominatim, CACHE
-    cache = json.loads(CACHE.read_text()) if CACHE.exists() else {}
+    cache = json.loads(CACHE.read_text(encoding="utf-8")) if CACHE.exists() else {}
     polys = osm_polygons()
     used: set[int] = set()
     sites: list[dict] = []   # each: {pt_m, lonlat, props, poly_idx}
@@ -116,14 +116,14 @@ def main():
         return s
 
     # 2) named sites first (most precise names)
-    for r in csv.DictReader(open(ROOT / "data/raw/extra_sites.csv")):
+    for r in csv.DictReader(open(ROOT / "data/raw/extra_sites.csv", encoding="utf-8")):
         hit = nominatim(r["query"] + ", India", cache)
         if hit:
             add(float(hit["lon"]), float(hit["lat"]),
                 {"site_name": r["site_name"], "city": r["city"], "state": r["state"], "ulb": r["ulb"],
                  "note": r.get("note") or None, "sources": ["named"]}, max_km=3.0)
     # 1) Climate TRACE dumpsites
-    for r in csv.DictReader(open(ROOT / "data/raw/climatetrace_india_dumpsites.csv")):
+    for r in csv.DictReader(open(ROOT / "data/raw/climatetrace_india_dumpsites.csv", encoding="utf-8")):
         nm = r["name"]
         if INDUSTRIAL.search(nm):
             continue
@@ -132,7 +132,7 @@ def main():
              "climatetrace_id": int(r["ct_id"]), "ct_waste_activity_t": int(r["waste_activity_t"]),
              "ct_co2e_100yr_t": int(r["co2e_100yr_t"]), "sources": ["climatetrace"]})
     # 4) DRAP ULBs -> nearest sites in the city (largest first); else best OSM polygon; else city point
-    ulbs = json.loads((ROOT / "data/processed/drap_ulbs_geocoded.json").read_text())
+    ulbs = json.loads((ROOT / "data/processed/drap_ulbs_geocoded.json").read_text(encoding="utf-8"))
     for u in ulbs:
         n = int(u["dumpsite_count"] or 1)
         drap = {"drap_priority": True, "drap_ulb": u["ulb"], "drap_sites_in_ulb": n,
@@ -201,7 +201,7 @@ def main():
     fc = {"type": "FeatureCollection", "features": feats,
           "attribution": "Boundaries (c) OpenStreetMap contributors (ODbL); dumpsite points: Climate TRACE (CC BY 4.0); "
                          "DRAP list: MoHUA concept note (PIB, Nov 2025)."}
-    (ROOT / "data/processed/gazetteer.geojson").write_text(json.dumps(fc))
+    (ROOT / "data/processed/gazetteer.geojson").write_text(json.dumps(fc), encoding="utf-8")
     from collections import Counter
     print(len(feats), "sites")
     print(Counter(f["properties"]["status"] for f in feats))

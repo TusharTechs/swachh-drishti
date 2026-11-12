@@ -19,8 +19,8 @@ KEY = {  # ground-truth site label -> substring of gazetteer site_name / osm_nam
 }
 
 def main():
-    gz = json.loads((PROC / "gazetteer.geojson").read_text())["features"]
-    fires = json.loads((PROC / "fires.json").read_text())["sites"]
+    gz = json.loads((PROC / "gazetteer.geojson").read_text(encoding="utf-8"))["features"]
+    fires = json.loads((PROC / "fires.json").read_text(encoding="utf-8"))["sites"]
     def find(label):
         k = KEY.get(label)
         if not k:
@@ -30,7 +30,7 @@ def main():
             if k in f"{p.get('site_name') or ''} {p.get('osm_name') or ''}".lower():
                 return p["site_id"]
     rows, hit, n = [], 0, 0
-    for r in csv.DictReader(open(ROOT / "data/raw/ground_truth_fires.csv")):
+    for r in csv.DictReader(open(ROOT / "data/raw/ground_truth_fires.csv", encoding="utf-8")):
         if not r["event_type"].startswith("fire") or r["in_backtest_window_2019_2026"] != "yes" or not r["date_start"]:
             continue
         sid = find(r["site"])
@@ -50,14 +50,14 @@ def main():
                      "site_id": sid, "evaluable": evaluable, "detected": detected if evaluable else None,
                      "note": note or ("site not in gazetteer" if sid is None else ""), "source_url": r["source_url"]})
     res = {"evaluable_events": n, "detected": hit, "recall": round(hit / n, 3) if n else None, "events": rows}
-    (PROC / "backtest_fires.json").write_text(json.dumps(res, indent=1))
+    (PROC / "backtest_fires.json").write_text(json.dumps(res, indent=1), encoding="utf-8")
     md = [f"# Fire backtest\n\nDocumented dumpsite fire events 2019–2025 matched to the gazetteer: **{n}**. "
           f"VIIRS detections at the site within ±1 day: **{hit}** (recall **{res['recall']}**).\n",
           "| Site | City | Dates | Detected | Note |", "|---|---|---|---|---|"]
     for e in rows:
         d = "—" if e["detected"] is None else ("yes" if e["detected"] else "**missed**")
         md.append(f"| {e['site']} | {e['city']} | {e['start']}→{e['end']} | {d} | {e['note']} [src]({e['source_url']}) |")
-    (ROOT / "docs/backtest_fires.md").write_text("\n".join(md) + "\n")
+    (ROOT / "docs/backtest_fires.md").write_text("\n".join(md) + "\n", encoding="utf-8")
     print(json.dumps({k: res[k] for k in ("evaluable_events", "detected", "recall")}))
 
 if __name__ == "__main__":

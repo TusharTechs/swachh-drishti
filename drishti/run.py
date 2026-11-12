@@ -18,7 +18,7 @@ CHIPS = PROC / "chips"
 YEARS = [2019, 2021, 2023, 2025, 2026]
 
 def sites(polygons_only=True):
-    fc = json.loads((PROC / "gazetteer.geojson").read_text())
+    fc = json.loads((PROC / "gazetteer.geojson").read_text(encoding="utf-8"))
     feats = fc["features"]
     if polygons_only:
         feats = [f for f in feats if f["geometry"] and f["geometry"]["type"] in ("Polygon", "MultiPolygon")]
@@ -27,7 +27,7 @@ def sites(polygons_only=True):
 def cmd_imagery(workers=12, only=None):
     from drishti.sentinel import observe
     out_f = PROC / "imagery.json"
-    done = json.loads(out_f.read_text()) if out_f.exists() else {}
+    done = json.loads(out_f.read_text(encoding="utf-8")) if out_f.exists() else {}
     todo = [s for s in sites() if s["properties"]["site_id"] not in done
             and (not only or s["properties"]["site_id"] in only)]
     print(f"{len(todo)} sites to observe ({len(done)} cached)")
@@ -43,9 +43,9 @@ def cmd_imagery(workers=12, only=None):
             except Exception as e:  # keep going; log and retry later
                 print("  error:", repr(e)[:200])
             if i % 10 == 0 or i == len(futs):
-                out_f.write_text(json.dumps(done))
+                out_f.write_text(json.dumps(done), encoding="utf-8")
                 print(f"  {i}/{len(futs)} sites", flush=True)
-    out_f.write_text(json.dumps(done))
+    out_f.write_text(json.dumps(done), encoding="utf-8")
 
 def cmd_fires():
     from drishti import fires as F
@@ -70,13 +70,13 @@ def cmd_fires():
                         "days": days, "max_frp": max(float(d.get("frp") or 0) for d in dets),
                         "sources": sorted({d["source"] for d in dets})}
     (PROC / "fires.json").write_text(json.dumps({"generated": dt.datetime.now(dt.timezone.utc).isoformat(),
-                                                  "n_detections_scanned": len(rows), "sites": summary}))
+                                                  "n_detections_scanned": len(rows), "sites": summary}), encoding="utf-8")
     print(len(rows), "detections scanned;", len(summary), "sites with fire detections")
 
 def cmd_exposure(workers=4):
     from drishti.exposure import ring_population
     out_f = PROC / "exposure.json"
-    done = json.loads(out_f.read_text()) if out_f.exists() else {}
+    done = json.loads(out_f.read_text(encoding="utf-8")) if out_f.exists() else {}
     feats = [f for f in sites(polygons_only=False) if f["geometry"] and f["properties"]["site_id"] not in done]
     # warm tile cache serially (avoid parallel downloads of the same tile)
     for i, f in enumerate(feats, 1):
@@ -86,13 +86,13 @@ def cmd_exposure(workers=4):
         except Exception as e:
             print("  error", sid, repr(e)[:160])
         if i % 20 == 0:
-            out_f.write_text(json.dumps(done)); print(f"  {i}/{len(feats)}", flush=True)
-    out_f.write_text(json.dumps(done))
+            out_f.write_text(json.dumps(done), encoding="utf-8"); print(f"  {i}/{len(feats)}", flush=True)
+    out_f.write_text(json.dumps(done), encoding="utf-8")
     print(len(done), "sites with exposure")
 
 def _load(name):
     f = PROC / name
-    return json.loads(f.read_text()) if f.exists() else {}
+    return json.loads(f.read_text(encoding="utf-8")) if f.exists() else {}
 
 def _combine(s, base, llm, err, backend_name, model, obs, f, e):
     """Merge the vision analyst with the rule baseline. The vision model judges WHAT and WHERE (surface type,
@@ -127,7 +127,7 @@ def cmd_repack():
         an = rec["assessment"].get("analyst", {})
         done[sid] = _combine(s, rules.assess(s, obs, f, e).model_dump(), an.get("llm_raw"), an.get("error"),
                              an.get("backend", "rules"), an.get("model", "rules"), obs, f, e)
-    (PROC / "agents.json").write_text(json.dumps(done, indent=1))
+    (PROC / "agents.json").write_text(json.dumps(done, indent=1), encoding="utf-8")
     from collections import Counter
     print(len(done), "packs;", Counter(r["review"]["passed"] for r in done.values()),
           Counter(r["assessment"]["remediation_trend"] for r in done.values()))
@@ -162,8 +162,8 @@ def cmd_agents(limit=None, refresh=False):
         print(f"  [{i}/{len(todo)}] {sid}: {a['surface_type']} / {a['remediation_trend']} / "
               f"{'PASS' if v['passed'] else 'HOLD'} ({a['analyst']['model']})", flush=True)
         if i % 10 == 0 or i == len(todo):
-            out_f.write_text(json.dumps(done, indent=1))
-    out_f.write_text(json.dumps(done, indent=1))
+            out_f.write_text(json.dumps(done, indent=1), encoding="utf-8")
+    out_f.write_text(json.dumps(done, indent=1), encoding="utf-8")
 
 def _numeric_trend(obs):
     if len(obs) < 2:
@@ -188,7 +188,7 @@ def cmd_publish():
     (web / "sites").mkdir(parents=True, exist_ok=True)
     (web / "chips").mkdir(parents=True, exist_ok=True)
     imagery, fires, expo, ag = _load("imagery.json"), _load("fires.json").get("sites", {}), _load("exposure.json"), _load("agents.json")
-    fc = json.loads((PROC / "gazetteer.geojson").read_text())
+    fc = json.loads((PROC / "gazetteer.geojson").read_text(encoding="utf-8"))
     feats, tot = [], {"sites_total": 0, "sites_mapped": 0, "legacy_waste_t": 0, "pop_2km": 0, "sites_with_fire": 0}
     for f in fc["features"]:
         p = dict(f["properties"]); sid = p["site_id"]
@@ -224,7 +224,7 @@ def cmd_publish():
             pub_obs.append(o)
         obs = pub_obs
         ins_f = PROC / "insar" / f"{sid}.json"
-        ins = json.loads(ins_f.read_text()) if ins_f.exists() else None
+        ins = json.loads(ins_f.read_text(encoding="utf-8")) if ins_f.exists() else None
         p["insar"] = bool(ins)
         cum = [x["cumulative_mm"] for x in (ins or {}).get("series", []) if x.get("cumulative_mm") is not None]
         p["insar_mm"] = cum[-1] if cum else None
@@ -233,19 +233,19 @@ def cmd_publish():
             p["exposed_first"], p["exposed_last"] = obs[0]["exposed_ha"], obs[-1]["exposed_ha"]
             p["year_first"], p["year_last"] = obs[0]["year"], obs[-1]["year"]
         (web / "sites" / f"{sid}.json").write_text(json.dumps({"imagery": obs, "fires": fi, "exposure": e or None,
-            "assessment": a.get("assessment"), "pack_md": published_pack, "insar": ins}))
+            "assessment": a.get("assessment"), "pack_md": published_pack, "insar": ins}), encoding="utf-8")
         tot["sites_total"] += 1; tot["sites_mapped"] += mapped
         tot["legacy_waste_t"] += p.get("legacy_waste_t") or 0
         tot["pop_2km"] += e.get("pop_2km", 0) if mapped else 0
         tot["pop_1km"] = tot.get("pop_1km", 0) + (e.get("pop_1km", 0) if mapped else 0)
         tot["sites_with_fire"] += p["fire_days"] > 0
     (web / "sites.geojson").write_text(json.dumps({"type": "FeatureCollection", "features": feats,
-                                                   "attribution": fc.get("attribution")}))
+                                                   "attribution": fc.get("attribution")}), encoding="utf-8")
     import csv
     csv_path = web / "sites.csv"
     csv_columns = ["site_id", "display_name", "city", "state", "status", "drap_priority", "legacy_waste_t", 
                    "area_ha", "trend", "fire_days", "pop_1km", "pop_2km", "pop_5km", "review_passed", "lon", "lat"]
-    with open(csv_path, 'w', newline='') as f:
+    with open(csv_path, 'w', newline='', encoding="utf-8") as f:
         writer = csv.DictWriter(f, fieldnames=csv_columns)
         writer.writeheader()
         for feat in feats:
@@ -268,7 +268,7 @@ def cmd_publish():
         tot["pop_1km"], tot["pop_2km"] = un["pop_union_1km"], un["pop_union_2km"]
         tot["people_note"] = f"union of rings around {un['n_sites']} sites with a boundary; GHSL 2025"
     tot["generated"] = dt.datetime.now(dt.timezone.utc).strftime("%Y-%m-%d")
-    (web / "summary.json").write_text(json.dumps(tot))
+    (web / "summary.json").write_text(json.dumps(tot), encoding="utf-8")
     print(tot)
 
 if __name__ == "__main__":

@@ -108,7 +108,7 @@ def trace(lon: float, lat: float, radius_m: float = 700, year: int = 2026):
     return res
 
 def main(workers=12):
-    fc = json.loads((PROC / "gazetteer.geojson").read_text())
+    fc = json.loads((PROC / "gazetteer.geojson").read_text(encoding="utf-8"))
     todo = [f for f in fc["features"] if f["properties"]["status"] == "needs-tracing"
             and f["properties"].get("location_is") != "city centroid"]
     print(len(todo), "point sites to auto-trace")
@@ -131,7 +131,7 @@ def main(workers=12):
                 f["geometry"] = res["geometry"]
             if i % 25 == 0:
                 print(f"  {i}/{len(todo)} traced={ok}", flush=True)
-    (PROC / "gazetteer.geojson").write_text(json.dumps(fc))
+    (PROC / "gazetteer.geojson").write_text(json.dumps(fc), encoding="utf-8")
     print("auto-traced", ok, "of", len(todo))
 
 if __name__ == "__main__":

@@ -55,12 +55,12 @@ def nominatim(q: str, cache: dict) -> dict | None:
         return None
     time.sleep(1.1)
     cache[q] = res[0] if res else None
-    CACHE.write_text(json.dumps(cache, indent=1))
+    CACHE.write_text(json.dumps(cache, indent=1), encoding="utf-8")
     return cache[q]
 
 def main():
-    cache = json.loads(CACHE.read_text()) if CACHE.exists() else {}
-    rows = [r for r in csv.DictReader(open(RAW / "drap_priority_ulbs.csv")) if r["dumpsite_count"]]
+    cache = json.loads(CACHE.read_text(encoding="utf-8")) if CACHE.exists() else {}
+    rows = [r for r in csv.DictReader(open(RAW / "drap_priority_ulbs.csv", encoding="utf-8")) if r["dumpsite_count"]]
     out = []
     for r in rows:
         state = STATE_FIX.get(r["state"].strip(), r["state"].strip().title())
@@ -71,7 +71,7 @@ def main():
                     "lon": float(hit["lon"]) if hit else None,
                     "geocode_label": hit["display_name"] if hit else None})
         print(("OK " if hit else "MISS ") + city, flush=True)
-    (ROOT / "data/processed/drap_ulbs_geocoded.json").write_text(json.dumps(out, indent=1))
+    (ROOT / "data/processed/drap_ulbs_geocoded.json").write_text(json.dumps(out, indent=1), encoding="utf-8")
     print(sum(1 for o in out if o["lat"]), "/", len(out), "geocoded")
 
 if __name__ == "__main__":

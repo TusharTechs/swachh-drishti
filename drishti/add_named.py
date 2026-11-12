@@ -21,8 +21,8 @@ META = {"Moshi garbage depot": ("Maharashtra", "PCMC", "Pimpri-Chinchwad", "Moun
         "Adampur Chhawni landfill": ("Madhya Pradesh", "BMC", "Bhopal", None)}
 
 def main():
-    cache = json.loads(CACHE.read_text()) if CACHE.exists() else {}
-    fc = json.loads(F.read_text())
+    cache = json.loads(CACHE.read_text(encoding="utf-8")) if CACHE.exists() else {}
+    fc = json.loads(F.read_text(encoding="utf-8"))
     have = {(f["properties"].get("site_name") or "").lower() for f in fc["features"]}
     polys = osm_polygons()
     n = max(int(f["properties"]["site_id"][2:]) for f in fc["features"])
@@ -56,7 +56,7 @@ def main():
         props["site_id"] = f"SD{n:04d}"
         fc["features"].append({"type": "Feature", "geometry": geom, "properties": props})
         print(props["site_id"], name, props["status"], hit["display_name"][:70])
-    F.write_text(json.dumps(fc))
+    F.write_text(json.dumps(fc), encoding="utf-8")
 
 if __name__ == "__main__":
     main()

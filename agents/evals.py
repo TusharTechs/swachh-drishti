@@ -23,8 +23,8 @@ def build(n_industrial=12):
     from drishti.sentinel import observe
     from dataclasses import asdict
     EV.mkdir(parents=True, exist_ok=True)
-    gz = json.loads((PROC / "gazetteer.geojson").read_text())["features"]
-    imagery = json.loads((PROC / "imagery.json").read_text())
+    gz = json.loads((PROC / "gazetteer.geojson").read_text(encoding="utf-8"))["features"]
+    imagery = json.loads((PROC / "imagery.json").read_text(encoding="utf-8"))
     cases = []
     for f in gz:
         p = f["properties"]
@@ -38,12 +38,12 @@ def build(n_industrial=12):
         obs = [asdict(o) for o in observe(cid, site["geometry"], [2021, 2026], PROC / "chips")]
         if obs:
             cases.append({"case_id": cid, "label": "industrial_dump", "site": site, "obs": obs})
-    CASES.write_text(json.dumps(cases))
+    CASES.write_text(json.dumps(cases), encoding="utf-8")
     print(len(cases), "cases:", sum(c["label"] == "industrial_dump" for c in cases), "industrial")
 
 def run():
     from agents.site_analyst import assess
-    cases = json.loads(CASES.read_text())
+    cases = json.loads(CASES.read_text(encoding="utf-8"))
     results, correct = [], 0
     for c in cases:
         site = c["site"]
@@ -62,7 +62,7 @@ def run():
         print(f"  {c['case_id']}: {c['label']} -> {pred} {'✓' if ok else '✗'}", flush=True)
     out = {"run_at": dt.datetime.now(dt.timezone.utc).isoformat(), "n": len(cases),
            "accuracy": round(correct / max(len(cases), 1), 3), "results": results}
-    (EV / f"run_{dt.datetime.now().strftime('%Y%m%d_%H%M%S')}.json").write_text(json.dumps(out, indent=1))
+    (EV / f"run_{dt.datetime.now().strftime('%Y%m%d_%H%M%S')}.json").write_text(json.dumps(out, indent=1), encoding="utf-8")
     print("accuracy", out["accuracy"])
 
 if __name__ == "__main__":

@@ -31,12 +31,12 @@ def reverse(lat, lon, cache):
     a = res.get("address", {}) if res else {}
     cache[key] = {"city": a.get("city") or a.get("town") or a.get("county") or a.get("state_district") or a.get("village"),
                   "state": a.get("state")}
-    CACHE.write_text(json.dumps(cache))
+    CACHE.write_text(json.dumps(cache), encoding="utf-8")
     return cache[key]
 
 def main():
-    cache = json.loads(CACHE.read_text()) if CACHE.exists() else {}
-    fc = json.loads(F.read_text())
+    cache = json.loads(CACHE.read_text(encoding="utf-8")) if CACHE.exists() else {}
+    fc = json.loads(F.read_text(encoding="utf-8"))
     n = 0
     for f in fc["features"]:
         p = f["properties"]
@@ -60,7 +60,7 @@ def main():
         else:
             suffix = " dumpsite"
         p["display_name"] = named or osm or f"{locality}{suffix}"
-    F.write_text(json.dumps(fc))
+    F.write_text(json.dumps(fc), encoding="utf-8")
     print("filled admin for", n, "sites")
 
 if __name__ == "__main__":

@@ -48,7 +48,7 @@ def fetch_yearly(years=range(2019, 2026), sats=("viirs-snpp", "viirs-jpss1"), bb
                 if not r.ok:
                     print("  missing", sat, y, r.status_code); continue
                 f.write_bytes(r.content)
-            with open(f) as fh:
+            with open(f, encoding="utf-8") as fh:
                 for x in csv.DictReader(fh):
                     if bbox_filter and not bbox_filter(float(x["longitude"]), float(x["latitude"])):
                         continue
@@ -71,12 +71,12 @@ def fetch_archive(start: dt.date, end: dt.date, sources=("VIIRS_SNPP_SP", "VIIRS
                 for attempt in range(5):
                     r = requests.get(url, timeout=180)
                     if r.ok and not r.text.startswith("Invalid"):
-                        f.write_text(r.text)
+                        f.write_text(r.text, encoding="utf-8")
                         break
                     time.sleep(10 * (attempt + 1))
                 time.sleep(0.5)
             if f.exists():
-                rows += [{**x, "source": src} for x in csv.DictReader(io.StringIO(f.read_text()))]
+                rows += [{**x, "source": src} for x in csv.DictReader(io.StringIO(f.read_text(encoding="utf-8")))]
             d += dt.timedelta(days=10)
     return rows
 
