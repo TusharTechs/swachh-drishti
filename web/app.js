@@ -317,7 +317,7 @@ function risk(d) {
     const pts = ins.series.filter((x) => x.cumulative_mm != null);
     const dd = (s) => `${s.slice(6, 8)}/${s.slice(4, 6)}`;
     radar = pts.length ? `${chart(pts.map((x) => x.cumulative_mm), pts.map((x) => dd(x.d2)), '#7c3aed', ' mm', true)}
-      <p class="callout">Cumulative vertical movement of the mound relative to the ground 300–800 m around it: <b>${pts[pts.length - 1].cumulative_mm} mm</b> over ${pts.length} Sentinel-1 pairs (${pts[0].d1.slice(0, 4)}). Negative means settling.</p>
+      <p class="callout">Cumulative vertical movement of the mound relative to the ground 300–800 m around it: <b>${pts[pts.length - 1].cumulative_mm} mm</b> over ${pts.length} Sentinel-1 pairs (${pts[0].d1.slice(0, 4)}). Negative means the mound is settling; positive means its surface is rising relative to the surroundings, for example where fresh waste is still being dumped.</p>
       <p class="note">ASF HyP3 InSAR (40 m). C-band radar decorrelates on active tipping faces; this is a screening signal, not a stability verdict.</p>`
       : '<p class="note">Radar pairs processed but decorrelated over the mound; no reliable measurement.</p>';
   }

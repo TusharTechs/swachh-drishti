@@ -74,6 +74,25 @@ def _mean_in(tif: Path, geom_ll, ring=False):
         a = arr[0].astype("float64"); a[a == 0] = np.nan
         return float(np.nanmean(a)) if np.isfinite(a).any() else None
 
+def _download(url: str, dest: Path, tries: int = 5):
+    """Stream a product with a read timeout so a stalled connection fails fast and is retried."""
+    import requests, time
+    for attempt in range(1, tries + 1):
+        tmp = dest.with_suffix(dest.suffix + ".part")
+        try:
+            with requests.get(url, stream=True, timeout=(15, 60)) as r:
+                r.raise_for_status()
+                with open(tmp, "wb") as fh:
+                    for chunk in r.iter_content(chunk_size=1 << 20):
+                        fh.write(chunk)
+            tmp.replace(dest)
+            return dest
+        except Exception as e:
+            print(f"  download retry {attempt}/{tries} for {dest.name}: {repr(e)[:90]}", flush=True)
+            tmp.unlink(missing_ok=True)
+            time.sleep(10 * attempt)
+    return None
+
 def collect(sid):
     h = hyp3(); f = site(sid)
     jobs = h.find_jobs(name=f"drishti-{sid}")
@@ -85,7 +104,11 @@ def collect(sid):
         have = list(d.glob(f"{job.files[0]['filename'][:-4]}*/*_vert_disp.tif")) if job.files else []
         if have:
             tifs.append(have[0]); continue
-        for zf in job.download_files(d):
+        for fi in job.files:
+            zf = _download(fi["url"], d / fi["filename"])
+            if zf is None:
+                print("  giving up on", fi["filename"], flush=True)
+                continue
             with zipfile.ZipFile(zf) as z:
                 m = [n for n in z.namelist() if n.endswith("_vert_disp.tif")]
                 if m:
