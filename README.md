@@ -47,7 +47,7 @@
 | **Size of the problem** | **74.4 lakh people** live within 1 km, and **2.28 crore within 2 km**, of the 325 dumpsites we have outlined (GHSL 2025, each person counted once). About 2,479 legacy dumpsites hold ~25 crore tonnes on ~15,000 acres (PIB, Jan 2026). |
 | **Severity** | 230 sites have satellite-detected fires since 2019. Mound collapses and fires have killed people: Ghazipur 2017 (2), Ludhiana 2022 (7), Moshi July 2026 (9). Dioxins near the Brahmapuram fire reached 16× the reference level. ₹6,700 cr of DRAP remediation runs without an independent check. |
 | **Quality of solution** | Open gazetteer, an auto-tracer driven by elevation and Sentinel-2, a yearly Sentinel-2 record, NASA FIRMS fires, Sentinel-1 InSAR mound movement, GHSL exposure, and agents gated by a reviewer. All on open data, reproducible, no API keys. |
-| **Proven impact** | Deployed publicly. 651 sites geocoded and linked to the government priority list, 325 reviewed evidence packs, radar measurements for 8 large mounds, and an honestly reported fire backtest. No field users yet: every pack has a right-of-reply form for ULBs. |
+| **Proven impact** | Deployed publicly. 651 sites geocoded and linked to the government priority list, 325 reviewed evidence packs, radar measurements for 10 large mounds, and an honestly reported fire backtest. No field users yet: every pack has a right-of-reply form for ULBs. |
 
 ---
 
@@ -60,7 +60,7 @@
 | People within 1 km / 2 km of a mapped site | **74.4 lakh / 2.28 crore** |
 | Legacy waste at DRAP priority sites | **~9 crore tonnes** |
 | Sites with VIIRS fire detections since 2019 | **230** |
-| Mounds measured with Sentinel-1 InSAR (2026) | **8** (2 more processing) |
+| Mounds measured with Sentinel-1 InSAR (2026) | **10** |
 | Reviewed evidence packs published | **325** |
 | Fire backtest: documented fires detected within ±1 day | **13 / 28 (46%)** |
 
